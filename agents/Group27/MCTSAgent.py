@@ -1,5 +1,6 @@
 """Group 27 Agent"""
 from random import choice
+from time import time
 
 # import torch
 
@@ -35,6 +36,9 @@ class MCTSAgent(AgentBase):
         # self.model.eval()
         self.mcts = MCTS(200)
 
+        self.total_search_time = 0
+        self.search_count = 0
+
     def make_move(self, turn: int, board: Board, opp_move: Move | None) -> Move:
         """The game engine will call this method to request a move from the agent.
         If the agent is to make the first move, opp_move will be None.
@@ -52,8 +56,14 @@ class MCTSAgent(AgentBase):
         """
 
         ## self.model.make_heuristics(board)
-
+        self.search_count += 1
+        a = time()
         move = self.mcts.search(turn, [], board, opp_move)
+        b = time()
+
+        time_searched = b-a
+        self.total_search_time += time_searched
+        print("Time: " + str(time_searched) + " Average Time: " + str(self.total_search_time/self.search_count))
 
         return move
 

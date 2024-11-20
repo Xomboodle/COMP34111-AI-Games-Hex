@@ -7,6 +7,7 @@ from src.Colour import Colour
 from math import inf, log, sqrt
 import random
 import copy
+from operator import truth
 
 
 def apply_move(node: Node, move : Move) -> tuple[Board, bool]:
@@ -89,18 +90,20 @@ class MCTS:
     
     def simulate(self, node : Node, depth_limit : int = 50) -> float:
         """Simulate a random playout from the current node's state."""
-        current_state = copy.deepcopy(node.state)
-
+        # node = copy.deepcopy(node)
+        current_state = node.state
         player_colour = node.get_player_colour()
         depth_count = 0
         player = node.player
-        while not(current_state.has_ended(player_colour)) and depth_count < depth_limit:  # Until the game reaches a terminal state
+        # truth from operators is used as it is faster than bool(actions)
+        # truth evaluates if there are any actions
+        while truth(node.actions) and depth_count < depth_limit:  # Until the game reaches a terminal state
             actions = node.actions
             move = random.choice(actions)  # Pick a random action
             current_state,player = apply_move(node,move)  # Apply the action
-            node = Node(current_state, player,turn=node.turn+1)
+            node = Node(current_state, player,turn=node.turn+1, parent=node, action=move)
             depth_count += 1
-        return Heuristics.evaluateBoard(current_state, player) # Return the reward of the terminal state
+        return 0 #Heuristics.evaluateBoard(current_state, player, [0.1,0.7,0.1, 0.1]) # Return the reward of the terminal state
 
     def back_propagate(self, node: Node, reward : float):
         """Backpropagate the reward through the tree."""
