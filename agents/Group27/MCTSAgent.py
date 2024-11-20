@@ -1,14 +1,15 @@
 """Group 27 Agent"""
 from random import choice
 
-import torch
+# import torch
 
 from src.AgentBase import AgentBase
 from src.Board import Board
 from src.Colour import Colour
 from src.Move import Move
 
-from agents.Group27.mcts.MCTSModel import MCTSModel
+# from agents.Group27.mcts.MCTSModel import MCTSModel
+from agents.Group27.mcts.MCTS import MCTS
 
 class MCTSAgent(AgentBase):
     """
@@ -29,9 +30,10 @@ class MCTSAgent(AgentBase):
             (i, j) for i in range(self._board_size) for j in range(self._board_size)
         ]
 
-        self.model: MCTSModel = MCTSModel()
-        self.model.load_state_dict(torch.load('agents/Group27/mcts/test.pth'))
-        self.model.eval()
+        # self.model: MCTSModel = MCTSModel()
+        # self.model.load_state_dict(torch.load('agents/Group27/mcts/test.pth'))
+        # self.model.eval()
+        self.mcts = MCTS(200)
 
     def make_move(self, turn: int, board: Board, opp_move: Move | None) -> Move:
         """The game engine will call this method to request a move from the agent.
@@ -48,6 +50,12 @@ class MCTSAgent(AgentBase):
         Returns:
             Move: The agent move
         """
+
+        ## self.model.make_heuristics(board)
+
+        move = self.mcts.search(turn, [], board, opp_move)
+
+        return move
 
         # if turn == 2 and choice([0, 1]) == 1:
         if turn == 2:
