@@ -5,6 +5,8 @@ from src.Board import Board
 from src.Colour import Colour
 from src.Move import Move
 
+from agents.Group27.mcts.Node import get_moves
+
 
 class NaiveAgent(AgentBase):
     """This class describes the default Hex agent. It will randomly send a
@@ -45,5 +47,6 @@ class NaiveAgent(AgentBase):
         if turn == 2:
             return Move(-1, -1)
         else:
-            x, y = choice(self._choices)
-            return Move(x, y)
+            # x, y = choice(self._choices)
+            return choice(get_moves(board, turn))
+
