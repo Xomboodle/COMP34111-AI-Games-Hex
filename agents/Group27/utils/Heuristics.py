@@ -65,3 +65,21 @@ class Heuristics:
         if not player and longest_blue >= 22:
             return math.inf
         return heuristic
+    
+    def evaluate_basic(board : Board, player : bool):
+        red_result = board.has_ended(Colour.BLUE)
+        blue_result = board.has_ended(Colour.RED)
+        if player:
+            # blue
+            if blue_result:
+                return 1
+            if red_result:
+                return -1
+            return 0
+        else:
+            #red
+            if red_result:
+                return 1
+            if blue_result:
+                return -1
+            return 0
