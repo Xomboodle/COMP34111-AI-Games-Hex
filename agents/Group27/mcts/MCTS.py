@@ -79,7 +79,6 @@ class MCTS:
 
         best_move = self.best_action()
         # self.current_node = self.nodes[make_hash(self.current_node.state,turn+1)]
-        print(">>>>>>>>> ", best_move)
         return best_move
         
     def select(self, node : Node) -> Node:
@@ -99,7 +98,7 @@ class MCTS:
     def simulate(self, node : Node, depth_limit : int = 50) -> float:
         """Simulate a random playout from the current node's state."""
         depth_count = 0
-        while node.is_terminal and depth_count < depth_limit:  # Until the game reaches a terminal state
+        while not(node.is_terminal) and depth_count < depth_limit:  # Until the game reaches a terminal state
             move = random.choice(node.state.valid_actions)  # Pick a random action
             node = node.make_move(move)
             depth_count += 1

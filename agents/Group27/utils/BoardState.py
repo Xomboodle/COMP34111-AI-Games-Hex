@@ -33,7 +33,7 @@ class BoardState():
 
         #actions will be referred to by address (move.y*self.size + move.x) reduces faff
         # we can also store actions in one big list.
-        self.valid_actions = [i for i in range(self.size**2)]
+        self.valid_actions = list(range(self.size**2))
         # note swapping is not provided by the board state. this is by the game
 
     def make_move(self,move : Move, colour : Colour):

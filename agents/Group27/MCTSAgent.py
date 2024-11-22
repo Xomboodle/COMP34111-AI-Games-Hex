@@ -63,7 +63,7 @@ class MCTSAgent(AgentBase):
 
         time_searched = b-a
         self.total_search_time += time_searched
-        print("Time: " + str(time_searched) + " Average Time: " + str(self.total_search_time/self.search_count))
+        # print("Time: " + str(time_searched) + " Average Time: " + str(self.total_search_time/self.search_count))
 
         return move
 
