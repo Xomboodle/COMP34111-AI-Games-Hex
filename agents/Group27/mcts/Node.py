@@ -7,6 +7,7 @@ from src.Move import Move
 from math import inf, log, sqrt
 import copy
 from agents.Group27.utils.BoardState import BoardState
+from operator import truth
        
 
 def get_moves(board: Board, turn: int) -> list:
@@ -65,9 +66,9 @@ class Node:
         ''' Makes a move where the move is an address for the BoardState'''
         next_player = not(self.player)
         next_turn = self.turn + 1
-        self.untried_actions.remove(move)
+        if truth(self.untried_actions): # this can be replaced by a bool for performance
+            self.untried_actions.remove(move)
         next_state = self.state.copy()
-        
         if move == -1:
             action = Move(-1,-1)
         else:

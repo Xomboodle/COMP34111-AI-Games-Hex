@@ -70,16 +70,16 @@ class Heuristics:
         red_result = board.has_ended(Colour.BLUE)
         blue_result = board.has_ended(Colour.RED)
         if player:
-            # blue
-            if blue_result:
-                return 1
-            if red_result:
-                return -1
-            return 0
-        else:
             #red
             if red_result:
                 return 1
             if blue_result:
+                return -1
+            return 0
+        else:    
+            # blue
+            if blue_result:
+                return 1
+            if red_result:
                 return -1
             return 0
