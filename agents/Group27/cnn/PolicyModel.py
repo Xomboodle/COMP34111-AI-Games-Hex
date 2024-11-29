@@ -2,24 +2,23 @@
 import torch
 import torch.nn as nn
 
-class MCTSModel(nn.Module):
+class PolicyModel(nn.Module):
     """Convolutional neural network for predicting game outcomes based on the Hex board state."""
 
-    def __init__(self):
+    def __init__(self, boardSize=11):
         """Initialise model."""
-        super(MCTSModel, self).__init__()
-
-        board_size = 11
+        super(PolicyModel, self).__init__()
 
         # Convolutional layers (feature extraction)
         #   - kernel_size: The size of the convolutional kernel
         #   - padding: The number of pixels to add to each side of the input
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=3, padding=1)
+        self.conv1 = nn.Conv2d(3, 32, kernel_size=3, padding=1)
         self.conv2 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
+        self.conv3 = nn.Conv2d(64, 64, kernel_size=3, padding=1)
 
-        # Fully connected layers (decision making)
-        self.fc1 = nn.Linear(64 * board_size * board_size, 128)
-        self.fc2 = nn.Linear(128, 1)
+        # Policy head
+        self.convp = nn.Conv2d(64, 2, kernel_size=1)  # reduce to 2 channels
+        self.fcp = nn.Linear(2 * boardSize * boardSize, boardSize * boardSize)
 
     def forward(self, x):
         """
@@ -34,11 +33,11 @@ class MCTSModel(nn.Module):
         # Convolutional layers
         x = torch.relu(self.conv1(x))
         x = torch.relu(self.conv2(x))
+        x = torch.relu(self.conv3(x))
 
-        # Flatten
-        x = x.view(x.size(0), -1)
+        # Policy head
+        p = torch.relu(self.convp(x))
+        p = p.view(p.size(0), -1)  # flatten
+        p = self.fcp(p)  # output move logits
 
-        # Fully connected layers
-        x = torch.relu(self.fc1(x))
-        x = torch.sigmoid(self.fc2(x))  # Output a probability
-        return x
+        return p

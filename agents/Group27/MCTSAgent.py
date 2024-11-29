@@ -9,7 +9,7 @@ from src.Board import Board
 from src.Colour import Colour
 from src.Move import Move
 
-# from agents.Group27.mcts.MCTSModel import MCTSModel
+# from agents.Group27.mcts.PolicyModel import PolicyModel
 from agents.Group27.mcts.MCTS import MCTS
 
 class MCTSAgent(AgentBase):
@@ -31,7 +31,7 @@ class MCTSAgent(AgentBase):
             (i, j) for i in range(self._board_size) for j in range(self._board_size)
         ]
 
-        # self.model: MCTSModel = MCTSModel()
+        # self.model: PolicyModel = PolicyModel()
         # self.model.load_state_dict(torch.load('agents/Group27/mcts/test.pth'))
         # self.model.eval()
         self.mcts = MCTS(200)

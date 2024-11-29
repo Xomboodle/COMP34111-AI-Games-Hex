@@ -35,18 +35,21 @@ class MCTS:
         # dictionary of nodes depending on the board state and the turn
         self.nodes = {make_hash(self.root_node.state, 1) : self.root_node}
         self.current_node = self.root_node
+        self.current_state = None
 
         # explore root node can probably try without this
         while self.root_node.untried_actions:
             self.expand(self.root_node)
 
-    def import_states():
-        '''TODO'''
-    
-    def export_states():
-        '''TODO'''
-    
-    def search(self, turn:int, heuristics: list, board: Board, previous_move : Move):
+    def import_states(self):
+        """TODO"""
+        pass
+
+    def export_states(self):
+        """TODO"""
+        pass
+
+    def search(self, turn:int, _heuristics: list, board: Board, previous_move : Move):
 
         self.current_state = board_to_boardstate(board) # BoardState
         try:
@@ -60,33 +63,32 @@ class MCTS:
                                     turn,
                                     previous_move)
             self.current_node = self.nodes[h]
-        
 
         for _ in range(self.max_simulations):
             # selection
 
             node = self.select(self.current_node) ## either increment, turn 0 or 1
             # exploration
-            
+
             if node.untried_actions:
                 node = self.expand(node)
-                
+
             # simulation
 
             reward = self.simulate(node)
-            # back propagate   
-            self.back_propagate(node, reward) 
+            # back propagate
+            self.back_propagate(node, reward)
 
         best_move = self.best_action()
         # self.current_node = self.nodes[make_hash(self.current_node.state,turn+1)]
         return best_move
-        
+
     def select(self, node : Node) -> Node:
         """Select the child with the highest UCB1 value"""
         while node.untried_actions == [] and node.children:  # If all actions are tried and children exist
             node = max(node.children, key=lambda child: child.ucb())  # Select the best child by UCB1
         return node
-    
+
     def expand(self, node: Node) -> Node:
         """Expand the node by trying one of the untried actions."""
         move = random.choice(node.untried_actions)
@@ -94,12 +96,13 @@ class MCTS:
         self.nodes[make_hash(child_node.state,child_node.turn)] = child_node
         node.children.append(child_node)
         return child_node
-    
+
     def simulate(self, node : Node, depth_limit : int = 50) -> float:
         """Simulate a random playout from the current node's state."""
         depth_count = 0
-        while not(node.is_terminal) and depth_count < depth_limit:  # Until the game reaches a terminal state
+        while not(node.is_terminal) and depth_count < depth_limit:  # Until the game reaches a terminal or deep state
             move = random.choice(node.state.valid_actions)  # Pick a random action
+            # TODO: use the policy network to pick the best move, instead of random rollouts
             node = node.make_move(move)
             depth_count += 1
         return Heuristics.evaluate_basic(boardstate_to_board(node.state), self.current_node.player) #Heuristics.evaluateBoard(current_state, player, [0.1,0.7,0.1, 0.1]) # Return the reward of the terminal state

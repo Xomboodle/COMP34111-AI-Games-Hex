@@ -1,3 +1,6 @@
+"""Data generation agent for policy learning."""
+import json
+import os
 from random import choice
 
 from src.AgentBase import AgentBase
@@ -5,12 +8,11 @@ from src.Board import Board
 from src.Colour import Colour
 from src.Move import Move
 
-from agents.Group27.mcts.Node import get_moves
+DATA_PATH = os.path.join(os.path.dirname(__file__), 'data', 'selfPlayData.json')
 
-
-class NaiveAgent(AgentBase):
-    """This class describes the default Hex agent. It will randomly send a
-    valid move at each turn, and it will choose to swap with a 50% chance.
+class LearningAgent(AgentBase):
+    """
+    Chump bot who plays randomly, recording its moves for policy learning.
 
     The class inherits from AgentBase, which is an abstract class.
     The AgentBase contains the colour property which you can use to get the agent's colour.
@@ -27,6 +29,13 @@ class NaiveAgent(AgentBase):
             (i, j) for i in range(self._board_size) for j in range(self._board_size)
         ]
 
+        self.data: dict[str, list[list]] = {}
+        try:
+            with open(DATA_PATH, 'r', encoding='utf-8') as f:
+                self.data = json.load(f)
+        except:
+            pass
+
     def make_move(self, turn: int, board: Board, opp_move: Move | None) -> Move:
         """The game engine will call this method to request a move from the agent.
         If the agent is to make the first move, opp_move will be None.
@@ -40,13 +49,28 @@ class NaiveAgent(AgentBase):
             opp_move (Move | None): The opponent's last move
 
         Returns:
-            Move: The agent's move
+            Move: The agent move
         """
 
-        # if turn == 2 and choice([0, 1]) == 1:
-        if turn == 2:
+        # select a move
+        if turn == 2 and choice([0, 1]) == 1:
             return Move(-1, -1)
         else:
-            # x, y = choice(self._choices)
-            return choice(get_moves(board, turn))
+            x, y = choice(self._choices)
+            while board.tiles[x][y].colour is not None:
+                x, y = choice(self._choices)
+        move = Move(x, y)
 
+        # track chosen moves
+        stringified_board = str(board)
+        if self.data.get(stringified_board) is None:
+            self.data[stringified_board] = [
+                [0 for _ in range(self._board_size)] for _ in range(self._board_size)
+            ]
+        self.data[stringified_board][x][y] += 1
+
+        # save data
+        with open(DATA_PATH, 'w', encoding='utf-8') as f:
+            json.dump(self.data, f, ensure_ascii=False, indent=4, separators=(',', ':'))
+
+        return move
