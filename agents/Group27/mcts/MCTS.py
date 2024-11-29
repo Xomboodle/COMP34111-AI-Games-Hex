@@ -105,7 +105,7 @@ class MCTS:
             # TODO: use the policy network to pick the best move, instead of random rollouts
             node = node.make_move(move)
             depth_count += 1
-        return Heuristics.evaluate_basic(boardstate_to_board(node.state), self.current_node.player) #Heuristics.evaluateBoard(current_state, player, [0.1,0.7,0.1, 0.1]) # Return the reward of the terminal state
+        return Heuristics.evaluateBoard2(boardstate_to_board(node.state), self.current_node.player) #Heuristics.evaluateBoard(current_state, player, [0.1,0.7,0.1, 0.1]) # Return the reward of the terminal state
 
     def back_propagate(self, node: Node, reward : float):
         """Backpropagate the reward through the tree."""
