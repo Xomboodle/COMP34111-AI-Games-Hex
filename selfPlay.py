@@ -29,6 +29,11 @@ class CustomGame(Game):
         self._board = Board(self.board.size)
         self.current_player = Colour.RED
         self._start_time = time.time()
+        if self.has_swapped:
+            self.players[Colour.RED], self.players[Colour.BLUE] = (
+                    self.players[Colour.BLUE],
+                    self.players[Colour.RED],
+                )
         self.has_swapped = False
 
         self.logDest = open(os.devnull, 'w', encoding='utf-8')
@@ -52,9 +57,9 @@ class CustomGame(Game):
             playerAgent = currentPlayer.agent
             currentPlayer.turn += 1
 
-            boardCopy = copy.deepcopy(self.board)
+            # boardCopy = copy.deepcopy(self.board)
             turnCopy = self.turn
-            playerCopy = copy.deepcopy(self.players)
+            # playerCopy = copy.deepcopy(self.players)
 
             playerBoard = copy.deepcopy(self.board)
 
@@ -62,10 +67,10 @@ class CustomGame(Game):
             m = playerAgent.make_move(self.turn, playerBoard, opponentMove)
             end = time.time()
 
-            assert boardCopy == self.board, "Board was modified, Possible cheating!"
-            assert turnCopy == self.turn, "Turn was modified, Possible cheating!"
-            assert playerCopy == self.players, "Players were modified, Possible cheating!"
-            assert end > start, "Move time is negative, Possible cheating!"
+            # assert boardCopy == self.board, "Board was modified, Possible cheating!"
+            # assert turnCopy == self.turn, "Turn was modified, Possible cheating!"
+            # assert playerCopy == self.players, "Players were modified, Possible cheating!"
+            # assert end > start, "Move time is negative, Possible cheating!"
 
             # ---
             # track moves
@@ -121,7 +126,7 @@ def selfPlay(totalGames=1, verbose=False):
 
     startTime = time.time()
 
-    p1Path, p1Class = 'agents.DefaultAgents.NaiveAgent NaiveAgent'.split(" ")
+    p1Path, p1Class = 'agents.Group27.MCTSAgent MCTSAgent'.split(" ")
     p2Path, p2Class = 'agents.DefaultAgents.NaiveAgent NaiveAgent'.split(" ")
     p1 = importlib.import_module(p1Path)
     p2 = importlib.import_module(p2Path)

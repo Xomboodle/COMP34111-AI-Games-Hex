@@ -1,6 +1,6 @@
 from agents.Group27.mcts.Node import Node, get_moves
 from agents.Group27.utils.BoardState import BoardState, board_to_boardstate, boardstate_to_board
-from agents.Group27.utils.Heuristics import Heuristics
+from agents.Group27.utils.Heuristics import Heuristics, bfsFinished
 from src.Board import Board
 from src.Move import Move
 from src.Game import Game
@@ -50,6 +50,7 @@ class MCTS:
         pass
 
     def search(self, turn:int, _heuristics: list, board: Board, previous_move : Move):
+        print("turn" + str(turn), end="\r")
 
         self.current_state = board_to_boardstate(board) # BoardState
         try:
@@ -57,8 +58,12 @@ class MCTS:
         except KeyError:
             # current node is the last turn in the this state
             h = make_hash(self.current_state, turn)
+            if previous_move is not None:
+                player = not(self.current_node.player) if previous_move.x == -1 else self.current_node.player
+            else:
+                player = self.current_node.player
             self.nodes[h] = Node(  self.current_state,
-                                    not(self.current_node.player),
+                                    player,
                                     self.current_node,
                                     turn,
                                     previous_move)
@@ -97,15 +102,21 @@ class MCTS:
         node.children.append(child_node)
         return child_node
 
-    def simulate(self, node : Node, depth_limit : int = 50) -> float:
+    def simulate(self, node : Node, depth_limit : int = 300) -> float:
         """Simulate a random playout from the current node's state."""
+        # print(node.player)
         depth_count = 0
-        while not(node.is_terminal) and depth_count < depth_limit:  # Until the game reaches a terminal or deep state
+        has_ended = bfsFinished(boardstate_to_board(node.state), node.player)
+        while not(has_ended) and not(node.is_terminal) and depth_count < depth_limit:  # Until the game reaches a terminal or deep state
             move = random.choice(node.state.valid_actions)  # Pick a random action
             # TODO: use the policy network to pick the best move, instead of random rollouts
             node = node.make_move(move)
             depth_count += 1
-        return Heuristics.evaluateBoard2(boardstate_to_board(node.state), self.current_node.player) #Heuristics.evaluateBoard(current_state, player, [0.1,0.7,0.1, 0.1]) # Return the reward of the terminal state
+            has_ended = bfsFinished(boardstate_to_board(node.state), False)
+        h = Heuristics.evaluateBoard2(boardstate_to_board(node.state), False,node.turn)
+        # print(boardstate_to_board(node.state).print_board())
+        # print(h)
+        return  h #Heuristics.evaluateBoard(current_state, player, [0.1,0.7,0.1, 0.1]) # Return the reward of the terminal state
 
     def back_propagate(self, node: Node, reward : float):
         """Backpropagate the reward through the tree."""
@@ -115,4 +126,11 @@ class MCTS:
 
     def best_action(self):
         """Return the best action based on the visit counts."""
-        return max(self.current_node.children, key=lambda child: child.visits).action
+        # for node in self.current_node.children:
+        #     print(node.value/node.visits, node.action)
+        if self.current_node.player:
+            #blue
+            return min(self.current_node.children, key=lambda child: child.value/child.visits).action
+        else:
+            #red
+            return max(self.current_node.children, key=lambda child: child.value/child.visits).action

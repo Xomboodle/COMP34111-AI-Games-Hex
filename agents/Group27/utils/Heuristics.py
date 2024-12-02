@@ -86,41 +86,41 @@ class Heuristics:
             return 0
         
     @staticmethod
-    def evaluateBoard2(boardState: Board, player: bool) -> float:
+    def evaluateBoard2(boardState: Board, player: bool, turn : int) -> float:
         """
             Evaluates the board state by finding the shortest path via
             BFS, and how many tiles within it are currently occupied by
             the player
         """
-        path_length, path = bfs(boardState, player)
-        path_length_opp, path_opp = bfs(boardState, not(player))
+        red_path_length = bfs(boardState, False)
+        blue_path_length = bfs(boardState, True)
 
         colour = Colour.BLUE if player else Colour.RED
         colour_opp = Colour.RED if player else Colour.BLUE
         placed = 0
         placed_opp = 0
-        for tile in path:
-            if boardState.tiles[tile[0]][tile[1]].colour == colour:
-                placed += 1
-
-        for tile in path_opp:
-            if boardState.tiles[tile[0]][tile[1]].colour == colour_opp:
-                placed_opp += 1
 
         # TODO:
         #  Values are hard-coded for now, will need to change
-        heuristic = (0.6 * path_length) + (0.8 * placed) - (0.3 * path_length_opp) - (0.7 * placed_opp)
+        red_heuristic = (0.6 * (1 / (red_path_length))) * (0.3 * (1 - (turn / 123)))
+        blue_heuristic = (0.6 * (1 / (blue_path_length))) * (0.3 * (1 - (turn / 123))) 
+        heuristic = red_heuristic - blue_heuristic
+
+        # if red_path_length > 0:
+        #     heuristic = (1 - (turn / 121))
+        # elif blue_path_length > 0:
+        #     heuristic = -(1 - (turn / 121))
         return heuristic
     
 def bfs(board: Board, player: bool):
     directions = [(-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1)]
 
     if player: # BLUE PLAYER
-        opp_colour = Colour.RED
+        opp_colour = Colour.BLUE
         start_nodes = [(0, j) for j in range(11) if board.tiles[0][j].colour != Colour.RED]
         target_side = lambda x, y: x == 10
     else: # RED PLAYER
-        opp_colour = Colour.BLUE
+        opp_colour = Colour.RED
         start_nodes = [(i, 0) for i in range(11) if board.tiles[i][0].colour != Colour.BLUE]
         target_side = lambda x, y: y == 10
     
@@ -131,16 +131,50 @@ def bfs(board: Board, player: bool):
 
         # Check if we've reached the target side
         if target_side(x, y):
-            return len(path), path
+            return len(path)
 
         # Explore neighbours
         for dx, dy in directions:
             nx, ny = x + dx, y + dy
 
             # Check bounds and if the neighbour doesn't belong to the opponent
-            if 0 <= nx < 11 and 0 <= ny < 11 and board.tiles[nx][ny].colour != opp_colour and (nx, ny) not in visited:
+            if 0 <= nx < 11 and 0 <= ny < 11 and board.tiles[nx][ny].colour == opp_colour and (nx, ny) not in visited:
                 visited.add((nx, ny))
                 queue.append((nx, ny, path + [(nx, ny)]))
 
 
-    return -1, [];
+    return -1
+
+
+def bfsFinished(board: Board, player: bool):
+    directions = [(-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1)]
+
+    if player: # BLUE PLAYER
+        colour = Colour.BLUE
+        start_nodes = [(0, j) for j in range(11) if board.tiles[0][j].colour != Colour.RED]
+        target_side = lambda x, y: x == 10
+    else: # RED PLAYER
+        colour = Colour.RED
+        start_nodes = [(i, 0) for i in range(11) if board.tiles[i][0].colour != Colour.BLUE]
+        target_side = lambda x, y: y == 10
+    
+    queue = deque([(x, y) for x, y in start_nodes])  # (x, y)
+    visited = set(start_nodes)
+    while queue:
+        x, y = queue.popleft()
+
+        # Check if we've reached the target side
+        if target_side(x, y):
+            return True
+
+        # Explore neighbours
+        for dx, dy in directions:
+            nx, ny = x + dx, y + dy
+
+            # Check bounds and if the neighbour doesn't belong to the opponent
+            if 0 <= nx < 11 and 0 <= ny < 11 and board.tiles[nx][ny].colour == colour and (nx, ny) not in visited:
+                visited.add((nx, ny))
+                queue.append((nx, ny))
+
+
+    return False
