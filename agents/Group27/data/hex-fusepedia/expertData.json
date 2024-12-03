@@ -1,0 +1,1162 @@
+[
+    {
+        "game_id": "1829613",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.42]PB[Tony]PW[richyfourtytwo]SZ[11]RE[B]GC[ game #1829613]SO[https://www.littlegolem.net];W[kg];B[he];W[eg];B[ci];W[ff];B[eh];W[gg];B[ih];W[if];B[hg];W[hf];B[fi];W[dh];B[di];W[hh];B[ig];W[gh];B[gj];W[hi];B[fe];W[ge];B[hc];W[gd];B[gc];W[ed];B[ec];W[fc];B[ga];W[gb];B[ha];W[jb];B[jf];W[hj];B[resign])"
+    },
+    {
+        "game_id": "1830250",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.2]PB[Force majeure]PW[Grzeniu]SZ[11]RE[W]GC[ game #1830250]SO[https://www.littlegolem.net];W[bb];B[de];W[ge];B[hi];W[fh];B[gf];W[eg];B[ff];W[ef];B[fd];W[fe];B[hc];W[ic];B[hd];W[resign])"
+    },
+    {
+        "game_id": "1826150",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.40]PB[Grzeniu]PW[Ocross]SZ[11]RE[B]GC[ game #1826150]SO[https://www.littlegolem.net];W[ac];B[cb];W[ih];B[jj];W[dh];B[hf];W[ge];B[hb];W[ec];B[gd];W[hd];B[ib];W[id];B[jc];W[fe];B[eg];W[fg];B[cj];W[eh];B[ei];W[gh];B[fh];W[gg];B[gi];W[fi];B[ek];W[dj];B[resign])"
+    },
+    {
+        "game_id": "1778783",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.2.1]PB[Knemay]PW[Lukasz S.]SZ[11]RE[W]GC[ game #1778783]SO[https://www.littlegolem.net];W[aj];B[ed];W[dc];B[cb];W[dg];B[gh];W[ih];B[ij];W[hj];B[ig];W[fd];B[ee];W[fe];B[ef];W[ff];B[eg];W[hg];B[gg];W[resign])"
+    },
+    {
+        "game_id": "1826319",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Christian0]PW[Grzeniu]SZ[11]RE[W]GC[ game #1826319]SO[https://www.littlegolem.net];W[ak];B[dc];W[jc];B[hi];W[fg];B[hc];W[ed];B[ff];W[cg];B[ch];W[dg];B[dh];W[eh];B[fe];W[gd];B[he];W[eg];B[df];W[ce];B[cf];W[ag];B[bg];W[ah];B[bh];W[ai];B[di];W[aj];B[bf];W[af];B[be];W[ae];B[bc];W[bd];B[eb];W[cd];B[fc];W[resign])"
+    },
+    {
+        "game_id": "1760187",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Knemay]PW[Giupiter]SZ[11]RE[B]GC[ game #1760187]SO[https://www.littlegolem.net];W[ak];B[fg];W[dg];B[ed];W[ge];B[hd];W[gd];B[df];W[ef];B[resign])"
+    },
+    {
+        "game_id": "1752048",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.1]PB[Richard Malaschitz]PW[shalev]SZ[11]RE[W]GC[ game #1752048]SO[https://www.littlegolem.net];W[ha];B[gh];W[jg];B[jf];W[hg];B[gg];W[dh];B[dc];W[ee];B[ef];W[bg];B[cg];W[bh];B[ch];W[bi];B[ci];W[ak];B[bj];W[aj];B[cf];W[fg];B[ge];W[af];B[bf];W[ag];B[bd];W[be];B[dd];W[jd];B[id];W[resign])"
+    },
+    {
+        "game_id": "1784830",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.17]PB[Giupiter]PW[Austral]SZ[11]RE[W]GC[ game #1784830]SO[https://www.littlegolem.net];W[kh];B[ff];W[dg];B[dc];W[ec];B[ee];W[id];B[he];W[ie];B[hg];W[cg];B[dd];W[jf];B[jg];W[ig];B[hi];W[fh];B[gi];W[gf];B[hd];W[fe];B[fg];W[ed];B[dh];W[eh];B[di];W[ej];B[eg];W[gg];B[ge];W[hf];B[ic];W[kb];B[jc];W[resign])"
+    },
+    {
+        "game_id": "1829603",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.42]PB[Shumacher;]]PW[shalev]SZ[11]RE[W]GC[ game #1829603]SO[https://www.littlegolem.net];W[kh];B[swap];W[de];B[dc];W[bc];B[bd];W[gg];B[fi];W[hh];B[gj];W[hj];B[eg];W[ij];B[ih];W[fg];B[eh];W[hi];B[hg];W[gh];B[ff];W[he];B[hd];W[ge];B[gd];W[fe];B[fd];W[ec];B[ee];W[cg];B[df];W[cf];B[ci];W[resign])"
+    },
+    {
+        "game_id": "1754338",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.mc.2015.dec.1.3]PB[JKB]PW[Jos Dekker]SZ[11]RE[B]GC[ game #1754338]SO[https://www.littlegolem.net];W[ac];B[dh];W[hg];B[ih];W[ci];B[gi];W[hi];B[hh];W[ch];B[dg];W[fh];B[ge];W[hd];B[gg];W[cg];B[de];W[bf];B[be];W[ce];B[dc];W[cd];B[cb];W[db];B[cc];W[dd];B[fb];W[ec];B[eb];W[gc];B[fc];W[fd];B[ed];W[ef];B[df];W[fg];B[resign])"
+    },
+    {
+        "game_id": "1814408",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.33]PB[shalev]PW[herveherve]SZ[11]RE[B]GC[ game #1814408]SO[https://www.littlegolem.net];W[ac];B[ci];W[ih];B[ff];W[ge];B[gf];W[ie];B[ic];W[hd];B[gc];W[hc];B[if];W[hf];B[hg];W[gg];B[gh];W[fh];B[ek];W[fi];B[ia];W[hb];B[resign])"
+    },
+    {
+        "game_id": "1816124",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.oct.1.2]PB[Grzeniu]PW[sZamBa_]SZ[11]RE[B]GC[ game #1816124]SO[https://www.littlegolem.net];W[ac];B[ff];W[hf];B[he];W[gf];B[ge];W[df];B[dg];W[ef];B[eg];W[bh];B[ci];W[aj];B[ak];W[bj];B[bk];W[cj];B[ck];W[ei];B[dj];W[di];B[ej];W[gi];B[fi];W[fh];B[hj];W[ih];B[hh];W[hi];B[gh];W[ig];B[resign])"
+    },
+    {
+        "game_id": "1804563",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[lazyplayer]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1804563]SO[https://www.littlegolem.net];W[ad];B[swap];W[eg];B[fc];W[ec];B[eb];W[fb];B[ee];W[hd];B[ge];W[he];B[gf];W[hg];B[hf];W[je];B[ie];W[jd];B[jc];W[id];B[hc];W[ic];B[ib];W[gd];B[gc];W[ed];B[fd];W[jb];B[fh];W[ig];B[resign])"
+    },
+    {
+        "game_id": "1829607",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.42]PB[corpsfini]PW[Grzeniu]SZ[11]RE[W]GC[ game #1829607]SO[https://www.littlegolem.net];W[ae];B[swap];W[gc];B[ge];W[ef];B[eg];W[ch];B[fd];W[id];B[hf];W[if];B[ie];W[ce];B[fb];W[eb];B[fa];W[kd];B[ec];W[ad];B[cc];W[gd];B[fe];W[hd];B[ih];W[resign])"
+    },
+    {
+        "game_id": "1823009",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.2]PB[Grzeniu]PW[zastrzyk]SZ[11]RE[B]GC[ game #1823009]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[gh];W[ih];B[ii];W[jh])"
+    },
+    {
+        "game_id": "1845436",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.50]PB[Grzeniu]PW[herveherve]SZ[11]RE[B]GC[ game #1845436]SO[https://www.littlegolem.net];W[ac];B[hh];W[dh];B[ef];W[ff];B[eg];W[fg];B[gd];W[de];B[cg];W[fe];B[ei];W[eh];B[cj];W[gh];B[gi];W[bi];B[ak];W[fi];B[ek];W[fj];B[fk];W[dj];B[ed];W[fd];B[gb];W[fc];B[fb];W[dc];B[ec];W[bf];B[ce];W[cf];B[be];W[dd];B[resign])"
+    },
+    {
+        "game_id": "1834641",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Force majeure]PW[Grzeniu]SZ[11]RE[W]GC[ game #1834641]SO[https://www.littlegolem.net];W[ac];B[de];W[hd];B[gh];W[ih];B[ij];W[eh];B[ge];W[fe];B[gd];W[ee];B[fc];W[ed];B[ec];W[dd];B[dc];W[cd];B[cb];W[gc];B[fd];W[cc];B[db];W[bb];B[bc];W[ad];B[bd];W[ae];B[be];W[af];B[bf];W[ag];B[bg];W[ah];B[bi];W[bh];B[ch];W[he];B[fg];W[gg];B[fh];W[hh];B[hg];W[jf];B[ie];W[resign])"
+    },
+    {
+        "game_id": "1815931",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Amerigo]PW[Grzeniu]SZ[11]RE[W]GC[ game #1815931]SO[https://www.littlegolem.net];W[jj];B[hd];W[ee];B[dc];W[fc];B[eg];W[id];B[he];W[ie];B[hf];W[if];B[ic];W[kb];B[ib];W[jb];B[jc];W[kc];B[jd];W[kd];B[je];W[ke];B[jg];W[dg];B[dh];W[ai];B[bj])"
+    },
+    {
+        "game_id": "1833213",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[Force majeure]SZ[11]RE[B]GC[ game #1833213]SO[https://www.littlegolem.net];W[ac];B[hd];W[dh];B[ci];W[ih];B[ee];W[jd];B[if];W[ce];B[ef];W[df];B[cf];W[de];B[dg];W[bh];B[cg];W[ag];B[cj];W[ch];B[ei];W[fg];B[bd];W[bf];B[ed];W[dc];B[gi];W[gh];B[gg];W[fh];B[fj];W[jg];B[hh];W[ke];B[ii];W[hi];B[gk];W[jj];B[jc];W[id];B[resign])"
+    },
+    {
+        "game_id": "1842938",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.48]PB[Giupiter]PW[passenger]SZ[11]RE[W]GC[ game #1842938]SO[https://www.littlegolem.net];W[ak];B[ff];W[gf];B[hi];W[hf];B[eh];W[gh];B[fi];W[gi];B[ej];W[ge];B[ic];W[fd];B[fe];W[gd];B[fk];W[gj];B[gk];W[ch];B[df];W[cf];B[cg];W[ah];B[bi];W[hj];B[hk];W[resign])"
+    },
+    {
+        "game_id": "1846381",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.51]PB[Grzeniu]PW[Nagy Fathy]SZ[11]RE[B]GC[ game #1846381]SO[https://www.littlegolem.net];W[ac];B[swap];W[dh];B[ge];W[ee];B[ef];W[fe];B[ff];W[cg];B[df];W[cf];B[de];W[ce];B[dd];W[cd];B[dc];W[bc];B[bb];W[cb];B[da];W[db];B[ea];W[eb];B[fa];W[fc];B[gb];W[hc];B[gc];W[gd];B[di];W[eh];B[ei];W[fh];B[fi];W[hi];B[hh];W[ci];B[bk];W[cj];B[ck];W[dj];B[dk];W[ej];B[ek];W[fj];B[fk];W[hj];B[ia];W[jb];B[ib];W[ic];B[resign])"
+    },
+    {
+        "game_id": "1834697",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.44]PB[passenger]PW[Force majeure]SZ[11]RE[B]GC[ game #1834697]SO[https://www.littlegolem.net];W[ac];B[ff];W[hg];B[hf];W[fe];B[ef];W[id];B[gg];W[cg];B[de];W[bf];B[di];W[je];B[jd];W[ie];B[ih];W[ci];B[bg];W[cf];B[ch];W[bi];B[cj];W[bj];B[bh];W[dh];B[dg];W[jf];B[ig];W[if];B[gi];W[gh];B[fi];W[fh];B[eh];W[fg];B[eg];W[ei];B[dk];W[ej];B[ek];W[fj];B[fk];W[gj];B[gk];W[hj];B[hk];W[jj];B[resign])"
+    },
+    {
+        "game_id": "1759442",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Knemay]PW[Giupiter]SZ[11]RE[B]GC[ game #1759442]SO[https://www.littlegolem.net];W[ak];B[swap];W[de];B[dh];W[eg];B[eh];W[gg];B[gh];W[fh];B[ej];W[bj];B[ci];W[hi];B[fj];W[ig];B[hg];W[if];B[he];W[hf];B[ff];W[fg];B[df];W[ef];B[fd];W[ge];B[gd];W[ib];B[hc];W[ic];B[resign])"
+    },
+    {
+        "game_id": "1841195",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.47]PB[Ocross]PW[shalev]SZ[11]RE[W]GC[ game #1841195]SO[https://www.littlegolem.net];W[ib];B[gh];W[cg];B[dc];W[ef];B[ci];W[bj];B[bi];W[fh];B[eg];W[de];B[gf];W[dh];B[dg];W[ch];B[di];W[fg];B[ff];W[eh];B[ej];W[fi];B[fj];W[gi];B[gj];W[ii];B[hi];W[jg];B[ih];W[jh];B[ig];W[jf];B[ie];W[if];B[gg];W[hf];B[he];W[resign])"
+    },
+    {
+        "game_id": "1808396",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.30]PB[Omo321]PW[shalev]SZ[11]RE[W]GC[ game #1808396]SO[https://www.littlegolem.net];W[eh];B[swap];W[de];B[dc];W[gf];B[ge];W[ef];B[ed];W[fd];B[ee];W[fe];B[eg];W[ff];B[hc];W[bc];B[gg];W[ci];B[dh];W[hh];B[di];W[ch];B[dg];W[bg];B[cg];W[bh];B[cj];W[bj];B[cf];W[bf];B[be];W[ce];B[cb];W[ec];B[dd];W[df];B[gb];W[cd];B[cc];W[ic];B[jd];W[resign])"
+    },
+    {
+        "game_id": "1791999",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.21]PB[shalev]PW[mouchet patrick]SZ[11]RE[B]GC[ game #1791999]SO[https://www.littlegolem.net];W[bb];B[swap];W[hg];B[ge];W[bh];B[de];W[fe];B[eg];W[ff];B[fh];W[if];B[gg];W[he];B[ie];W[je];B[jd];W[hf];B[hd];W[ee];B[dg];W[gf];B[hh];W[gh];B[fj];W[gi];B[gj];W[ii];B[fd];W[ed];B[jj];W[hk];B[hi];W[jg];B[ec];W[fc];B[resign])"
+    },
+    {
+        "game_id": "1830849",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[Force majeure]SZ[11]RE[B]GC[ game #1830849]SO[https://www.littlegolem.net];W[ac];B[gh];W[ih];B[hf];W[eg];B[fd];W[hd];B[ge];W[de];B[dj];W[di];B[ef];W[cg];B[ci];W[dh];B[ch];W[dg];B[resign])"
+    },
+    {
+        "game_id": "1819075",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[gwopy]SZ[11]RE[B]GC[ game #1819075]SO[https://www.littlegolem.net];W[ac];B[af];W[dh];B[de];W[hd];B[fd];W[hg];B[hc];W[gd])"
+    },
+    {
+        "game_id": "1815152",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[jytou]SZ[11]RE[B]GC[ game #1815152]SO[https://www.littlegolem.net];W[ac];B[ad];W[dh];B[ef];W[hd];B[he];W[ff];B[ge];W[fe];B[eg];W[gg];B[gc];W[ed];B[ec];W[fc];B[ga];W[fi];B[gd];W[fb];B[fa];W[eb];B[ea];W[db];B[resign])"
+    },
+    {
+        "game_id": "1814417",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.33]PB[richyfourtytwo]PW[Giupiter]SZ[11]RE[B]GC[ game #1814417]SO[https://www.littlegolem.net];W[ac];B[hh];W[gh];B[ef];W[ge];B[ee];W[hf];B[gd];W[fd];B[resign])"
+    },
+    {
+        "game_id": "1756723",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.4]PB[Austral]PW[shalev]SZ[11]RE[W]GC[ game #1756723]SO[https://www.littlegolem.net];W[ha];B[hi];W[dh];B[ed];W[fd];B[ef];W[ff];B[eg];W[fg];B[ei];W[ih];B[hh];W[ig];B[hg];W[resign])"
+    },
+    {
+        "game_id": "1755647",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.mc.2016.jan.1.1]PB[vieuxsac]PW[richyfourtytwo]SZ[11]RE[B]GC[ game #1755647]SO[https://www.littlegolem.net];W[ad];B[swap];W[hh];B[ii];W[gi];B[ge];W[fe];B[eg];W[cd];B[dh];W[hf];B[ff];W[id];B[ic];W[hd];B[gc];W[fc];B[hc];W[gd];B[fd];W[ee];B[ed];W[de];B[dd];W[ce];B[eb];W[dc];B[bb];W[jb];B[resign])"
+    },
+    {
+        "game_id": "1835271",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Force majeure]PW[Grzeniu]SZ[11]RE[W]GC[ game #1835271]SO[https://www.littlegolem.net];W[ac];B[de];W[hg];B[hi];W[dh];B[ge];W[fe];B[gc];W[ed];B[ee];W[fd];B[eg];W[dg];B[ef];W[gg];B[gf];W[fg];B[ff];W[resign])"
+    },
+    {
+        "game_id": "1768507",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.9]PB[richyfourtytwo]PW[Austral]SZ[11]RE[W]GC[ game #1768507]SO[https://www.littlegolem.net];W[ac];B[swap];W[ge];B[hd];W[gd];B[fg];W[di];B[ff];W[hf];B[gh];W[fh];B[gg];W[ig];B[hi];W[ii];B[ih];W[kg];B[jg];W[kf];B[jf];W[ke];B[je];W[kd];B[jd];W[kc];B[jb];W[cg];B[ee];W[ef];B[fe];W[de];B[ec];W[ed];B[fc];W[fd];B[hb];W[gb];B[gc];W[bd];B[db];W[cb];B[da];W[ib];B[hc];W[ic];B[jc];W[resign])"
+    },
+    {
+        "game_id": "1830253",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.2]PB[Grzeniu]PW[nick32]SZ[11]RE[B]GC[ game #1830253]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[dg];W[eg];B[fe];W[ge];B[eh];W[fg];B[fh];W[dh];B[cj];W[di];B[dj];W[ei];B[ej];W[gi];B[ee];W[hc];B[hd];W[gd];B[gf];W[ff];B[resign])"
+    },
+    {
+        "game_id": "1828220",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.41]PB[Shumacher;]]PW[Giupiter]SZ[11]RE[B]GC[ game #1828220]SO[https://www.littlegolem.net];W[ki];B[dc];W[hf];B[ig];W[dg];B[fd];W[hd];B[fg];W[gh];B[he];W[ge];B[ee];W[id];B[gf];W[ie];B[resign])"
+    },
+    {
+        "game_id": "1787043",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.18]PB[Austral]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1787043]SO[https://www.littlegolem.net];W[ak];B[swap];W[ff];B[ii];W[cd];B[fe];W[hd];B[ib];W[ef];B[ee];W[cf];B[ce];W[af];B[hc];W[dd];B[de];W[bg];B[bj];W[di];B[dh];W[ch];B[be];W[ae];B[bd];W[ad];B[bb];W[bc];B[da];W[cb];B[ca];W[eb];B[ej];W[dj];B[resign])"
+    },
+    {
+        "game_id": "1825526",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[Christian0]SZ[11]RE[B]GC[ game #1825526]SO[https://www.littlegolem.net];W[ac];B[de];W[ge];B[fh];W[dh];B[eg];W[hg];B[hh];W[eh];B[gf];W[fg];B[ff];W[ie];B[jb];W[ic];B[ib];W[hc];B[hb];W[gc];B[gb];W[fc];B[resign])"
+    },
+    {
+        "game_id": "1822237",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[zastrzyk]PW[Grzeniu]SZ[11]RE[W]GC[ game #1822237]SO[https://www.littlegolem.net];W[kj];B[hg];W[eg];B[dc];W[bc];B[bd];W[jd];B[hd];W[ee];B[fd];W[ed];B[fe];W[dg];B[fb])"
+    },
+    {
+        "game_id": "1783584",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.16]PB[shalev]PW[SoaresS]SZ[11]RE[B]GC[ game #1783584]SO[https://www.littlegolem.net];W[bb];B[swap];W[hg];B[ii];W[eg];B[hc];W[ic];B[hd];W[id];B[ib];W[jb];B[hf];W[ig];B[fi];W[je];B[gj];W[hi];B[hj];W[fj];B[gi];W[dg];B[ci];W[di];B[resign])"
+    },
+    {
+        "game_id": "1760231",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Knemay]PW[Tom Ace]SZ[11]RE[W]GC[ game #1760231]SO[https://www.littlegolem.net];W[aj];B[cf];W[ge];B[fg];W[eg];B[ff];W[ef];B[fe];W[ee];B[fc];W[dd];B[dc];W[ec];B[fa];W[hb];B[fb];W[gd];B[fd];W[hf];B[hg];W[gg];B[fi];W[ih];B[gi];W[cg];B[bh];W[ch];B[ej];W[jf];B[jg];W[hh];B[ii];W[ji];B[ij];W[ah];B[bg];W[resign])"
+    },
+    {
+        "game_id": "1815153",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[jytou]PW[Grzeniu]SZ[11]RE[W]GC[ game #1815153]SO[https://www.littlegolem.net];W[ai];B[gh];W[de];B[dc];W[ec];B[cg];W[dg];B[dj];W[bg];B[bh];W[ah];B[ci];W[fi];B[fh];W[aj];B[cf];W[bf];B[ce];W[ig];B[eg];W[hf];B[hi];W[ii];B[ih];W[kg];B[jg];W[kf];B[jf];W[ke];B[je];W[kd];B[jc];W[jd];B[hd];W[gf];B[fe];W[dh];B[ei];W[bd];B[be];W[resign])"
+    },
+    {
+        "game_id": "1796223",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.23]PB[shalev]PW[realefab]SZ[11]RE[B]GC[ game #1796223]SO[https://www.littlegolem.net];W[ac];B[dd];W[hg];B[id];W[hd];B[gf];W[bh];B[be];W[ff];B[ia];W[ib];B[ja];W[jb];B[ka];W[hb];B[ge];W[he];B[hf];W[je];B[if];W[jf];B[ig];W[jg];B[ih];W[jh];B[ij];W[ii];B[hj];W[hi];B[gj];W[gi];B[fj];W[ei];B[fi];W[fg];B[gg];W[fe];B[gd];W[fd];B[fc];W[gc];B[ha];W[gb];B[ga];W[fb];B[fa];W[eb];B[ea];W[db];B[da];W[cb];B[ca];W[ab];B[resign])"
+    },
+    {
+        "game_id": "1778312",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Giupiter]PW[magicnonno]SZ[11]RE[B]GC[ game #1778312]SO[https://www.littlegolem.net];W[ak];B[ff];W[ef];B[fc];W[ee];B[gd];W[gc];B[gb];W[dh];B[fd];W[cd];B[dd];W[ce];B[de];W[bg];B[ch];W[ai];B[aj];W[bi];B[bj];W[ci];B[ck];W[cj];B[bk];W[ej];B[resign])"
+    },
+    {
+        "game_id": "1806882",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.29]PB[Giupiter]PW[shalev]SZ[11]RE[W]GC[ game #1806882]SO[https://www.littlegolem.net];W[ad];B[swap];W[hg];B[hi];W[eg];B[dj];W[bj];B[ci];W[gi];B[hb];W[hd];B[hc];W[df];B[fc];W[ec];B[eb];W[jb];B[ic];W[dc];B[fb];W[db];B[ea];W[bb];B[cb];W[bc];B[cc];W[bd];B[ce];W[resign])"
+    },
+    {
+        "game_id": "1835062",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.4]PB[Grzeniu]PW[EJCT]SZ[11]RE[B]GC[ game #1835062]SO[https://www.littlegolem.net];W[ib];B[gh];W[ih];B[dc];W[eg];B[hc];W[bc];B[ce];W[fd];B[fe];W[hd];B[gf];W[ie];B[ig];W[hg];B[if];W[hf];B[hh];W[dg];B[df];W[gg];B[resign])"
+    },
+    {
+        "game_id": "1765595",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.8]PB[Giupiter]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1765595]SO[https://www.littlegolem.net];W[ka];B[swap];W[gg];B[hd];W[ee];B[ef];W[he];B[hc];W[fe];B[gf];W[hf];B[ge];W[ff];B[fg];W[dh];B[eg];W[cg];B[df];W[bf];B[cf];W[bg];B[ce];W[ae];B[be];W[af];B[bc];W[bd];B[cc];W[cd];B[di];W[eh];B[eb];W[dc];B[db];W[gc];B[ed];W[ec];B[fb];W[fc];B[ha];W[hb];B[ia];W[jb];B[ib];W[id];B[fi];W[ei];B[dk];W[ej];B[ek];W[gj];B[hh];W[fh];B[fj];W[cj];B[ci];W[dj];B[bk];W[ck];B[jc];W[ic];B[ka];W[ja])"
+    },
+    {
+        "game_id": "1798885",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.25]PB[shalev]PW[Nagy Fathy]SZ[11]RE[B]GC[ game #1798885]SO[https://www.littlegolem.net];W[ac];B[ce];W[hg];B[hd];W[ee];B[ef];W[fe];B[ff];W[ge];B[gf];W[ie];B[he];W[jc];B[jb];W[ic];B[ib];W[hc];B[hb];W[fc];B[gi];W[fh];B[ei];W[hj];B[if];W[hf];B[gh];W[ih];B[resign])"
+    },
+    {
+        "game_id": "1806886",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.29]PB[mouchet patrick]PW[Tasmanian Devil]SZ[11]RE[W]GC[ game #1806886]SO[https://www.littlegolem.net];W[ac];B[hi];W[dh];B[df];W[ef];B[dg];W[eg];B[fd];W[ee];B[ed];W[gd];B[fe];W[ge];B[ff];W[gf];B[fg];W[gg];B[fj];W[fi];B[ej];W[bi];B[gc];W[ei];B[ib];W[be];B[de];W[resign])"
+    },
+    {
+        "game_id": "1845441",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.50]PB[EJCT]PW[Force majeure]SZ[11]RE[W]GC[ game #1845441]SO[https://www.littlegolem.net];W[ag];B[ed];W[dc];B[dh];W[fe];B[fg];W[hg];B[hf];W[gg];B[gf];W[ch];B[ci];W[aj];B[bh];W[eg];B[eh];W[bi];B[df];W[cf];B[cg];W[id];B[gc];W[hd];B[cj];W[je];B[if];W[jf];B[ig];W[jg];B[ii];W[jj];B[kh];W[ih];B[hi];W[resign])"
+    },
+    {
+        "game_id": "1778785",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.2.1]PB[Giupiter]PW[Lukasz S.]SZ[11]RE[W]GC[ game #1778785]SO[https://www.littlegolem.net];W[ak];B[swap];W[ib];B[gh];W[eh];B[ff];W[gf];B[ge];W[hd];B[dg];W[ig];B[he];W[jd];B[je];W[ie];B[if];W[hf];B[fg];W[fh];B[gg];W[resign])"
+    },
+    {
+        "game_id": "1821928",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[egur]PW[Grzeniu]SZ[11]RE[W]GC[ game #1821928]SO[https://www.littlegolem.net];W[ac];B[de];W[ih];B[ij];W[ji];B[jj];W[ii];B[hj];W[fi];B[hd];W[ic];B[gf];W[id];B[he];W[je];B[hg];W[if];B[gi];W[gh];B[hh];W[gg];B[hf];W[cg];B[ed];W[ef];B[fe];W[bf];B[be];W[ce];B[dc];W[resign])"
+    },
+    {
+        "game_id": "1820508",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.1]PB[Grzeniu]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1820508]SO[https://www.littlegolem.net];W[ib];B[swap];W[hd];B[ic];W[cd];B[cj];W[ih];B[ij];W[hj];B[gg];W[eh];B[eg];W[fg];B[ge];W[he];B[gh];W[jg];B[ib];W[di];B[gf];W[ff];B[fe];W[df];B[de];W[be];B[dj];W[fi];B[ec];W[cf];B[ef];W[ch];B[resign])"
+    },
+    {
+        "game_id": "1832938",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.43]PB[Shumacher;]]PW[Tony]SZ[11]RE[W]GC[ game #1832938]SO[https://www.littlegolem.net];W[ki];B[swap];W[gj];B[ge];W[cg];B[ed];W[dd];B[de];W[bf];B[dg];W[ch];B[dh];W[ci];B[ce];W[be];B[cc];W[cd];B[eb];W[ec];B[fb];W[fc];B[gb];W[hc];B[jb];W[ib];B[gc];W[gd];B[fd];W[fe];B[ef];W[hf];B[ff];W[id];B[gh];W[resign])"
+    },
+    {
+        "game_id": "1782394",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[lapierrefolle]PW[magicnonno]SZ[11]RE[W]GC[ game #1782394]SO[https://www.littlegolem.net];W[ak];B[swap];W[ff];B[hc];W[dd];B[de];W[gd];B[gc];W[fd];B[fc];W[ed];B[dc];W[ib];B[ec];W[ic];B[ei];W[di];B[dj];W[ih];B[hg];W[ch];B[bk];W[fg];B[gh];W[ak];B[bj];W[aj];B[bi];W[ai];B[bh];W[ah];B[bg];W[ag];B[bf];W[af];B[cd];W[resign])"
+    },
+    {
+        "game_id": "1760680",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.6]PB[Austral]PW[Giupiter]SZ[11]RE[B]GC[ game #1760680]SO[https://www.littlegolem.net];W[kd];B[hh];W[ih];B[hi];W[eg];B[fd];W[de];B[ec];W[gd];B[gc];W[hc];B[hb];W[fe];B[ja];W[ka];B[jb];W[kb];B[jc];W[kc];B[jd];W[jf];B[ii];W[ji];B[ij];W[if];B[fh];W[di];B[ff];W[gg];B[resign])"
+    },
+    {
+        "game_id": "1797804",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.24]PB[richyfourtytwo]PW[Shumacher;]]SZ[11]RE[W]GC[ game #1797804]SO[https://www.littlegolem.net];W[ac];B[de];W[ge];B[ii];W[fg];B[gd];W[ee];B[fc];W[gc];B[ei];W[di];B[eh];W[hh];B[fj];W[gj];B[gi];W[hi];B[gg];W[if];B[ie];W[hf];B[hd];W[fe];B[fd];W[be];B[cd];W[bd];B[ce];W[bf];B[cg];W[resign])"
+    },
+    {
+        "game_id": "1823106",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.38]PB[SoaresS]PW[shalev]SZ[11]RE[W]GC[ game #1823106]SO[https://www.littlegolem.net];W[ki];B[ed];W[hd];B[gh];W[cd];B[cc];W[gg];B[gf];W[dh];B[fg];W[ee];B[fe];W[resign])"
+    },
+    {
+        "game_id": "1784841",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.17]PB[mouchet patrick]PW[richyfourtytwo]SZ[11]RE[W]GC[ game #1784841]SO[https://www.littlegolem.net];W[ac];B[eg];W[hf];B[ic];W[fe];B[ge];W[ff];B[fg];W[id];B[ie];W[gf];B[gh];W[fh];B[fi];W[di];B[ei];W[eh];B[gg];W[dg];B[dh];W[hh];B[hg];W[jf];B[ii];W[bi];B[bj];W[ci];B[ck];W[gj];B[ch];W[ig];B[if];W[kd];B[jc];W[jd];B[gd];W[hc];B[hd];W[he];B[fd];W[de];B[ee];W[bh];B[cd];W[bf];B[bg];W[cg];B[ec];W[ae];B[cf];W[resign])"
+    },
+    {
+        "game_id": "1822265",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1822265]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[gi];W[ii];B[hj];W[ji];B[hg];W[dh];B[ee];W[cf];B[de];W[ce];B[db];W[dd];B[cg];W[df];B[dg];W[ff];B[eg];W[fg];B[ei];W[gh];B[hi];W[ih];B[hh];W[eh];B[gb];W[gc];B[resign])"
+    },
+    {
+        "game_id": "1846285",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2017.feb.1.2]PB[mouchet patrick]PW[EJCT]SZ[11]RE[B]GC[ game #1846285]SO[https://www.littlegolem.net];W[ab];B[bb];W[ge];B[gf];W[ff];B[eh];W[dh];B[di];W[ci];B[cc];W[ed];B[eg];W[dg];B[ef];W[df];B[ee];W[de];B[fc];W[cj];B[eb];W[fb];B[ec];W[fd];B[gc];W[hd];B[ib];W[jb];B[ic];W[jc];B[id];W[jd];B[resign])"
+    },
+    {
+        "game_id": "1842939",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.48]PB[Grzeniu]PW[h1h1h1]SZ[11]RE[B]GC[ game #1842939]SO[https://www.littlegolem.net];W[ib];B[hg];W[dh];B[fe];W[ge];B[fg];W[ef];B[ee];W[ff];B[di];W[eh];B[ei];W[bj];B[ci];W[bi];B[ch];W[bh];B[df];W[cf];B[bg];W[cg];B[dd];W[dg];B[hc];W[ed];B[fd];W[de];B[resign])"
+    },
+    {
+        "game_id": "1771122",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.11]PB[corpsfini]PW[shalev]SZ[11]RE[W]GC[ game #1771122]SO[https://www.littlegolem.net];W[ac];B[gh];W[eg];B[dh];W[hh];B[gi];W[eh];B[ee];W[hg];B[gg];W[fe];B[gc];W[hc];B[gd];W[jd];B[hd];W[ic];B[id];W[fd];B[fc];W[ed];B[ec];W[dd];B[dc];W[cd];B[cb];W[bb];B[bc];W[db];B[cc];W[ad];B[bd];W[ae];B[be];W[af];B[bf];W[ag];B[bg];W[ah];B[bi];W[jc];B[ie];W[resign])"
+    },
+    {
+        "game_id": "1824371",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.39]PB[mouchet patrick]PW[Giupiter]SZ[11]RE[W]GC[ game #1824371]SO[https://www.littlegolem.net];W[ab];B[swap];W[ff];B[gg];W[eh];B[fe];W[ge];B[hc];W[ed];B[eg];W[fg];B[ci];W[id];B[he];W[jb];B[ei];W[di];B[ck];W[gi];B[fj];W[gj];B[fi];W[gh];B[fh];W[if];B[ie];W[hd];B[kd];W[resign])"
+    },
+    {
+        "game_id": "1822238",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[zastrzyk]SZ[11]RE[B]GC[ game #1822238]SO[https://www.littlegolem.net];W[ac];B[df];W[eg];B[gh];W[ih];B[ff];W[ef];B[fd];W[hd];B[ge];W[gd];B[fe];W[he];B[gg];W[hg];B[hf];W[je];B[resign])"
+    },
+    {
+        "game_id": "1822264",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1822264]SO[https://www.littlegolem.net];W[ib];B[swap];W[hd];B[ic];W[cd];B[cc];W[dh];B[hc];W[bd];B[gd];W[cg];B[di];W[eh];B[ei];W[fh];B[fi];W[hi];B[cf];W[ee];B[ed];W[de];B[resign])"
+    },
+    {
+        "game_id": "1815930",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Amerigo]PW[Grzeniu]SZ[11]RE[W]GC[ game #1815930]SO[https://www.littlegolem.net];W[jj];B[hg];W[eh];B[dc];W[gd];B[ff];W[hf];B[gg];W[kf];B[je];W[ah];B[dg];W[bi];B[bh];W[ai];B[bg];W[ag];B[bf];W[af];B[bd];W[be];B[dd];W[if];B[ig];W[resign])"
+    },
+    {
+        "game_id": "1759284",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.1.3]PB[zastrzyk]PW[Jose Maria Grau Ribas]SZ[11]RE[W]GC[ game #1759284]SO[https://www.littlegolem.net];W[kj];B[ed];W[cd];B[cb];W[hg];B[ih];W[gd];B[ge];W[hf];B[gi];W[fg];B[id];W[hd];B[he];W[fe];B[ej];W[fi];B[fj];W[di];B[bj];W[ck];B[ff];W[resign])"
+    },
+    {
+        "game_id": "1779366",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.14]PB[shalev]PW[martinbh]SZ[11]RE[B]GC[ game #1779366]SO[https://www.littlegolem.net];W[bb];B[fg];W[hg];B[hf];W[eg];B[fd];W[de];B[df];W[cf];B[cg];W[fe];B[ee];W[gd];B[di];W[eh];B[ei];W[fh];B[gj];W[fj];B[fi];W[hh];B[gi];W[ii];B[ia];W[hc];B[jb];W[gb];B[hk];W[jj];B[ij];W[ji];B[ik];W[jk];B[hi];W[ih];B[ha];W[ga];B[hb];W[gc];B[ef];W[ff];B[gh];W[gg])"
+    },
+    {
+        "game_id": "1820507",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.1]PB[h1h1h1]PW[Grzeniu]SZ[11]RE[W]GC[ game #1820507]SO[https://www.littlegolem.net];W[ai];B[dc];W[hd];B[hi];W[dg];B[ci];W[eh];B[eg];W[dh];B[ef];W[hf];B[ge];W[he];B[gg];W[ig];B[hg];W[if];B[gj];W[bf];B[cf];W[ce];B[de];W[bg];B[eb];W[resign])"
+    },
+    {
+        "game_id": "1797800",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.24]PB[Tommah]PW[shalev]SZ[11]RE[W]GC[ game #1797800]SO[https://www.littlegolem.net];W[kf];B[swap];W[ci];B[dc];W[ic];B[dh];W[bg];B[cg];W[bh];B[ch];W[bi];B[cf];W[gh];B[hf];W[gf];B[gg];W[fg];B[ei];W[fh];B[fj];W[hi];B[hj];W[ji];B[ii];W[jh];B[ih];W[jg];B[ig];W[ke];B[jf];W[kf];B[jd];W[bf];B[ce];W[ae];B[be];W[af];B[bc];W[resign])"
+    },
+    {
+        "game_id": "1820366",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Wickedestjr]PW[Grzeniu]SZ[11]RE[W]GC[ game #1820366]SO[https://www.littlegolem.net];W[ad];B[swap];W[hd];B[hi];W[ji];B[jh];W[bg];B[ci];W[eh];B[ge];W[ef];B[fd];W[gd];B[fe];W[ed];B[ee];W[cf];B[eb];W[dd];B[fc];W[db];B[ea];W[bb];B[cc];W[resign])"
+    },
+    {
+        "game_id": "1826151",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.40]PB[mouchet patrick]PW[Omo321]SZ[11]RE[B]GC[ game #1826151]SO[https://www.littlegolem.net];W[ab];B[swap];W[ff];B[fe];W[ge];B[hc];W[gd];B[gc];W[ed];B[dh];W[eh];B[fd];W[ef];B[ee];W[ic];B[hh];W[jc];B[fg];W[eg];B[hd];W[ie];B[he];W[hf];B[fi];W[dj];B[resign])"
+    },
+    {
+        "game_id": "1820538",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[agrajaj]SZ[11]RE[B]GC[ game #1820538]SO[https://www.littlegolem.net];W[ib];B[swap];W[hd];B[fg];W[ih];B[hf];W[eg];B[cj];W[di];B[fe];W[gf];B[gj];W[ff];B[dj];W[ei];B[ej];W[fi];B[fj];W[hi];B[resign])"
+    },
+    {
+        "game_id": "1821930",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[egur]PW[Grzeniu]SZ[11]RE[W]GC[ game #1821930]SO[https://www.littlegolem.net];W[kh];B[swap];W[jj];B[hd];W[cd];B[cb];W[bc];B[bb];W[cc];B[db];W[fc];B[hg];W[cg];B[ci];W[dh];B[di];W[fh];B[eh];W[fg];B[fe];W[eg];B[ed];W[ee];B[fd];W[ec];B[dd];W[ge];B[hc];W[resign])"
+    },
+    {
+        "game_id": "1820393",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[gwopy]SZ[11]RE[B]GC[ game #1820393]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[eg];W[dh];B[df];W[ih])"
+    },
+    {
+        "game_id": "1787042",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.18]PB[Giupiter]PW[shalev]SZ[11]RE[W]GC[ game #1787042]SO[https://www.littlegolem.net];W[kj];B[ed];W[dc];B[eg];W[he];B[hd];W[ge];B[gc];W[jc];B[jb];W[hc];B[gd];W[ic];B[id];W[jd];B[ie];W[je];B[ig];W[if];B[hg];W[fg];B[hf];W[de];B[ef];W[eh];B[cg];W[resign])"
+    },
+    {
+        "game_id": "1828226",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.41]PB[Grzeniu]PW[Juan Jose Montes de Oca Arbos]SZ[11]RE[B]GC[ game #1828226]SO[https://www.littlegolem.net];W[ac];B[ce];W[dh];B[ed];W[hd];B[gf];W[de];B[dd];W[ee];B[gc];W[fd];B[fc];W[id];B[ff];W[eg];B[ef];W[hf];B[gh];W[gg];B[fg];W[fh];B[dk];W[ei];B[cj];W[fj];B[ja];W[hb];B[hc];W[jb];B[resign])"
+    },
+    {
+        "game_id": "1822263",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[zastrzyk]PW[Shumacher;]]SZ[11]RE[W]GC[ game #1822263]SO[https://www.littlegolem.net];W[ki];B[swap];W[fh];B[gd];W[dg];B[ec];W[cd];B[de];W[hd];B[fg];W[ge];B[eh];W[hf];B[gg];W[hg];B[gi])"
+    },
+    {
+        "game_id": "1789276",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.19]PB[Shumacher;]]PW[Giupiter]SZ[11]RE[W]GC[ game #1789276]SO[https://www.littlegolem.net];W[ac];B[swap];W[ii];B[gf];W[cd];B[gg];W[dh];B[dg];W[ff];B[gc];W[ee];B[ed];W[de];B[db];W[cb];B[da];W[bc];B[ab];W[fc];B[fd];W[dc];B[eb];W[ec];B[ga];W[gb];B[ha];W[hb];B[ia];W[jb];B[ib];W[id];B[ge];W[hd];B[hc];W[if];B[ie];W[resign])"
+    },
+    {
+        "game_id": "1803083",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.27]PB[shalev]PW[SoaresS]SZ[11]RE[B]GC[ game #1803083]SO[https://www.littlegolem.net];W[ac];B[gh];W[ih];B[ge];W[bh];B[ce];W[de];B[dh];W[ch];B[resign])"
+    },
+    {
+        "game_id": "1815808",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.34]PB[Omo321]PW[Giupiter]SZ[11]RE[W]GC[ game #1815808]SO[https://www.littlegolem.net];W[dj];B[swap];W[ff];B[gc];W[cd];B[dh];W[gg];B[gf];W[fg];B[fe];W[id];B[hd];W[ic];B[hb];W[cg];B[cf];W[df];B[de];W[he];B[ja];W[fd];B[fc];W[ed];B[ec];W[dd];B[cc];W[resign])"
+    },
+    {
+        "game_id": "1834688",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.44]PB[Shumacher;]]PW[Omo321]SZ[11]RE[B]GC[ game #1834688]SO[https://www.littlegolem.net];W[hb];B[fe];W[jh];B[gh];W[if];B[id];W[ge];B[hf];W[ie];B[he];W[cf];B[ee];W[dd];B[ch];W[eh];B[ec];W[gd];B[dk];W[fh];B[ej];W[fi];B[fj];W[gi];B[gj];W[ii];B[hi];W[jd];B[hh];W[ci];B[fg];W[bi];B[gc];W[hc];B[cg];W[eg];B[resign])"
+    },
+    {
+        "game_id": "1774789",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.12]PB[Tommah]PW[shalev]SZ[11]RE[W]GC[ game #1774789]SO[https://www.littlegolem.net];W[kf];B[swap];W[ci];B[dc];W[ic];B[dh];W[gg];B[gf];W[hf];B[he];W[jd];B[jc];W[id];B[ie];W[je];B[if];W[jf];B[ig];W[jg];B[ih];W[jh];B[ij];W[ii];B[hj];W[hi];B[ej];W[fj];B[ek];W[ei];B[dj];W[di];B[bk];W[ak];B[bj];W[aj];B[bi];W[ai];B[bh];W[ah];B[bg];W[ag];B[ce];W[bf];B[cf];W[resign])"
+    },
+    {
+        "game_id": "1835736",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.45]PB[shalev]PW[h1h1h1]SZ[11]RE[B]GC[ game #1835736]SO[https://www.littlegolem.net];W[ac];B[swap];W[hg];B[hi];W[ii];B[hj];W[ij];B[ih];W[jf];B[if];W[kg];B[hf];W[je];B[he];W[id];B[jd];W[ie];B[ic];W[jb];B[jc];W[hd];B[hc];W[fd];B[resign])"
+    },
+    {
+        "game_id": "1784835",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.17]PB[shalev]PW[apollo1001]SZ[11]RE[B]GC[ game #1784835]SO[https://www.littlegolem.net];W[bb];B[ff];W[hg];B[hf];W[bh];B[cf];W[be];B[bf];W[ef];B[ee];W[df];B[de];W[fe];B[ci];W[dh];B[di];W[eh];B[ei];W[fh];B[gi];W[fi];B[ek];W[bj];B[resign])"
+    },
+    {
+        "game_id": "1782392",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[magicnonno]PW[lapierrefolle]SZ[11]RE[W]GC[ game #1782392]SO[https://www.littlegolem.net];W[ac];B[swap];W[fd];B[ff];W[cg];B[fc];W[gc];B[ch];W[eg];B[ef];W[ie];B[ic];W[dg];B[de];W[hd];B[hg];W[gg];B[he];W[id];B[hf];W[ig];B[if];W[ke];B[jf];W[kf];B[jh];W[jg];B[hi];W[hh];B[gi];W[gh];B[ei];W[ci];B[dj];W[ii];B[hj];W[resign])"
+    },
+    {
+        "game_id": "1800546",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.26]PB[Austral]PW[shalev]SZ[11]RE[W]GC[ game #1800546]SO[https://www.littlegolem.net];W[bb];B[swap];W[fd];B[gh];W[fh];B[dj];W[cj];B[di];W[hg];B[gg];W[if];B[gf];W[he];B[hi];W[fg];B[eg];W[resign])"
+    },
+    {
+        "game_id": "1825525",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Christian0]PW[Grzeniu]SZ[11]RE[W]GC[ game #1825525]SO[https://www.littlegolem.net];W[ak];B[hi];W[gh];B[dc];W[ee];B[hd];W[gd];B[eg];W[ff];B[fg];W[hf];B[ei];W[fj];B[gf];W[he];B[ge];W[jc];B[id];W[kd];B[jd];W[kc];B[je];W[ke];B[hc];W[ib];B[ig];W[jg];B[ii];W[ch];B[df];W[cf];B[cg];W[ah];B[bi];W[resign])"
+    },
+    {
+        "game_id": "1849683",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.53]PB[Omo321]PW[passenger]SZ[11]RE[W]GC[ game #1849683]SO[https://www.littlegolem.net];W[di];B[swap];W[hd];B[ff];W[he];B[gh];W[ih];B[hi];W[dh];B[ee];W[gg];B[ei];W[cj];B[eh];W[de];B[df];W[bg];B[ch];W[resign])"
+    },
+    {
+        "game_id": "1762084",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.7]PB[shalev]PW[Giupiter]SZ[11]RE[B]GC[ game #1762084]SO[https://www.littlegolem.net];W[cb];B[swap];W[ge];B[hf];W[dh];B[ff];W[gf];B[fh];W[hh];B[gi];W[hi];B[gj];W[hj];B[hg];W[gh];B[gg];W[fg];B[eg];W[eh];B[gd];W[hd];B[hc];W[ic];B[ja];W[ib];B[ia];W[hb];B[ha];W[fb];B[gb];W[fc];B[gc];W[ee];B[resign])"
+    },
+    {
+        "game_id": "1835740",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.45]PB[SoaresS]PW[Grzeniu]SZ[11]RE[W]GC[ game #1835740]SO[https://www.littlegolem.net];W[ki];B[hg];W[eg];B[dh];W[cg];B[di];W[fh];B[gi];W[bh];B[ej])"
+    },
+    {
+        "game_id": "1812336",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.oct.1.1]PB[Giupiter]PW[mouchet patrick]SZ[11]RE[B]GC[ game #1812336]SO[https://www.littlegolem.net];W[ad];B[swap];W[hh];B[he];W[ef];B[fc];W[gc];B[fe];W[ee];B[fd];W[ec];B[ed];W[ge];B[gd];W[hd];B[ib];W[hc];B[ha];W[gb];B[ga];W[fb];B[fa];W[ea];B[eb];W[cc];B[dd];W[dc];B[fg];W[gg];B[gf];W[ff];B[dh];W[eh];B[eg];W[ch];B[ci];W[jb];B[bi];W[ie];B[id];W[kc];B[jd];W[kd];B[ig];W[jf];B[je];W[ke];B[hg];W[jg];B[ii];W[ih];B[gi];W[jj];B[resign])"
+    },
+    {
+        "game_id": "1777841",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.13]PB[richyfourtytwo]PW[Shumacher;]]SZ[11]RE[W]GC[ game #1777841]SO[https://www.littlegolem.net];W[ac];B[de];W[ff];B[hi];W[gf];B[ej];W[ii];B[hj];W[fj];B[fi];W[hg];B[gh];W[di];B[bj];W[cj];B[eh];W[dh];B[eg];W[resign])"
+    },
+    {
+        "game_id": "1821932",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[egur]PW[Grzeniu]SZ[11]RE[W]GC[ game #1821932]SO[https://www.littlegolem.net];W[kh];B[swap];W[jj];B[hg];W[ff];B[dh];W[gf];B[fg];W[eh];B[eg];W[gg];B[fi];W[gh];B[gj];W[gi];B[fj];W[hi];B[ij];W[ji];B[ii];W[kg];B[jh];W[kh];B[ig];W[jg];B[ih];W[resign])"
+    },
+    {
+        "game_id": "1812694",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.32]PB[shalev]PW[richyfourtytwo]SZ[11]RE[B]GC[ game #1812694]SO[https://www.littlegolem.net];W[ac];B[dh];W[hg];B[he];W[jd];B[hd];W[ef];B[fg];W[ic];B[if];W[jg];B[jf];W[hf];B[ie];W[gf];B[fe];W[cg];B[bi];W[ff];B[ee];W[bf];B[df];W[dg];B[cf];W[bg];B[cb];W[ce];B[dd];W[bd];B[ba];W[cc];B[db];W[dc];B[eb];W[ec];B[fb];W[fc];B[gb];W[hc];B[resign])"
+    },
+    {
+        "game_id": "1805097",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.28]PB[Austral]PW[Giupiter]SZ[11]RE[B]GC[ game #1805097]SO[https://www.littlegolem.net];W[kj];B[swap];W[fh];B[ff];W[df];B[dd];W[fe];B[dg];W[gf];B[ge];W[id];B[he];W[ie];B[gg];W[hf];B[fg];W[hg];B[ic];W[hd];B[hc];W[gd];B[resign])"
+    },
+    {
+        "game_id": "1778314",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Giupiter]PW[magicnonno]SZ[11]RE[B]GC[ game #1778314]SO[https://www.littlegolem.net];W[ka];B[ff];W[ef];B[fc];W[fe];B[gd];W[ce];B[cd];W[ec];B[dh];W[eg];B[eh];W[gg];B[gh];W[fh];B[ej];W[fd];B[gi];W[bj];B[dj];W[ch];B[dg];W[bg];B[dd];W[de];B[ga];W[gc];B[resign])"
+    },
+    {
+        "game_id": "1780894",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.15]PB[Austral]PW[shalev]SZ[11]RE[W]GC[ game #1780894]SO[https://www.littlegolem.net];W[ki];B[ed];W[fd];B[gh];W[hg];B[hh];W[jg];B[jh];W[ih];B[hj];W[hi];B[gj];W[gi];B[fj];W[fi];B[ej];W[di];B[bj];W[cj];B[ei];W[eh];B[fh];W[ff];B[hb];W[hd];B[fc];W[ib];B[hc];W[resign])"
+    },
+    {
+        "game_id": "1835057",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.4]PB[Grzeniu]PW[nick32]SZ[11]RE[B]GC[ game #1835057]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[dh];W[ih];B[hd];W[ge];B[hh];W[ig];B[gd];W[fe];B[fd];W[ee];B[fb];W[eb];B[ec];W[cd];B[gi];W[jf];B[dc];W[bc];B[dd];W[ce];B[de];W[cf];B[df];W[bh];B[cj];W[ci];B[bj];W[di];B[dj];W[ei];B[ek];W[fj];B[fk];W[gj];B[gk];W[hj];B[hk];W[jj];B[ij];W[kh];B[resign])"
+    },
+    {
+        "game_id": "1778787",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.2.1]PB[vieuxsac]PW[Knemay]SZ[11]RE[W]GC[ game #1778787]SO[https://www.littlegolem.net];W[ad];B[swap];W[hc];B[ge];W[fe];B[ff];W[dg];B[dh];W[ih];B[ig];W[bi];B[de];W[hf];B[fg];W[gh];B[id];W[bf];B[cf];W[bg];B[cd];W[resign])"
+    },
+    {
+        "game_id": "1755650",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.mc.2016.jan.1.1]PB[richyfourtytwo]PW[Shumacher;]]SZ[11]RE[W]GC[ game #1755650]SO[https://www.littlegolem.net];W[ab];B[swap];W[fe];B[hh];W[eg];B[eh];W[fh];B[ei];W[gi];B[gh];W[ci];B[dh];W[fi];B[fg];W[he];B[gg];W[ch];B[bj];W[cj];B[dg];W[cg];B[df];W[cf];B[dd];W[de];B[ed];W[ee];B[gc];W[fc];B[fd];W[ic];B[hd];W[resign])"
+    },
+    {
+        "game_id": "1830255",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.2]PB[Christian0]PW[Grzeniu]SZ[11]RE[W]GC[ game #1830255]SO[https://www.littlegolem.net];W[aa];B[de];W[df];B[ge];W[gd];B[hi];W[gg];B[dh];W[eg];B[ei];W[fi];B[fh];W[gh];B[ff];W[fg];B[ee];W[resign])"
+    },
+    {
+        "game_id": "1822262",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1822262]SO[https://www.littlegolem.net];W[ac];B[hi];W[ji];B[ij];W[jj];B[if];W[dh];B[ci];W[di];B[ef];W[ff];B[fe];W[ge];B[hc];W[gd];B[gb];W[gc];B[hb];W[fc];B[fb];W[ec];B[eb];W[bd];B[eg];W[fg];B[eh];W[fi];B[fh];W[hg];B[resign])"
+    },
+    {
+        "game_id": "1824844",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.3]PB[Grzeniu]PW[sZamBa_]SZ[11]RE[B]GC[ game #1824844]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[ii];W[dh];B[ef];W[ff];B[eh];W[ch];B[de];W[gf];B[hd];W[gd];B[eg];W[fh];B[resign])"
+    },
+    {
+        "game_id": "1817703",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.35]PB[Grzeniu]PW[jytou]SZ[11]RE[B]GC[ game #1817703]SO[https://www.littlegolem.net];W[ac];B[bd];W[dh];B[ef];W[hd];B[fg];W[gg];B[gf];W[ie];B[fi];W[ch];B[cg];W[hg];B[hh];W[fh];B[eh];W[ei];B[resign])"
+    },
+    {
+        "game_id": "1780898",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.15]PB[Knemay]PW[richyfourtytwo]SZ[11]RE[B]GC[ game #1780898]SO[https://www.littlegolem.net];W[aj];B[ge];W[de];B[cg];W[ff];B[ef];W[fe];B[ei];W[eh];B[di];W[gh];B[fg];W[eg];B[fh];W[ci];B[dh];W[hf];B[hg];W[gg];B[gf];W[id];B[ie];W[he];B[resign])"
+    },
+    {
+        "game_id": "1783582",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.16]PB[mouchet patrick]PW[Knemay]SZ[11]RE[B]GC[ game #1783582]SO[https://www.littlegolem.net];W[ac];B[swap];W[ge];B[gg];W[fg];B[fh];W[eh];B[dj];W[bi];B[ci];W[ei];B[ej];W[fi];B[fj];W[hi];B[gi];W[hh];B[ij];W[hj];B[gh];W[bj];B[ch];W[bh];B[cg];W[bg];B[cf];W[bf];B[ce];W[be];B[cd];W[bd];B[cc];W[bc];B[bb];W[if];B[hd];W[he];B[ie];W[hf];B[hb];W[jb];B[ic];W[gb];B[resign])"
+    },
+    {
+        "game_id": "1844505",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.49]PB[Nagy Fathy]PW[shalev]SZ[11]RE[W]GC[ game #1844505]SO[https://www.littlegolem.net];W[ac];B[gh];W[dh];B[ed];W[fe];B[gc];W[fc];B[fd];W[hc];B[gd];W[hd];B[fg];W[ef];B[ge];W[ce];B[df];W[cg];B[cf];W[ag];B[bd];W[be];B[dc];W[gf];B[he];W[jd];B[if];W[ie];B[hf];W[jf];B[je];W[resign])"
+    },
+    {
+        "game_id": "1816121",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.oct.1.2]PB[mouchet patrick]PW[Grzeniu]SZ[11]RE[W]GC[ game #1816121]SO[https://www.littlegolem.net];W[ab];B[de];W[ee];B[hd];W[fc];B[eg];W[ge];B[gh];W[fg];B[ei];W[ci];B[dh];W[di];B[eh];W[cg];B[ch];W[ai];B[bh];W[ah];B[bf];W[bg];B[df];W[ef];B[dg];W[ig];B[hi];W[ii];B[ih];W[kg];B[je];W[resign])"
+    },
+    {
+        "game_id": "1774790",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.12]PB[Knemay]PW[Shumacher;]]SZ[11]RE[W]GC[ game #1774790]SO[https://www.littlegolem.net];W[aj];B[swap];W[hg];B[ff];W[ef];B[eg];W[dg];B[dh];W[ch];B[ci];W[aj];B[cj];W[ak];B[bi];W[ai];B[bh];W[ah];B[bg];W[ag];B[ce];W[be];B[bf];W[af];B[cc];W[cd];B[eb];W[dc];B[db];W[ge];B[gf];W[resign])"
+    },
+    {
+        "game_id": "1829540",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.1]PB[Grzeniu]PW[h1h1h1]SZ[11]RE[B]GC[ game #1829540]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[ig];W[gh];B[ff];W[dg];B[df];W[hd];B[fg];W[cg];B[dh];W[bi];B[bh];W[ch];B[fe];W[cf];B[de];W[ce];B[dd];W[cd];B[dc];W[bc];B[resign])"
+    },
+    {
+        "game_id": "1846284",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2017.feb.1.2]PB[zastrzyk]PW[mouchet patrick]SZ[11]RE[B]GC[ game #1846284]SO[https://www.littlegolem.net];W[kj];B[ge];W[de];B[dh];W[hg];B[ef];W[id];B[ic];W[jb];B[jc];W[hd];B[ji];W[ig];B[ie];W[he];B[hf];W[gf];B[gg];W[fg];B[ei];W[fh];B[fi];W[gh];B[hc];W[gd];B[gc];W[fd];B[fb];W[fc];B[gb];W[eb];B[resign])"
+    },
+    {
+        "game_id": "1836266",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2017.jan.1.1]PB[Force majeure]PW[EJCT]SZ[11]RE[B]GC[ game #1836266]SO[https://www.littlegolem.net];W[ac];B[hi];W[eg];B[cd];W[hd];B[ff];W[ef];B[fd];W[fe];B[eh];W[fi];B[ib];W[ec];B[de];W[id];B[jc];W[hc];B[hb];W[gc];B[ge];W[gd];B[resign])"
+    },
+    {
+        "game_id": "1833018",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.3]PB[Grzeniu]PW[__yeye__]SZ[11]RE[B]GC[ game #1833018]SO[https://www.littlegolem.net];W[ac];B[eg];W[ih];B[he];W[ff];B[fg];W[gf];B[gg];W[hf];B[gd];W[ee];B[hg];W[jf];B[if];W[je];B[ie];W[jd];B[jb];W[ic];B[ib];W[hc];B[hb];W[gc];B[gb];W[fc];B[fb];W[ec];B[eb];W[bd];B[bc];W[cc];B[dc];W[ce];B[da];W[bb];B[resign])"
+    },
+    {
+        "game_id": "1754334",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.mc.2015.dec.1.3]PB[Tom Ace]PW[Jos Dekker]SZ[11]RE[W]GC[ game #1754334]SO[https://www.littlegolem.net];W[ib];B[swap];W[ih];B[ij];W[hh];B[ge];W[ef];B[fd];W[de];B[dd];W[gd];B[fe];W[hd];B[gc];W[ch];B[fg];W[ce];B[dc];W[he];B[if];W[resign])"
+    },
+    {
+        "game_id": "1821929",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[agrajaj]SZ[11]RE[B]GC[ game #1821929]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[dg];W[dh];B[ff];W[hf];B[he];W[gf];B[ge];W[ef];B[eg];W[jd];B[jb];W[ic])"
+    },
+    {
+        "game_id": "1823107",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.38]PB[Shumacher;]]PW[mouchet patrick]SZ[11]RE[B]GC[ game #1823107]SO[https://www.littlegolem.net];W[kh];B[swap];W[hg];B[ge];W[ee];B[ef];W[cg];B[dh];W[bi];B[bj];W[ci];B[cj];W[di];B[dj];W[ei];B[ej];W[gi];B[fk];W[gk];B[gj];W[ii];B[fh];W[gf];B[eh];W[fi];B[hi];W[ih];B[hh];W[ig];B[id];W[fe];B[ff];W[gh];B[de];W[df];B[gb];W[fc];B[fb];W[hc];B[resign])"
+    },
+    {
+        "game_id": "1822042",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.37]PB[Shumacher;]]PW[richyfourtytwo]SZ[11]RE[B]GC[ game #1822042]SO[https://www.littlegolem.net];W[ac];B[ff];W[jh];B[hd];W[ge];B[gd];W[fe];B[fd];W[ee];B[ed];W[ce];B[dg];W[cf];B[dc];W[bd];B[be];W[cd];B[hi];W[bh];B[bj];W[ci];B[cj];W[di];B[dj];W[fi];B[ei];W[fh];B[bc];W[bb];B[resign])"
+    },
+    {
+        "game_id": "1779363",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.14]PB[Austral]PW[Jose Maria Grau Ribas]SZ[11]RE[W]GC[ game #1779363]SO[https://www.littlegolem.net];W[kf];B[ff];W[hd];B[ii];W[hh];B[fi];W[jh];B[gg];W[hf];B[ji];W[gj];B[he];W[gf];B[ge];W[jd];B[jb];W[ic];B[if];W[ie];B[hg];W[fg];B[ei];W[dh];B[cj];W[bj];B[ci];W[bi];B[ch];W[bh];B[cg];W[bg];B[ce];W[cf];B[ee];W[df];B[eg];W[resign])"
+    },
+    {
+        "game_id": "1830256",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.2]PB[Grzeniu]PW[jytou]SZ[11]RE[B]GC[ game #1830256]SO[https://www.littlegolem.net];W[ib];B[ic];W[dh];B[ef];W[ff];B[gd];W[fe];B[fd];W[de];B[cg];W[ee];B[dd];W[ed];B[fb];W[bf];B[fc];W[ec];B[eb];W[cc];B[cb];W[db];B[dc];W[be];B[resign])"
+    },
+    {
+        "game_id": "1808386",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.30]PB[Giupiter]PW[Shumacher;]]SZ[11]RE[W]GC[ game #1808386]SO[https://www.littlegolem.net];W[kh];B[swap];W[ee];B[fh];W[eh];B[eg];W[dh];B[dg];W[gf];B[ei];W[ch];B[fg];W[cg];B[df];W[cf];B[de];W[ce];B[dc];W[dd];B[ec];W[ed];B[fc];W[hd];B[gc];W[gd];B[ib];W[jb];B[ic];W[jc];B[id];W[jd];B[ie];W[je];B[if];W[kf];B[jf];W[ke];B[jg];W[kg];B[jh];W[kh];B[jj];W[ji];B[hj];W[hb];B[hc];W[cc];B[cd];W[ii];B[hi];W[resign])"
+    },
+    {
+        "game_id": "1832943",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.43]PB[Giupiter]PW[shalev]SZ[11]RE[W]GC[ game #1832943]SO[https://www.littlegolem.net];W[jh];B[swap];W[fg];B[ed];W[gd];B[ff];W[eg];B[hd];W[df];B[ec];W[resign])"
+    },
+    {
+        "game_id": "1835064",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.4]PB[jytou]PW[Grzeniu]SZ[11]RE[W]GC[ game #1835064]SO[https://www.littlegolem.net];W[ai];B[dc];W[ec];B[ci];W[dg];B[hd];W[ee];B[eh];W[bj];B[bi];W[aj];B[bh];W[ah];B[bg];W[gg];B[fe];W[ff];B[ef];W[eg];B[df];W[resign])"
+    },
+    {
+        "game_id": "1834690",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.44]PB[shalev]PW[Grzeniu]SZ[11]RE[B]GC[ game #1834690]SO[https://www.littlegolem.net];W[ac];B[de];W[hg];B[hi];W[ii];B[hj];W[ij];B[ih];W[jf];B[kg];W[gi];B[hd];W[fe];B[gc];W[ed];B[ee];W[fd];B[ff];W[ef];B[eg];W[ge];B[hf];W[gf];B[gg];W[fg];B[fh];W[ci];B[di];W[eh];B[ei];W[bi];B[resign])"
+    },
+    {
+        "game_id": "1837228",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2017.jan.1.2]PB[EJCT]PW[Force majeure]SZ[11]RE[W]GC[ game #1837228]SO[https://www.littlegolem.net];W[ag];B[swap];W[cd];B[ef];W[hg];B[ge];W[cg];B[cj];W[eg];B[dg];W[ch];B[cf];W[bg];B[ce];W[ed];B[ee];W[af];B[cb];W[bd];B[dc];W[db];B[cc];W[dd];B[fb];W[gc];B[hb];W[hc];B[ib];W[jb];B[ic];W[jc];B[id];W[jd];B[ie];W[je];B[if];W[jf];B[ig];W[jg];B[ih];W[jh];B[ij];W[ii];B[hj];W[hi];B[gj];W[dh];B[fi];W[resign])"
+    },
+    {
+        "game_id": "1841197",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.47]PB[Grzeniu]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1841197]SO[https://www.littlegolem.net];W[ac];B[ef];W[dh];B[hd];W[ge];B[fg];W[cg];B[cf];W[df];B[ed];W[fd];B[fc];W[gc];B[ee];W[de];B[dd];W[ce];B[bd];W[db];B[dc];W[hf];B[hg];W[gg];B[fi];W[gh];B[gi];W[ih];B[hh];W[jf];B[if];W[je];B[ie];W[jd];B[ii];W[fh];B[ei];W[cj];B[eh];W[hi];B[resign])"
+    },
+    {
+        "game_id": "1791355",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jun.1.3]PB[Shumacher;]]PW[Stanley Kozera]SZ[11]RE[B]GC[ game #1791355]SO[https://www.littlegolem.net];W[ab];B[de];W[jj];B[hg];W[ff];B[eh];W[gg];B[fi];W[gh];B[gi];W[hh];B[hi];W[ih];B[ii];W[kh];B[jh];W[jg];B[kg];W[ei];B[fh];W[dh];B[eg];W[cg])"
+    },
+    {
+        "game_id": "1836762",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Shumacher;]]PW[Force majeure]SZ[11]RE[B]GC[ game #1836762]SO[https://www.littlegolem.net];W[ac];B[ff];W[ih];B[de];W[ee];B[fg];W[he];B[hf];W[je];B[ig];W[kf];B[jf];W[ke];B[id];W[df];B[dh];W[ie];B[jg];W[kg];B[jh];W[cg];B[ch];W[kh];B[ji];W[ki];B[jk];W[jj];B[ik];W[ij];B[hk];W[gj];B[hj];W[ii];B[hi];W[hh];B[gi];W[fh];B[hd];W[ge];B[gd];W[fe];B[fc];W[cd];B[resign])"
+    },
+    {
+        "game_id": "1820509",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.1]PB[agrajaj]PW[Grzeniu]SZ[11]RE[W]GC[ game #1820509]SO[https://www.littlegolem.net];W[ab];B[de];W[gd];B[hi];W[eh];B[ge];W[ef];B[ed];W[fd];B[eg];W[gg];B[gf];W[dg];B[dh];W[ch];B[ci];W[aj];B[bi];W[ai];B[bh];W[ah];B[bg];W[ag];B[bf];W[af];B[bd];W[be];B[dc];W[resign])"
+    },
+    {
+        "game_id": "1761027",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[zastrzyk]PW[Jos Dekker]SZ[11]RE[B]GC[ game #1761027]SO[https://www.littlegolem.net];W[kj];B[ge];W[de];B[cg];W[dh];B[dc];W[hd];B[if];W[he];B[gg];W[ef];B[eg];W[dg];B[ee];W[fe];B[gc];W[fc];B[fd];W[df];B[ed];W[dd];B[ec];W[cc];B[cd];W[bf];B[bd];W[ib];B[resign])"
+    },
+    {
+        "game_id": "1823010",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.2]PB[Shumacher;]]PW[Grzeniu]SZ[11]RE[W]GC[ game #1823010]SO[https://www.littlegolem.net];W[ac];B[hd];W[ef];B[de];W[ff];B[fe];W[ee];B[fc];W[hc];B[gd];W[ed];B[ec];W[dd];B[dc];W[bd];B[cd];W[af];B[be];W[ae];B[bf];W[ag];B[bg];W[ah];B[bh];W[ai];B[bj];W[bi];B[di];W[dh];B[ci];W[ch];B[fh];W[ei];B[eh];W[gg];B[gf];W[hf];B[fg];W[he];B[ge];W[resign])"
+    },
+    {
+        "game_id": "1836952",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.46]PB[Giupiter]PW[Omo321]SZ[11]RE[B]GC[ game #1836952]SO[https://www.littlegolem.net];W[ad];B[bc];W[fe];B[ff];W[ef];B[eg];W[ch];B[ci];W[dh];B[di];W[eh];B[ei];W[gh];B[ed];W[ge];B[gg];W[fh];B[gi];W[ii];B[dg];W[if];B[ih];W[hh];B[id];W[hf];B[hb];W[fc];B[resign])"
+    },
+    {
+        "game_id": "1832937",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.43]PB[Grzeniu]PW[mouchet patrick]SZ[11]RE[B]GC[ game #1832937]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[eg];W[ih];B[ic];W[dh];B[dg];W[ge];B[gf];W[he];B[hg];W[hf];B[gg];W[ff];B[fg];W[jf];B[if];W[je];B[id];W[ie];B[gd];W[ee];B[resign])"
+    },
+    {
+        "game_id": "1779198",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.may.1.1]PB[Shumacher;]]PW[Giupiter]SZ[11]RE[B]GC[ game #1779198]SO[https://www.littlegolem.net];W[ac];B[ef];W[ji];B[fg];W[if];B[hf];W[ie];B[id];W[he];B[hd];W[fe];B[ge];W[jd];B[jb];W[ff];B[fh];W[gf];B[fd];W[gd];B[hb];W[ib];B[hc];W[jc];B[ic];W[gc];B[gb];W[ec];B[fc];W[de];B[ee];W[cg];B[gi];W[dh];B[resign])"
+    },
+    {
+        "game_id": "1814418",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.33]PB[Tony]PW[mouchet patrick]SZ[11]RE[B]GC[ game #1814418]SO[https://www.littlegolem.net];W[kf];B[ge];W[id];B[ic];W[jb];B[jc];W[de];B[eb];W[cd];B[cc];W[bd];B[bc];W[dc];B[db];W[ef];B[eg];W[je];B[gd];W[fc];B[ff];W[ch];B[ci];W[dh];B[di];W[eh];B[ei];W[fh];B[fi];W[gh];B[gi];W[jh];B[hh];W[hf];B[jg];W[kg];B[jf];W[ke];B[if];W[ie];B[hg];W[gg];B[ec];W[df];B[dg];W[cg];B[fb];W[gb];B[ed];W[fd];B[resign])"
+    },
+    {
+        "game_id": "1822261",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[zastrzyk]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1822261]SO[https://www.littlegolem.net];W[kj];B[swap];W[gh];B[ff];W[de];B[fg];W[eg];B[ee];W[df];B[ec];W[ed];B[fc];W[fd];B[gc];W[cd];B[eh];W[dh];B[cc];W[dc];B[ea];W[be];B[cb];W[eb];B[fa];W[fb];B[ga];W[gb];B[ha];W[hb];B[ia];W[jb];B[ib];W[id];B[ic];W[jc];B[fj];W[hf];B[ie];W[he];B[hg];W[gg];B[fi];W[hi];B[ij];W[gk];B[hh];W[gi];B[resign])"
+    },
+    {
+        "game_id": "1822054",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.37]PB[shalev]PW[Juan Jose Montes de Oca Arbos]SZ[11]RE[B]GC[ game #1822054]SO[https://www.littlegolem.net];W[ac];B[ce];W[hg];B[he];W[ge];B[hc];W[ic];B[gf];W[ff];B[fg];W[jd];B[if];W[jg];B[ke];W[eg];B[di];W[eh];B[ei];W[fh];B[hd];W[fd];B[gi];W[fi];B[ek];W[gb];B[ii];W[bj];B[ch];W[ej];B[resign])"
+    },
+    {
+        "game_id": "1829537",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.1]PB[Force majeure]PW[Grzeniu]SZ[11]RE[W]GC[ game #1829537]SO[https://www.littlegolem.net];W[ac];B[hd];W[eg];B[de];W[gd];B[ff];W[ef];B[fe];W[ee];B[fc];W[ed];B[ec];W[fd];B[hb];W[gb];B[gc];W[be];B[dd];W[cf];B[bd];W[ic];B[hc];W[id];B[he];W[ie];B[ig];W[jf];B[hh];W[hf];B[ja];W[resign])"
+    },
+    {
+        "game_id": "1794427",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.22]PB[richyfourtytwo]PW[Austral]SZ[11]RE[W]GC[ game #1794427]SO[https://www.littlegolem.net];W[ac];B[gh];W[eh];B[ed];W[ge];B[ff];W[gg];B[gf];W[ie];B[hf];W[if];B[hg];W[ig];B[hi];W[gi];B[hh];W[ii];B[ih];W[kg];B[jg];W[kf];B[jf];W[ke];B[je];W[kd];B[jc];W[jd];B[id];W[he];B[gd];W[hd];B[ib];W[hc];B[hb];W[gc];B[gb];W[dd];B[ec];W[de];B[dc];W[bd];B[cd];W[be];B[ce];W[bf];B[cf];W[bg];B[ch];W[resign])"
+    },
+    {
+        "game_id": "1817425",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[gwopy]PW[Grzeniu]SZ[11]RE[W]GC[ game #1817425]SO[https://www.littlegolem.net];W[ff];B[swap];W[bb];B[de];W[if];B[hi];W[gg];B[fh];W[fg];B[di];W[gi];B[gh];W[hh];B[hg];W[ig];B[hb];W[ic];B[ja];W[fd];B[gd];W[bf];B[dg];W[ka];B[jb];W[kb];B[jc];W[kc];B[je];W[jd];B[ie];W[bh];B[bg];W[hf];B[he];W[resign])"
+    },
+    {
+        "game_id": "1837719",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[Force majeure]SZ[11]RE[B]GC[ game #1837719]SO[https://www.littlegolem.net];W[ib];B[swap];W[hd];B[gh];W[ih];B[ic];W[cd];B[ii];W[dh];B[ei];W[cj];B[fe];W[gf];B[hc];W[ef];B[ee];W[de];B[df];W[gd];B[gc];W[fd];B[resign])"
+    },
+    {
+        "game_id": "1816128",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.oct.1.2]PB[Grzeniu]PW[egur]SZ[11]RE[B]GC[ game #1816128]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[df];W[hg];B[ff];W[ge];B[hf];W[gf];B[fh];W[if];B[gi];W[ih];B[ii];W[hi];B[gk];W[je];B[ij];W[gj];B[fk];W[fj];B[ek];W[ej];B[dk];W[cj];B[dj];W[di];B[ei];W[eg];B[fg];W[ef];B[fd];W[ee];B[fb];W[fc];B[gb];W[hc];B[resign])"
+    },
+    {
+        "game_id": "1844503",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.49]PB[Tony]PW[passenger]SZ[11]RE[W]GC[ game #1844503]SO[https://www.littlegolem.net];W[kg];B[swap];W[hi];B[ff];W[ee];B[dc];W[dg];B[eh];W[fg];B[eg];W[he];B[gd];W[jd];B[ic];W[kb];B[ib];W[ka];B[gg];W[ci];B[fb];W[jg];B[ie];W[je];B[if];W[jf];B[ih];W[hh];B[ig];W[jh];B[ij];W[ii];B[fj];W[cc];B[dj];W[be];B[cd];W[bd];B[ce];W[bf];B[cg];W[resign])"
+    },
+    {
+        "game_id": "1791987",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.21]PB[Giupiter]PW[richyfourtytwo]SZ[11]RE[W]GC[ game #1791987]SO[https://www.littlegolem.net];W[aj];B[ge];W[ee];B[dc];W[fe];B[dh];W[bj];B[dg];W[gg];B[gd];W[ff];B[fc];W[ec];B[ed];W[ce];B[dd];W[gc];B[fd];W[cc];B[cf];W[resign])"
+    },
+    {
+        "game_id": "1812695",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.32]PB[Shumacher;]]PW[Omo321]SZ[11]RE[B]GC[ game #1812695]SO[https://www.littlegolem.net];W[kh];B[gh];W[ih];B[ig];W[dh];B[ef];W[ff];B[ei];W[ch];B[eg];W[df];B[ed];W[gf];B[eh];W[ee];B[fd];W[fe];B[hc];W[ic];B[hd];W[id];B[he];W[je];B[jd];W[ie];B[ja];W[dc];B[hi];W[ce];B[ci];W[bj];B[resign])"
+    },
+    {
+        "game_id": "1824377",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.39]PB[corpsfini]PW[shalev]SZ[11]RE[W]GC[ game #1824377]SO[https://www.littlegolem.net];W[cc];B[swap];W[dc];B[gh];W[gg];B[fh];W[ig];B[hi];W[ii];B[ih];W[kg];B[gj];W[jh];B[hg];W[eh];B[dj];W[cj];B[fg];W[eg];B[di];W[ci];B[dh];W[ch];B[dg];W[cg];B[df];W[cf];B[dd];W[if];B[he];W[jd];B[je];W[jg];B[ie];W[resign])"
+    },
+    {
+        "game_id": "1761029",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[zastrzyk]PW[Jos Dekker]SZ[11]RE[B]GC[ game #1761029]SO[https://www.littlegolem.net];W[kj];B[hg];W[de];B[df];W[ch];B[dc];W[cc];B[db];W[bc];B[cd];W[bf];B[cf];W[gd];B[ee];W[ff];B[eh];W[di];B[eg];W[fh];B[fg];W[gg];B[gf];W[hf];B[he];W[jd];B[ie];W[ke];B[resign])"
+    },
+    {
+        "game_id": "1810377",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.31]PB[Omo321]PW[richyfourtytwo]SZ[11]RE[W]GC[ game #1810377]SO[https://www.littlegolem.net];W[fi];B[swap];W[gg];B[ge];W[de];B[cc];W[dd];B[ef];W[cg];B[ch];W[dg];B[dh];W[eg];B[eh];W[fg];B[gh];W[ih];B[hi];W[ji];B[hh];W[bi];B[fh];W[resign])"
+    },
+    {
+        "game_id": "1829538",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.1]PB[Grzeniu]PW[Nathan F Miller]SZ[11]RE[B]GC[ game #1829538]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[hi];W[ji];B[jh];W[dh];B[ee];W[ge];B[eg];W[dg];B[ff];W[fe];B[ef];W[cf];B[de];W[ce];B[dc];W[dd];B[fc];W[ec];B[fa];W[db];B[eb];W[bd];B[resign])"
+    },
+    {
+        "game_id": "1755164",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.3]PB[wojtex]PW[shalev]SZ[11]RE[W]GC[ game #1755164]SO[https://www.littlegolem.net];W[ib];B[hi];W[ji];B[jh];W[eg];B[fe];W[ge];B[ff];W[gf];B[fg];W[gg];B[fh];W[gh];B[gd];W[hd];B[hc];W[ic];B[fj];W[fi];B[ej];W[di];B[ei];W[df];B[ed];W[bf];B[bj];W[bg];B[ck];W[resign])"
+    },
+    {
+        "game_id": "1770393",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.mar.1.1]PB[Jose Maria Grau Ribas]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1770393]SO[https://www.littlegolem.net];W[ki];B[swap];W[de];B[dh];W[fh];B[ed];W[dd];B[ee];W[df];B[dg];W[ef];B[fg];W[eh];B[ec];W[ge];B[eg];W[hf];B[gg];W[hg];B[gh];W[hh];B[gi];W[hi];B[gk];W[gj];B[fk];W[fj];B[ek];W[dj];B[resign])"
+    },
+    {
+        "game_id": "1818221",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[ramski]PW[Grzeniu]SZ[11]RE[W]GC[ game #1818221]SO[https://www.littlegolem.net];W[ff];B[swap];W[df];B[dc];W[cd];B[cc];W[gd];B[gh];W[ah];B[bi];W[gg];B[eh];W[ke];B[ei];W[hh];B[if];W[ci];B[dg];W[eg];B[ef];W[resign])"
+    },
+    {
+        "game_id": "1817423",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[gwopy]SZ[11]RE[B]GC[ game #1817423]SO[https://www.littlegolem.net];W[ac];B[ff];W[hf];B[he];W[gf];B[ge];W[df];B[ee];W[ef];B[fe];W[ce];B[jd];W[dh];B[bd];W[dc];B[cj];W[ei];B[ej];W[dj];B[eh];W[di];B[ck];W[dk];B[eg];W[dg];B[cf];W[de];B[cd];W[dd];B[resign])"
+    },
+    {
+        "game_id": "1837720",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Force majeure]PW[Grzeniu]SZ[11]RE[W]GC[ game #1837720]SO[https://www.littlegolem.net];W[bb];B[de];W[hd];B[hi];W[eg];B[di];W[ei];B[eh];W[gg];B[gf];W[dg];B[dj];W[hg];B[gh];W[fh];B[ej];W[gi];B[hh];W[resign])"
+    },
+    {
+        "game_id": "1834700",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.44]PB[Tony]PW[Giupiter]SZ[11]RE[B]GC[ game #1834700]SO[https://www.littlegolem.net];W[kg];B[swap];W[dh];B[ch];W[eg];B[fe];W[ge];B[ff];W[hg];B[gg];W[ed];B[df];W[if];B[ie];W[je];B[ic];W[jd];B[jb];W[gd];B[resign])"
+    },
+    {
+        "game_id": "1836761",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1836761]SO[https://www.littlegolem.net];W[ac];B[swap];W[dh];B[ci];W[ih];B[gh];W[ed];B[he];W[eg];B[di];W[fh];B[gi];W[gg];B[fc];W[fd];B[resign])"
+    },
+    {
+        "game_id": "1836760",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Force majeure]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1836760]SO[https://www.littlegolem.net];W[ac];B[swap];W[ff];B[hi];W[ie];B[fh];W[dh];B[hc];W[dd];B[de];W[ee];B[ef];W[cg];B[df];W[bf];B[ce];W[be];B[cd];W[bd];B[cb];W[cc];B[ea];W[db];B[da];W[eb];B[fa];W[fb];B[ga];W[hb];B[gb];W[gc];B[eh];W[eg];B[cj];W[bj];B[fe];W[fc];B[bg];W[cf];B[ch];W[ii];B[hj];W[ci];B[dg];W[ai];B[bh];W[ge];B[gd];W[ic];B[hd];W[jd];B[he];W[hg];B[resign])"
+    },
+    {
+        "game_id": "1817700",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.35]PB[mouchet patrick]PW[shalev]SZ[11]RE[W]GC[ game #1817700]SO[https://www.littlegolem.net];W[ab];B[gh];W[eg];B[dh];W[eh];B[fd];W[ee];B[ed];W[fe];B[hc];W[be];B[di];W[ei];B[ce];W[ag];B[bf];W[resign])"
+    },
+    {
+        "game_id": "1841964",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2017.jan.1.5]PB[Shumacher;]]PW[zastrzyk]SZ[11]RE[W]GC[ game #1841964]SO[https://www.littlegolem.net];W[ac];B[swap];W[bc];B[df];W[ii];B[ge];W[kc];B[jb];W[ef];B[fg];W[ch];B[de];W[fd];B[dh];W[resign])"
+    },
+    {
+        "game_id": "1755644",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.mc.2016.jan.1.1]PB[Shumacher;]]PW[vieuxsac]SZ[11]RE[W]GC[ game #1755644]SO[https://www.littlegolem.net];W[ac];B[ih];W[ii];B[gg];W[ch];B[cb];W[fe];B[ci];W[bj];B[ef];W[bi];B[dg];W[cg];B[de];W[ce];B[cf];W[ag];B[bf];W[ee];B[df];W[af];B[be];W[fg];B[ff];W[gf];B[ge];W[id];B[he];W[ie];B[hf];W[jf];B[if];W[je];B[jg];W[ae];B[bd];W[resign])"
+    },
+    {
+        "game_id": "1818222",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[ramski]SZ[11]RE[B]GC[ game #1818222]SO[https://www.littlegolem.net];W[ac];B[de];W[dh];B[ef];W[gf];B[gh];W[hg];B[ig];W[ff];B[gd];W[hd];B[ib];W[hc];B[hb];W[gc];B[gb];W[fc];B[fb];W[ec];B[eb];W[bd];B[cc];W[ce];B[bc];W[ad];B[ba];W[db];B[da];W[ea];B[gg];W[eh];B[resign])"
+    },
+    {
+        "game_id": "1762085",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.7]PB[Shumacher;]]PW[Austral]SZ[11]RE[B]GC[ game #1762085]SO[https://www.littlegolem.net];W[ac];B[dh];W[ih];B[hd];W[ic];B[he];W[jd];B[if];W[jg];B[ke];W[hf];B[ie];W[cg];B[ci];W[bj];B[bh];W[eg];B[ef];W[dg];B[cf];W[df];B[ed];W[fd];B[resign])"
+    },
+    {
+        "game_id": "1768506",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.9]PB[shalev]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1768506]SO[https://www.littlegolem.net];W[bb];B[swap];W[hg];B[hd];W[fd];B[fh];W[dh];B[ci];W[di];B[ej];W[ch];B[ee];W[fe];B[eg];W[df];B[ef];W[de];B[ec];W[ed];B[resign])"
+    },
+    {
+        "game_id": "1819141",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.36]PB[shalev]PW[Tommah]SZ[11]RE[B]GC[ game #1819141]SO[https://www.littlegolem.net];W[ac];B[ci];W[ih];B[ic];W[dh];B[di];W[eh];B[ei];W[fh];B[gh];W[fi];B[ee];W[ce];B[cf];W[fe];B[gc];W[fd];B[fc];W[ed];B[eb];W[ec];B[fb];W[cc];B[da];W[bb];B[dc];W[cd];B[resign])"
+    },
+    {
+        "game_id": "1821931",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[agrajaj]PW[Grzeniu]SZ[11]RE[W]GC[ game #1821931]SO[https://www.littlegolem.net];W[ab];B[de];W[ge];B[hi];W[eh];B[ff];W[gf];B[fg];W[gg];B[fh];W[gh];B[fj];W[fi];B[ej])"
+    },
+    {
+        "game_id": "1816127",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.oct.1.2]PB[h1h1h1]PW[Grzeniu]SZ[11]RE[W]GC[ game #1816127]SO[https://www.littlegolem.net];W[ai];B[swap];W[ch];B[gh];W[id];B[ed];W[gf];B[jb];W[fc];B[fd];W[gc];B[gd];W[hc];B[he];W[je];B[ie];W[jd];B[if];W[jf];B[ig];W[jg];B[hd];W[ic];B[ii];W[kh];B[jj];W[ij];B[ji];W[ih];B[gj];W[hi];B[hj];W[gi];B[fj];W[cf];B[dc];W[fi];B[ej];W[bf];B[di];W[ei];B[dj];W[bj];B[eh];W[dg];B[bd];W[resign])"
+    },
+    {
+        "game_id": "1753882",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.2]PB[Tommah]PW[shalev]SZ[11]RE[W]GC[ game #1753882]SO[https://www.littlegolem.net];W[ke];B[swap];W[ci];B[dc];W[ic];B[dh];W[ch];B[dg];W[cg];B[df];W[ce];B[ed];W[cc];B[cd];W[ae];B[eb];W[bc];B[bf];W[be];B[cf];W[hf];B[hi];W[gh];B[fj];W[kg];B[ig];W[jf];B[if];W[je];B[ie];W[jd];B[id];W[jc];B[jg];W[kf];B[ji];W[ei];B[dj];W[di];B[bk];W[ak];B[bj];W[ii];B[jh];W[resign])"
+    },
+    {
+        "game_id": "1815817",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.34]PB[shalev]PW[Ocross]SZ[11]RE[B]GC[ game #1815817]SO[https://www.littlegolem.net];W[ac];B[jj];W[dh];B[dc];W[ge];B[ff];W[gf];B[gd];W[hd];B[ib];W[jc];B[jb];W[hc];B[hb];W[fc];B[di];W[ci];B[dg];W[ee];B[eb];W[ga];B[fh];W[fg];B[eh];W[eg];B[bk];W[gi];B[resign])"
+    },
+    {
+        "game_id": "1846287",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2017.feb.1.2]PB[EJCT]PW[zastrzyk]SZ[11]RE[W]GC[ game #1846287]SO[https://www.littlegolem.net];W[kg];B[swap];W[ge];B[ed];W[ji];B[ij];W[cd];B[cb];W[ec];B[hd];W[he];B[eh];W[gd];B[gh];W[dh];B[eg];W[dg];B[cj];W[di];B[dj];W[fi];B[ei];W[gi];B[gg];W[jf];B[ig];W[resign])"
+    },
+    {
+        "game_id": "1815151",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[h1h1h1]PW[Grzeniu]SZ[11]RE[W]GC[ game #1815151]SO[https://www.littlegolem.net];W[ah];B[gh];W[he];B[dc];W[ge];B[eg];W[bi];B[bj];W[ci];B[ei];W[cj];B[df];W[dg];B[ef];W[gg];B[dh];W[ig];B[hi];W[ii];B[ih];W[kg];B[ij];W[ji];B[jg];W[kf];B[je];W[cd];B[bh];W[ai];B[bf];W[resign])"
+    },
+    {
+        "game_id": "1778788",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.2.1]PB[Knemay]PW[Giupiter]SZ[11]RE[B]GC[ game #1778788]SO[https://www.littlegolem.net];W[aj];B[bh];W[ge];B[gf];W[ff];B[fg];W[eg];B[cj];W[ei];B[eh];W[ci];B[fd];W[ee];B[gb];W[de];B[dc];W[hc];B[resign])"
+    },
+    {
+        "game_id": "1836949",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.46]PB[shalev]PW[herveherve]SZ[11]RE[B]GC[ game #1836949]SO[https://www.littlegolem.net];W[ac];B[ff];W[hg];B[he];W[df];B[dg];W[bh];B[de];W[ef];B[eg];W[cf];B[bi];W[ch];B[ci];W[dh];B[ei];W[di];B[ck];W[dj];B[dk];W[ej];B[ek];W[gj];B[fj];W[fi];B[gi];W[ih];B[ig];W[hh];B[gh];W[gf];B[ge];W[fg];B[fd];W[ce];B[db];W[cd];B[resign])"
+    },
+    {
+        "game_id": "1754335",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.mc.2015.dec.1.3]PB[JKB]PW[Tom Ace]SZ[11]RE[W]GC[ game #1754335]SO[https://www.littlegolem.net];W[ai];B[bj];W[ge];B[ic];W[de];B[fg];W[hg];B[fj];W[hi];B[dg];W[hf];B[ij];W[gk];B[hh];W[gh];B[gd];W[ef];B[fe];W[hc];B[gb];W[ff];B[ee];W[df];B[dc];W[resign])"
+    },
+    {
+        "game_id": "1835060",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.4]PB[Force majeure]PW[Grzeniu]SZ[11]RE[W]GC[ game #1835060]SO[https://www.littlegolem.net];W[ac];B[de];W[hg];B[hi];W[ii];B[hj];W[ih];B[ij];W[gg];B[hd];W[fe];B[ff];W[ee];B[ge];W[dg];B[ed];W[hc];B[df];W[ef];B[dh];W[eg];B[eh];W[fg];B[gh];W[fh];B[ej];W[aj];B[cj];W[bj];B[ch];W[resign])"
+    },
+    {
+        "game_id": "1824367",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.39]PB[Tony]PW[Omo321]SZ[11]RE[B]GC[ game #1824367]SO[https://www.littlegolem.net];W[kg];B[gh];W[de];B[df];W[if];B[ie];W[hf];B[he];W[ff];B[di];W[fg];B[fe];W[ge];B[gd];W[ee];B[ef];W[hd];B[hc];W[ic];B[ja];W[ib];B[ia];W[hb];B[ha];W[fc];B[fb];W[dc];B[resign])"
+    },
+    {
+        "game_id": "1779361",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.14]PB[Knemay]PW[Giupiter]SZ[11]RE[B]GC[ game #1779361]SO[https://www.littlegolem.net];W[aj];B[ee];W[dd];B[dg];W[ge];B[gf];W[eg];B[fc];W[fe];B[hb];W[ib];B[hc];W[ic];B[hd];W[id];B[he];W[if];B[ie];W[kd];B[je];W[ke];B[jf];W[kf];B[jg];W[kg];B[ji];W[jh];B[ii];W[ih];B[hi];W[hh];B[gi];W[gh];B[fi];W[fh];B[ei];W[dh];B[cj];W[di];B[dj];W[bj];B[ci];W[bh];B[ch];W[cf];B[bg];W[cg];B[ce];W[de];B[dc];W[ec];B[fa];W[fb];B[resign])"
+    },
+    {
+        "game_id": "1765598",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.8]PB[shalev]PW[richyfourtytwo]SZ[11]RE[B]GC[ game #1765598]SO[https://www.littlegolem.net];W[bb];B[swap];W[hd];B[gg];W[ih];B[gf];W[ie];B[id];W[he];B[if];W[je];B[jf];W[eg];B[ci];W[dh];B[fe];W[ee];B[ec];W[dd];B[dc];W[ed];B[fc];W[fd];B[gc];W[gd];B[resign])"
+    },
+    {
+        "game_id": "1828234",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.41]PB[Omo321]PW[shalev]SZ[11]RE[W]GC[ game #1828234]SO[https://www.littlegolem.net];W[ck];B[ed];W[fe];B[gh];W[fh];B[gc];W[hc];B[gd];W[he];B[hd];W[jc];B[gb];W[ic];B[id];W[jd];B[ie];W[ke];B[je];W[kd];B[jg];W[resign])"
+    },
+    {
+        "game_id": "1759408",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.5]PB[Gwylim Ashley]PW[shalev]SZ[11]RE[W]GC[ game #1759408]SO[https://www.littlegolem.net];W[bb];B[gh];W[dh];B[df];W[ef];B[fd];W[he];B[ge];W[gd];B[fe];W[ie];B[hd];W[jc];B[fc];W[gb];B[jd];W[id];B[gg];W[gf];B[ei];W[eh];B[cj];W[dj];B[di];W[fi];B[fh])"
+    },
+    {
+        "game_id": "1788995",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.may.2.1]PB[Giupiter]PW[Shumacher;]]SZ[11]RE[W]GC[ game #1788995]SO[https://www.littlegolem.net];W[aj];B[swap];W[cd];B[ii];W[dh];B[ci];W[ch];B[de];W[ee];B[dg];W[eg];B[ef];W[cg];B[ec];W[df];B[fb];W[hc];B[gc];W[hb];B[gd];W[hd];B[ge];W[he];B[gf];W[hf];B[gg];W[hg];B[gi];W[gh];B[fi];W[bf];B[dj];W[resign])"
+    },
+    {
+        "game_id": "1823008",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.2]PB[sZamBa_]PW[Grzeniu]SZ[11]RE[W]GC[ game #1823008]SO[https://www.littlegolem.net];W[ac];B[de];W[ic];B[hi];W[di];B[eg];W[hg];B[hf];W[ah];B[df];W[bf];B[bg];W[ag];B[bi];W[cg];B[ed];W[cd];B[dh];W[fg];B[ge];W[if];B[ie];W[resign])"
+    },
+    {
+        "game_id": "1820367",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[ramski]SZ[11]RE[B]GC[ game #1820367]SO[https://www.littlegolem.net];W[ac];B[ff];W[hf];B[he];W[gf];B[ge];W[df];B[ci];W[eg];B[eh];W[fg];B[gi];W[fi];B[de];W[ee];B[resign])"
+    },
+    {
+        "game_id": "1806881",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.29]PB[Austral]PW[Shumacher;]]SZ[11]RE[W]GC[ game #1806881]SO[https://www.littlegolem.net];W[kj];B[swap];W[fh];B[gd];W[hd];B[hc];W[ic];B[jb];W[ib];B[ge];W[he];B[gg];W[fg];B[gf];W[fe];B[fd];W[de];B[dd];W[ce];B[cd];W[ed];B[fb];W[ec];B[eb];W[dc];B[db];W[bc];B[cc];W[ae];B[be];W[af];B[bf];W[ag];B[bh];W[resign])"
+    },
+    {
+        "game_id": "1810382",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.31]PB[Shumacher;]]PW[shalev]SZ[11]RE[W]GC[ game #1810382]SO[https://www.littlegolem.net];W[ah];B[swap];W[jb];B[hi];W[ji];B[jh];W[dh];B[bj];W[ge];B[fg];W[ci];B[ef];W[df];B[dg];W[bh];B[cg];W[bg];B[cf];W[bf];B[ce];W[be];B[cd];W[bd];B[cb];W[cc];B[db];W[dc];B[eb];W[ec];B[fb];W[he];B[fc];W[gg];B[fh];W[gh];B[fj];W[fi];B[ej];W[resign])"
+    },
+    {
+        "game_id": "1820503",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.1]PB[Grzeniu]PW[sZamBa_]SZ[11]RE[B]GC[ game #1820503]SO[https://www.littlegolem.net];W[ib];B[swap];W[hd];B[gg];W[eg];B[eh];W[fg];B[fh];W[dh];B[cj];W[di];B[dj];W[ei];B[ej];W[fi];B[fj];W[hi];B[gi];W[hh];B[gh];W[if];B[he];W[jd];B[jc];W[id];B[hc];W[gd];B[gc];W[ec];B[fb];W[dd];B[ea];W[cb];B[dc];W[eb];B[ed];W[ic];B[ja];W[ib];B[ia];W[hb];B[ha];W[gb];B[resign])"
+    },
+    {
+        "game_id": "1805100",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.28]PB[corpsfini]PW[shalev]SZ[11]RE[W]GC[ game #1805100]SO[https://www.littlegolem.net];W[ag];B[swap];W[ff];B[gh];W[dc];B[de];W[hc];B[ei];W[ig];B[hi];W[ii];B[ih];W[kg];B[gj];W[jh];B[hf];W[ie];B[jf];W[di];B[eh];W[ch];B[dh];W[dg];B[bj];W[resign])"
+    },
+    {
+        "game_id": "1757412",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.1.2]PB[Knemay]PW[Giupiter]SZ[11]RE[B]GC[ game #1757412]SO[https://www.littlegolem.net];W[ak];B[swap];W[de];B[cd];W[ee];B[ef];W[cg];B[dh];W[bi];B[bj];W[ci];B[cj];W[di];B[dj];W[gh];B[fi];W[gi];B[fh];W[gg];B[fe];W[ff];B[fg];W[gf];B[fd];W[fc];B[dg];W[gd];B[hc];W[gc];B[resign])"
+    },
+    {
+        "game_id": "1823011",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.2]PB[Grzeniu]PW[acfiorentina]SZ[11]RE[B]GC[ game #1823011]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[fb];W[ih];B[gc];W[gb];B[fc];W[jd];B[jb];W[hc];B[gd];W[id];B[hf];W[if];B[hj];W[hh];B[gi];W[ji];B[ik];W[kj];B[ga];W[hb];B[hd];W[ic];B[ig];W[hg];B[jj];W[ki];B[kk];W[jk];B[ii];W[jh];B[ie];W[je];B[ia];W[ha])"
+    },
+    {
+        "game_id": "1789268",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.19]PB[shalev]PW[richyfourtytwo]SZ[11]RE[B]GC[ game #1789268]SO[https://www.littlegolem.net];W[bb];B[swap];W[hg];B[hf];W[bh];B[ee];W[fe];B[gc];W[ed];B[df];W[ge];B[hc];W[id];B[jb];W[ib];B[eh];W[fg];B[fh];W[ig];B[hh];W[ih];B[resign])"
+    },
+    {
+        "game_id": "1794428",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.22]PB[shalev]PW[cb597]SZ[11]RE[B]GC[ game #1794428]SO[https://www.littlegolem.net];W[ac];B[de];W[hg];B[id];W[ge];B[gf];W[if];B[he];W[ff];B[fg];W[eg];B[eh];W[dh];B[cj];W[di];B[dj];W[ei];B[ej];W[fi];B[fj];W[gi];B[gj];W[ii];B[gd];W[hd];B[ib];W[hc];B[hb];W[fc];B[resign])"
+    },
+    {
+        "game_id": "1848479",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.52]PB[Grzeniu]PW[realefab]SZ[11]RE[B]GC[ game #1848479]SO[https://www.littlegolem.net];W[ac];B[cd];W[dh];B[ic];W[fe];B[fd];W[gd];B[hb];W[ib];B[hc];W[gc];B[gb];W[ec];B[ef];W[fg];B[ff];W[he];B[gf];W[hf];B[gg];W[hg];B[gi];W[ih];B[ii];W[gh];B[fi];W[fh];B[di];W[ei];B[dk];W[gj];B[resign])"
+    },
+    {
+        "game_id": "1759285",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.1.3]PB[Jose Maria Grau Ribas]PW[Lukasz S.]SZ[11]RE[W]GC[ game #1759285]SO[https://www.littlegolem.net];W[ja];B[gh];W[eg];B[de];W[ih];B[hi];W[he];B[di];W[ei];B[fg];W[dg];B[dj];W[cd];B[hh];W[ej];B[eh];W[ci];B[bk];W[ak];B[bj];W[aj];B[bi];W[ai];B[bh];W[ah];B[bf];W[bg];B[df];W[resign])"
+    },
+    {
+        "game_id": "1826155",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.40]PB[Tony]PW[shalev]SZ[11]RE[W]GC[ game #1826155]SO[https://www.littlegolem.net];W[kg];B[swap];W[gh];B[ed];W[dc];B[eg];W[fg];B[ge];W[he];B[hd];W[jc];B[hc];W[ce];B[cd];W[be];B[fb];W[dd];B[cg];W[ci];B[dh];W[jb];B[id];W[jd];B[ie];W[je];B[if];W[ch];B[ef];W[kf];B[jf];W[ke];B[ih];W[kh];B[jh];W[resign])"
+    },
+    {
+        "game_id": "1836951",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.46]PB[Grzeniu]PW[Tony]SZ[11]RE[B]GC[ game #1836951]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[ge];W[ih];B[fg];W[eg];B[ef];W[ff];B[ee];W[fe];B[di];W[ch];B[gd];W[fd];B[resign])"
+    },
+    {
+        "game_id": "1770072",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.10]PB[shalev]PW[Knemay]SZ[11]RE[B]GC[ game #1770072]SO[https://www.littlegolem.net];W[bb];B[swap];W[hg];B[ih];W[eg];B[ff];W[ge];B[gg];W[ef];B[fd];W[fe];B[hc];W[id];B[ic];W[jb];B[hf];W[df];B[resign])"
+    },
+    {
+        "game_id": "1771131",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.11]PB[Knemay]PW[Austral]SZ[11]RE[B]GC[ game #1771131]SO[https://www.littlegolem.net];W[aj];B[ed];W[hc];B[fg];W[dd];B[cg];W[dg];B[fd];W[ef];B[ge];W[de];B[dh];W[ch];B[ci];W[bi];B[ak];W[hg];B[bj];W[gf];B[ff];W[he];B[hd];W[id];B[ic];W[kb];B[jc];W[kc];B[jd];W[kd];B[je];W[ke];B[jf];W[kf];B[jg];W[kg];B[jh];W[kh];B[ji];W[ki];B[jk];W[eh];B[eg];W[jj];B[ik];W[ij];B[hk];W[fh];B[gj];W[hj];B[gk];W[ih];B[resign])"
+    },
+    {
+        "game_id": "1809285",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.sep.1.3]PB[mouchet patrick]PW[zastrzyk]SZ[11]RE[W]GC[ game #1809285]SO[https://www.littlegolem.net];W[ac];B[ce];W[ge];B[gh];W[dh];B[ff];W[ef];B[eg];W[dg];B[fd];W[fe];B[hc];W[gc];B[gd];W[de];B[ec];W[fc];B[ed];W[dd];B[dc];W[be];B[cd];W[ic];B[hd];W[id];B[jb];W[ib];B[he];W[ie];B[hf];W[if];B[hi];W[resign])"
+    },
+    {
+        "game_id": "1836758",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Shumacher;]]PW[Grzeniu]SZ[11]RE[W]GC[ game #1836758]SO[https://www.littlegolem.net];W[ac];B[de];W[df];B[hi];W[hh];B[ge];W[cf];B[ce];W[hd];B[gi];W[jg];B[jh];W[ih];B[hj];W[fh];B[dh];W[ci];B[ch];W[he];B[gg];W[resign])"
+    },
+    {
+        "game_id": "1833211",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[null]PB[Force majeure]PW[Grzeniu]SZ[11]RE[W]GC[ game #1833211]SO[https://www.littlegolem.net];W[bb];B[de];W[hd];B[hi];W[gh];B[gf];W[ff];B[fg];W[ch];B[dh];W[dg];B[ci];W[aj];B[bi];W[resign])"
+    },
+    {
+        "game_id": "1761019",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.1.4]PB[Knemay]PW[Austral]SZ[11]RE[B]GC[ game #1761019]SO[https://www.littlegolem.net];W[ak];B[swap];W[de];B[dc];W[ee];B[dh];W[eh];B[ff];W[eg];B[ef];W[cg];B[fd];W[ec];B[di];W[dg];B[ei];W[gh];B[fc];W[hb];B[fj];W[hi];B[resign])"
+    },
+    {
+        "game_id": "1830847",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[Force majeure]SZ[11]RE[B]GC[ game #1830847]SO[https://www.littlegolem.net];W[ib];B[swap];W[hd];B[gf];W[ff];B[eh];W[hg];B[gg];W[ie];B[gi];W[ih];B[ii];W[hi];B[gk];W[ej];B[fj];W[fh];B[gh];W[dg];B[resign])"
+    },
+    {
+        "game_id": "1778784",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.2.1]PB[Lukasz S.]PW[vieuxsac]SZ[11]RE[B]GC[ game #1778784]SO[https://www.littlegolem.net];W[bb];B[swap];W[eg];B[fe];W[ed];B[gh];W[ih];B[fg];W[df];B[di];W[eh];B[ei];W[fh];B[fi];W[hg];B[gg];W[jd];B[ic];W[he];B[hf];W[je];B[ig];W[hh];B[resign])"
+    },
+    {
+        "game_id": "1833020",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.3]PB[Force majeure]PW[Grzeniu]SZ[11]RE[W]GC[ game #1833020]SO[https://www.littlegolem.net];W[ac];B[de];W[ge];B[hi];W[gh];B[gf];W[eg];B[ff];W[ef];B[fe];W[ee];B[fc];W[ed];B[ec];W[dd];B[dc];W[cd];B[cb];W[fd];B[gc];W[gd];B[ib];W[hc];B[hb];W[cc];B[db];W[bb];B[bc];W[ad];B[bd];W[ae];B[be];W[af];B[bf];W[ag];B[bg];W[ah];B[bh];W[ai];B[bj];W[bi];B[di];W[ig];B[dh];W[jb];B[ic];W[jc];B[ie];W[resign])"
+    },
+    {
+        "game_id": "1829539",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.1]PB[nick32]PW[Grzeniu]SZ[11]RE[W]GC[ game #1829539]SO[https://www.littlegolem.net];W[aj];B[hd];W[ee];B[dc];W[fc];B[ef];W[ge];B[hi];W[fg];B[eh];W[eg];B[dh];W[bh];B[cj];W[ak];B[cg];W[fe];B[fh];W[bg];B[cf];W[bf];B[ce];W[ih];B[hh];W[be];B[cb];W[resign])"
+    },
+    {
+        "game_id": "1759286",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.1.3]PB[Lukasz S.]PW[zastrzyk]SZ[11]RE[B]GC[ game #1759286]SO[https://www.littlegolem.net];W[bb];B[de];W[ff];B[hi];W[ji];B[jh];W[ef];B[ei];W[di];B[eg];W[gg];B[fh];W[fg];B[eh];W[hg];B[hh];W[ch];B[dg];W[cg];B[resign])"
+    },
+    {
+        "game_id": "1823015",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.nov.1.2]PB[Shumacher;]]PW[zastrzyk]SZ[11]RE[W]GC[ game #1823015]SO[https://www.littlegolem.net];W[ki];B[swap];W[dg];B[dc];W[hg];B[ge];W[ee];B[gc];W[fc];B[fd];W[ed];B[gb];W[fb];B[dh];W[eg];B[eh];W[fg];B[fh];W[if];B[gi];W[hi];B[gg];W[he];B[hj];W[ii];B[gj];W[ij];B[hk];W[kj];B[jg];W[resign])"
+    },
+    {
+        "game_id": "1818487",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Grzeniu]PW[gwopy]SZ[11]RE[B]GC[ game #1818487]SO[https://www.littlegolem.net];W[ac];B[ff];W[hf];B[he];W[gf];B[ge];W[df];B[dg];W[jd];B[ja];W[jb])"
+    },
+    {
+        "game_id": "1770073",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.10]PB[Giupiter]PW[richyfourtytwo]SZ[11]RE[W]GC[ game #1770073]SO[https://www.littlegolem.net];W[ka];B[ff];W[ef];B[eg];W[dg];B[dh];W[ch];B[ed];W[fd];B[ee];W[ie];B[gh];W[cf];B[ce];W[dd];B[db];W[bf];B[ec];W[fe];B[bj];W[ih];B[hi];W[gi];B[fj];W[gj];B[fi];W[hg];B[hh];W[resign])"
+    },
+    {
+        "game_id": "1790605",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.20]PB[shalev]PW[Shumacher;]]SZ[11]RE[B]GC[ game #1790605]SO[https://www.littlegolem.net];W[bb];B[swap];W[hg];B[hd];W[fd];B[fe];W[df];B[eg];W[ch];B[di];W[bj];B[ee];W[de];B[ec];W[ed];B[gc];W[fc];B[ga];W[db];B[resign])"
+    },
+    {
+        "game_id": "1778790",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.jan.2.1]PB[Giupiter]PW[vieuxsac]SZ[11]RE[B]GC[ game #1778790]SO[https://www.littlegolem.net];W[ak];B[swap];W[ib];B[hd];W[eg];B[ef];W[ge];B[hi];W[fg];B[gd];W[fe];B[fd];W[de];B[ci];W[ee];B[eh];W[gi];B[fh];W[hg];B[gf];W[ie];B[resign])"
+    },
+    {
+        "game_id": "1835059",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2016.dec.1.4]PB[EJCT]PW[Force majeure]SZ[11]RE[W]GC[ game #1835059]SO[https://www.littlegolem.net];W[kg];B[swap];W[cd];B[eg];W[hg];B[he];W[ff];B[fh];W[ci];B[ch];W[hh];B[gg];W[dg];B[ef];W[cg];B[de];W[hf];B[hd];W[eh];B[fg];W[resign])"
+    },
+    {
+        "game_id": "1760682",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.6]PB[shalev]PW[Rex Moore]SZ[11]RE[B]GC[ game #1760682]SO[https://www.littlegolem.net];W[cb];B[swap];W[hg];B[id];W[hd];B[fj];W[ih];B[ii];W[gj];B[hh];W[ig];B[hi];W[jh];B[ji];W[fh];B[gg];W[ff];B[ia];W[hc];B[ge];W[fe];B[fg];W[eg];B[di];W[ch];B[ci];W[eh];B[fi];W[gh];B[gi];W[bj];B[bi];W[ei];B[resign])"
+    },
+    {
+        "game_id": "1848482",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.52]PB[Omo321]PW[shalev]SZ[11]RE[W]GC[ game #1848482]SO[https://www.littlegolem.net];W[gi];B[swap];W[gh];B[ed];W[fd];B[ff];W[ie];B[he];W[cf];B[cg];W[ef];B[eg];W[bi];B[dh];W[ah];B[di];W[cj];B[bg];W[ag];B[bf];W[af];B[bd];W[be];B[cd];W[ce];B[fc];W[ee];B[gc];W[jc];B[ib];W[jb];B[id];W[bc];B[dd];W[resign])"
+    },
+    {
+        "game_id": "1849674",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.53]PB[mouchet patrick]PW[shalev]SZ[11]RE[W]GC[ game #1849674]SO[https://www.littlegolem.net];W[ab];B[gh];W[fh];B[bj];W[fi];B[ge];W[dg];B[df];W[fe];B[eg];W[gg];B[gf];W[ef];B[di];W[jd];B[id];W[jc];B[if];W[resign])"
+    },
+    {
+        "game_id": "1842943",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.48]PB[shalev]PW[Tommah]SZ[11]RE[B]GC[ game #1842943]SO[https://www.littlegolem.net];W[ac];B[ci];W[hg];B[ic];W[dh];B[di];W[eh];B[ei];W[fh];B[fi];W[ih];B[hh];W[ig];B[de];W[fe];B[fd];W[gd];B[hb];W[ib];B[hc];W[gc];B[gb];W[fc];B[fb];W[ec];B[eb];W[bd];B[dc];W[ce];B[dd];W[cf];B[bc];W[cc];B[da];W[bb];B[dg];W[bh];B[gh];W[hj];B[bi];W[gg];B[ch];W[df];B[ff];W[he];B[resign])"
+    },
+    {
+        "game_id": "1856712",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.56]PB[passenger]PW[Grzeniu]SZ[11]RE[W]GC[ game #1856712]SO[https://www.littlegolem.net];W[ab];B[de];W[hg];B[hi];W[ji];B[jh];W[ff];B[hd];W[gd];B[ge];W[ie];B[hc];W[resign])"
+    },
+    {
+        "game_id": "1857906",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.57]PB[Grzeniu]PW[Juan Jose Montes de Oca Arbos]SZ[11]RE[B]GC[ game #1857906]SO[https://www.littlegolem.net];W[ac];B[dd];W[dh];B[ee];W[ge];B[ff];W[fe];B[dg];W[gf];B[fh];W[fg];B[ck];W[bj];B[ci];W[di];B[hb];W[fc];B[fd];W[hc];B[ib];W[gc];B[resign])"
+    },
+    {
+        "game_id": "1849675",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.53]PB[Grzeniu]PW[Giupiter]SZ[11]RE[B]GC[ game #1849675]SO[https://www.littlegolem.net];W[ac];B[swap];W[ed];B[gh];W[ih];B[ji];W[hj];B[dh];W[gg];B[ge];W[ef];B[de];W[cg];B[ee];W[fe];B[gc];W[fd];B[resign])"
+    },
+    {
+        "game_id": "1856458",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.HEX11.mc.2017.mar.1.3]PB[Shumacher;]]PW[passenger]SZ[11]RE[W]GC[ game #1856458]SO[https://www.littlegolem.net];W[ac];B[swap];W[bc];B[cd];W[ji];B[ge];W[de];B[dh];W[ff];B[gd];W[bf];B[dg];W[bi];B[di];W[ie];B[hf];W[gf];B[he];W[ee];B[fh];W[gg];B[gh];W[hg];B[hh];W[jg];B[ig];W[ke];B[jf];W[kf];B[jc];W[resign])"
+    },
+    {
+        "game_id": "1845439",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.50]PB[Tony]PW[Omo321]SZ[11]RE[B]GC[ game #1845439]SO[https://www.littlegolem.net];W[kg];B[ed];W[dc];B[dd];W[ge];B[gh];W[jf];B[jg];W[jh];B[ij];W[be];B[cg];W[fh];B[gf];W[he];B[fg];W[hf];B[gg];W[hi];B[ic];W[jd];B[hb];W[hc];B[if];W[hg];B[gk];W[fj];B[resign])"
+    },
+    {
+        "game_id": "1828218",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.41]PB[Tony]PW[SoaresS]SZ[11]RE[W]GC[ game #1828218]SO[https://www.littlegolem.net];W[kg];B[swap];W[eg];B[dc];W[bc];B[he];W[hd];B[fe];W[id];B[gf];W[ee];B[gc];W[de];B[bd];W[ie];B[fh];W[cg];B[ej];W[hh];B[fi];W[fj];B[hg];W[resign])"
+    },
+    {
+        "game_id": "1835744",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.45]PB[Tony]PW[herveherve]SZ[11]RE[B]GC[ game #1835744]SO[https://www.littlegolem.net];W[kg];B[dd];W[hd];B[ih];W[ji];B[jf];W[fe];B[dh];W[fg];B[ej];W[fh];B[gd];W[ge];B[ib];W[gc];B[resign])"
+    },
+    {
+        "game_id": "1808393",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.30]PB[Tony]PW[martinbh]SZ[11]RE[B]GC[ game #1808393]SO[https://www.littlegolem.net];W[kg];B[swap];W[ih];B[ff];W[hd];B[he];W[id];B[ie];W[ef];B[eg];W[ch];B[ci];W[aj];B[bi];W[ai];B[bh];W[jf];B[je];W[ah];B[bg];W[ag];B[bf];W[af];B[ak];W[bj];B[bk];W[cj];B[ck];W[dj];B[dk];W[fj];B[ej];W[fh];B[fi];W[gh];B[gi];W[jg];B[ij];W[hj];B[hk];W[gj];B[hi];W[ii];B[ei];W[ge];B[gf];W[eh];B[di];W[dh];B[dg];W[cg];B[df];W[cf];B[de];W[ce];B[dc];W[dd];B[fc];W[ec];B[fa];W[eb];B[ea];W[cb];B[db];W[bd];B[be];W[cd];B[cc];W[bc];B[da];W[ca];B[hh];W[hg];B[ig];W[if];B[fk];W[ek])"
+    },
+    {
+        "game_id": "1848476",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.52]PB[Tony]PW[Nagy Fathy]SZ[11]RE[B]GC[ game #1848476]SO[https://www.littlegolem.net];W[kg];B[swap];W[eg];B[di];W[fh];B[ej];W[dg];B[ch];W[fj];B[fi];W[hh];B[gi];W[hi];B[gj];W[ij];B[gh];W[hg];B[gg];W[hf];B[gf];W[he];B[ic];W[fe];B[gd];W[ge];B[fd];W[de];B[df];W[cf];B[dd];W[ed];B[fb];W[ec];B[eb];W[cc];B[dc];W[be];B[ce];W[bf];B[ee];W[cg];B[da];W[bb];B[resign])"
+    },
+    {
+        "game_id": "1815810",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.34]PB[Simon O]PW[Tony]SZ[11]RE[W]GC[ game #1815810]SO[https://www.littlegolem.net];W[fe];B[swap];W[ff];B[eg];W[fg];B[gh];W[ei];B[eh];W[fh];B[fe];W[ge];B[hc];W[cf];B[fd];W[ic];B[hd];W[ie];B[id])"
+    },
+    {
+        "game_id": "1817691",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.35]PB[cb597]PW[Tony]SZ[11]RE[W]GC[ game #1817691]SO[https://www.littlegolem.net];W[bb];B[swap];W[ff];B[eh];W[gg];B[hh];W[fi];B[gf])"
+    },
+    {
+        "game_id": "1771545",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[null]PB[Tony]PW[Takvorian]SZ[11]RE[B]GC[ game #1771545]SO[https://www.littlegolem.net];W[kg];B[ff];W[de];B[dg];W[ci];B[cg];W[he];B[gh];W[if];B[jb];W[gd];B[resign])"
+    },
+    {
+        "game_id": "1819139",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.36]PB[Tony]PW[Ocross]SZ[11]RE[B]GC[ game #1819139]SO[https://www.littlegolem.net];W[kg];B[ca];W[ge];B[ij];W[ji];B[jh];W[ii];B[ih];W[fe];B[ff];W[gf];B[gg];W[eh];B[fg];W[hf];B[hg];W[dg];B[ef];W[df];B[ee];W[de];B[ec];W[ed];B[fc];W[fd];B[ia];W[gc];B[gb];W[hb];B[ha];W[jb];B[dh];W[eg];B[dj];W[fi];B[ib];W[ic];B[resign])"
+    },
+    {
+        "game_id": "1823109",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.38]PB[corpsfini]PW[Tony]SZ[11]RE[W]GC[ game #1823109]SO[https://www.littlegolem.net];W[ac];B[swap];W[fc];B[fg];W[eg];B[ff];W[ef];B[eh];W[ci];B[dh];W[ch];B[dj];W[cj];B[dg];W[cg];B[de];W[ie];B[ge];W[ic];B[hg];W[resign])"
+    },
+    {
+        "game_id": "1841199",
+        "red_won_flg": 1,
+        "moves": "(;FF[4]EV[hex.in.HEX11.47]PB[Tony]PW[h1h1h1]SZ[11]RE[B]GC[ game #1841199]SO[https://www.littlegolem.net];W[kg];B[swap];W[ih];B[he];W[de];B[ch];W[eg];B[eh];W[fg];B[fi];W[hi];B[fh];W[gg];B[hh];W[ig];B[hg];W[if];B[hf];W[jd];B[ic];W[kb];B[ka];W[jb];B[ja];W[ib];B[ia];W[hb];B[ha];W[gb];B[ga];W[eb];B[fb];W[ed];B[fc];W[gd];B[fd];W[ef];B[resign])"
+    },
+    {
+        "game_id": "1842935",
+        "red_won_flg": 0,
+        "moves": "(;FF[4]EV[hex.in.HEX11.48]PB[Ocross]PW[Tony]SZ[11]RE[W]GC[ game #1842935]SO[https://www.littlegolem.net];W[ib];B[ge];W[di];B[gf];W[fh];B[dg];W[ff];B[dh];W[eg];B[eh];W[fg];B[fe];W[he];B[hd];W[jc];B[ie];W[id];B[hf];W[cf];B[ee];W[ch];B[ci];W[aj];B[bh];W[resign])"
+    }
+]
