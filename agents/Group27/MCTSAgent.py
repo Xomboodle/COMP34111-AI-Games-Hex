@@ -10,7 +10,7 @@ from src.Colour import Colour
 from src.Move import Move
 
 # from agents.Group27.mcts.PolicyModel import PolicyModel
-from agents.Group27.mcts.MCTS import MCTS
+from agents.Group27.mcts.MCTS import Searcher,MainSearcher
 
 class MCTSAgent(AgentBase):
     """
@@ -34,7 +34,8 @@ class MCTSAgent(AgentBase):
         # self.model: PolicyModel = PolicyModel()
         # self.model.load_state_dict(torch.load('agents/Group27/mcts/test.pth'))
         # self.model.eval()
-        self.mcts = MCTS(200)
+        self.mcts = MainSearcher() # multithreaded search
+        # self.mcts = Searcher() # single threaded
 
         self.total_search_time = 0
         self.search_count = 0
@@ -63,7 +64,8 @@ class MCTSAgent(AgentBase):
 
         time_searched = b-a
         self.total_search_time += time_searched
-        # print("Time: " + str(time_searched) + " Average Time: " + str(self.total_search_time/self.search_count))
+        print("Time: " + str(time_searched) + " Average Time: " + str(self.total_search_time/self.search_count))
+        print(f"Number of nodes {len(self.mcts.tree.nodes)}")
 
         return move
 

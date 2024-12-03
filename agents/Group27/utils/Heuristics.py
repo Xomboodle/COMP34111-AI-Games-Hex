@@ -68,23 +68,15 @@ class Heuristics:
         return heuristic
     
     def evaluate_basic(board : Board, player : bool):
-        red_result = board.has_ended(Colour.BLUE)
-        blue_result = board.has_ended(Colour.RED)
-        if player:
-            #red
-            if red_result:
-                return 1
-            if blue_result:
-                return -1
-            return 0
-        else:    
-            # blue
-            if blue_result:
-                return 1
-            if red_result:
-                return -1
-            return 0
-        
+        board.has_ended(Colour.RED)
+        board.has_ended(Colour.BLUE)
+        winner = board.get_winner()
+        if winner == Colour.BLUE:
+            return -1
+        elif winner == Colour.RED:
+            return 1
+        return 0
+    
     @staticmethod
     def evaluateBoard2(boardState: Board, player: bool, turn : int) -> float:
         """

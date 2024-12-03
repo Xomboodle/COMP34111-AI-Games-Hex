@@ -82,6 +82,8 @@ class CustomGame(Game):
             boards[stringiBoard] = (m.x, m.y)
             # ---
 
+            print(self.board.print_board()) # displays the board
+
             currentPlayer.move_time += int(end - start)
             if currentPlayer.move_time > Game.MAXIMUM_TIME:
                 endState = EndState.TIMEOUT
@@ -164,10 +166,14 @@ def selfPlay(totalGames=1, players=('chump', 'chump'), verbose=False):
         silent=True,
     )
 
+    wins = 0
     for i in range(totalGames):
 
         game.reset()
-        game.run()
+        results = game.run()
+        win = results["winner"] == "Alice"
+        if win:
+            wins += 1
 
         percentage = (i+1) / totalGames
         if (verbose and percentage >= checkpoint):
@@ -188,8 +194,13 @@ def selfPlay(totalGames=1, players=('chump', 'chump'), verbose=False):
     with open(os.path.join(DATA_PATH, f'{players[0]}-v-{players[1]}.json'), 'w', encoding='utf-8') as f:
         f.write(data)
 
+    print(f'Won {wins} / {totalGames}')
     print(f'Played {totalGames} games')
     print(f'Took {elapsedTime:.2f} seconds')
+
+    # save data
+    # with open(os.path.join(DATA_PATH, 'chump-v-chump.json'), 'w', encoding='utf-8') as f:
+    #     json.dump(game.data, f, ensure_ascii=False, indent=4, separators=(',', ':'))
 
 if (__name__ == '__main__'):
     parser = argparse.ArgumentParser(description='Generate bootstrap data with self-play.')

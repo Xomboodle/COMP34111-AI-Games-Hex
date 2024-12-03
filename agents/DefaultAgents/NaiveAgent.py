@@ -5,7 +5,7 @@ from src.Board import Board
 from src.Colour import Colour
 from src.Move import Move
 
-from agents.Group27.mcts.Node import get_moves
+from agents.Group27.mcts.Tree import get_moves
 
 
 class NaiveAgent(AgentBase):
