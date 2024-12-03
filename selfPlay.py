@@ -132,11 +132,17 @@ def selfPlay(totalGames=1, verbose=False):
     step = 0.1
     checkpoint = step
 
+    options = {
+        'chump': 'agents.DefaultAgents.NaiveAgent NaiveAgent',
+        'monkey': 'agents.Group27.MCTSAgent MCTSAgent',
+    }
+    players = ('monkey', 'chump') # CHANGEME to change the agents
+
     startTime = time.time()
 
     # 'agents.DefaultAgents.NaiveAgent NaiveAgent'
-    p1Path, p1Class = 'agents.Group27.MCTSAgent MCTSAgent'.split(" ")
-    p2Path, p2Class = 'agents.DefaultAgents.NaiveAgent NaiveAgent'.split(" ")
+    p1Path, p1Class = options[players[0]].split(" ")
+    p2Path, p2Class = options[players[1]].split(" ")
     p1 = importlib.import_module(p1Path)
     p2 = importlib.import_module(p2Path)
 
@@ -167,7 +173,7 @@ def selfPlay(totalGames=1, verbose=False):
     elapsedTime = endTime - startTime
 
     # save data
-    with open(os.path.join(DATA_PATH, 'chump-v-chump.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(DATA_PATH, f'{players[0]}-v-{players[1]}.json'), 'w', encoding='utf-8') as f:
         json.dump(game.data, f, ensure_ascii=False, indent=4, separators=(',', ':'))
 
     print(f'Played {totalGames} games')

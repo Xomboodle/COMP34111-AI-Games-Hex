@@ -50,8 +50,6 @@ class MCTS:
         pass
 
     def search(self, turn:int, _heuristics: list, board: Board, previous_move : Move):
-        print("turn" + str(turn), end="\r")
-
         self.current_state = board_to_boardstate(board) # BoardState
         try:
             self.current_node = self.nodes[str(self.current_state)+str(turn)]
