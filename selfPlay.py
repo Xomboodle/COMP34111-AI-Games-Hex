@@ -98,11 +98,14 @@ class CustomGame(Game):
             self.current_player = Colour.opposite(self.current_player)
 
         # ---
+        result = self._end_game(endState)
+        print(f'{result["winner"]} won in {self.turn} turns')
+
         # save results
         if (os.path.exists(DATA_PATH) is False):
             os.makedirs(DATA_PATH)
 
-        winner = self.players[self.current_player].name
+        winner = result['winner']
         for (player, boards) in [(self.player1, p1Boards), (self.player2, p2Boards)]:
             for (board, move) in boards.items():
 
@@ -121,13 +124,16 @@ class CustomGame(Game):
                         self.data[board]['payoff'] += 1
                     else:
                         self.data[board]['payoff'] -= 1
+                else:
+                    if (player.name == self.player1.name):
+                        self.data[board]['payoff'] -= 1
+                    else:
+                        self.data[board]['payoff'] += 1
         # ---
 
-        result = self._end_game(endState)
-        print(f'{result["winner"]} won in {self.turn} turns')
         return result
 
-def selfPlay(totalGames=1, verbose=False):
+def selfPlay(totalGames=1, players=('chump', 'chump'), verbose=False):
     """Iteratively play games between agents to generate data."""
     step = 0.1
     checkpoint = step
@@ -136,7 +142,6 @@ def selfPlay(totalGames=1, verbose=False):
         'chump': 'agents.DefaultAgents.NaiveAgent NaiveAgent',
         'monkey': 'agents.Group27.MCTSAgent MCTSAgent',
     }
-    players = ('monkey', 'chump') # CHANGEME to change the agents
 
     startTime = time.time()
 
@@ -175,6 +180,13 @@ def selfPlay(totalGames=1, verbose=False):
     # save data
     with open(os.path.join(DATA_PATH, f'{players[0]}-v-{players[1]}.json'), 'w', encoding='utf-8') as f:
         json.dump(game.data, f, ensure_ascii=False, indent=4, separators=(',', ':'))
+    # reformat
+    with open(os.path.join(DATA_PATH, f'{players[0]}-v-{players[1]}.json'), 'r', encoding='utf-8') as f:
+        data = f.read()
+    data = data.replace('\n                ', '')
+    data = data.replace('\n            ]', ']')
+    with open(os.path.join(DATA_PATH, f'{players[0]}-v-{players[1]}.json'), 'w', encoding='utf-8') as f:
+        f.write(data)
 
     print(f'Played {totalGames} games')
     print(f'Took {elapsedTime:.2f} seconds')
@@ -189,4 +201,4 @@ if (__name__ == '__main__'):
         help='Number of games to play.',
     )
     args = parser.parse_args()
-    selfPlay(args.numGames, True)
+    selfPlay(args.numGames, players=('monkey', 'chump'), verbose=True)
