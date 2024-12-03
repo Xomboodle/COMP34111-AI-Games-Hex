@@ -57,11 +57,14 @@ class CustomGame(Game):
             playerAgent = currentPlayer.agent
             currentPlayer.turn += 1
 
+            print(f'turn {self.turn}', end='\r')
+
             # boardCopy = copy.deepcopy(self.board)
-            turnCopy = self.turn
+            # turnCopy = self.turn
             # playerCopy = copy.deepcopy(self.players)
 
-            playerBoard = copy.deepcopy(self.board)
+            # playerBoard = copy.deepcopy(self.board)
+            playerBoard = self.board
 
             start = time.time()
             m = playerAgent.make_move(self.turn, playerBoard, opponentMove)
@@ -96,6 +99,9 @@ class CustomGame(Game):
 
         # ---
         # save results
+        if (os.path.exists(DATA_PATH) is False):
+            os.makedirs(DATA_PATH)
+
         winner = self.players[self.current_player].name
         for (player, boards) in [(self.player1, p1Boards), (self.player2, p2Boards)]:
             for (board, move) in boards.items():
@@ -117,7 +123,9 @@ class CustomGame(Game):
                         self.data[board]['payoff'] -= 1
         # ---
 
-        return self._end_game(endState)
+        result = self._end_game(endState)
+        print(f'{result["winner"]} won in {self.turn} turns')
+        return result
 
 def selfPlay(totalGames=1, verbose=False):
     """Iteratively play games between agents to generate data."""
@@ -126,6 +134,7 @@ def selfPlay(totalGames=1, verbose=False):
 
     startTime = time.time()
 
+    # 'agents.DefaultAgents.NaiveAgent NaiveAgent'
     p1Path, p1Class = 'agents.Group27.MCTSAgent MCTSAgent'.split(" ")
     p2Path, p2Class = 'agents.DefaultAgents.NaiveAgent NaiveAgent'.split(" ")
     p1 = importlib.import_module(p1Path)
