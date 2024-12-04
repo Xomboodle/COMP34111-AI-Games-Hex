@@ -7,8 +7,8 @@ from operator import truth
 def board_to_boardstate(board : Board) -> BoardState:
     ''' Generates a boardstate from a board '''
     bs = BoardState(board.size)
-    for y,line in enumerate(board.tiles):
-        for x,tile in enumerate(line):
+    for x,line in enumerate(board.tiles):
+        for y,tile in enumerate(line):
             if tile.colour:
                 bs.make_move(Move(x,y), tile.colour)
     return bs
@@ -53,7 +53,7 @@ class BoardState():
 
     def move_to_address(self, move : Move) -> int:
         '''Converts a move to an address'''
-        return move.y*self.size + move.x
+        return move.x*self.size + move.y
     
     def __str__(self) -> str:
         return self.tiles

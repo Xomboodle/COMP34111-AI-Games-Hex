@@ -12,8 +12,8 @@ from operator import truth
 
 def get_moves(board: Board, turn: int) -> list:
     moves = []
-    for y, line in enumerate(board.tiles):
-        for x,tile in enumerate(line):
+    for x, line in enumerate(board.tiles):
+        for y,tile in enumerate(line):
             result = False
             if (0 <= x < board.size) and (0 <= y < board.size):
                 # is in bound?

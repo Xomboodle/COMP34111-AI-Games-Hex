@@ -1,6 +1,6 @@
 from agents.Group27.mcts.Node import Node, get_moves
 from agents.Group27.utils.BoardState import BoardState, board_to_boardstate, boardstate_to_board
-from agents.Group27.utils.Heuristics import Heuristics, bfsFinished
+from agents.Group27.utils.Heuristics import Heuristics, bfsFinished, chooseBestMove
 from src.Board import Board
 from src.Move import Move
 from src.Game import Game
@@ -106,14 +106,14 @@ class MCTS:
         """Simulate a random playout from the current node's state."""
         # print(node.player)
         depth_count = 0
-        has_ended = bfsFinished(boardstate_to_board(node.state), node.player)
+        has_ended = bfsFinished(node.state, node.player)
         while not(has_ended) and not(node.is_terminal) and depth_count < depth_limit:  # Until the game reaches a terminal or deep state
-            move = random.choice(node.state.valid_actions)  # Pick a random action
+            move = chooseBestMove(node.state, node.player, node.state.valid_actions)#random.choice(node.state.valid_actions)  # Pick a random action
             # TODO: use the policy network to pick the best move, instead of random rollouts
             node = node.make_move(move)
             depth_count += 1
-            has_ended = bfsFinished(boardstate_to_board(node.state), False)
-        h = Heuristics.evaluateBoard2(boardstate_to_board(node.state), False,node.turn)
+            has_ended = bfsFinished(node.state, node.player)
+        h = Heuristics.evaluateBoard2(node.state, False,node.turn)
         # print(boardstate_to_board(node.state).print_board())
         # print(h)
         return  h #Heuristics.evaluateBoard(current_state, player, [0.1,0.7,0.1, 0.1]) # Return the reward of the terminal state
