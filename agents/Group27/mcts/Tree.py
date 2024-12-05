@@ -111,13 +111,13 @@ class Node:
 ## THREADING
 
 class DatabaseTree(Tree):
-    def __init__(self, pipes : list[list[Connection, Connection]], max_threads : int):
+    def __init__(self, max_threads : int):
         super().__init__()
         self.max_threads = max_threads
-        self.pipes = pipes
+        # self.pipes = pipes
         # setup thread to listen on connections
-        database_listener = Thread(target=self.listener, name="Database Listener")
-        database_listener.start()
+        # database_listener = Thread(target=self.listener, name="Database Listener")
+        # database_listener.start() # we could move this out??
 
         self.updated_data = {}
         # list of node_hashes with value, visits
@@ -125,12 +125,12 @@ class DatabaseTree(Tree):
         # list of parent_hash and action
         
 
-    def listener(self):
+    def listener(self, pipes):
         while True:
             i = 0
             while i < self.max_threads:
                 try:
-                    conn = self.pipes[i][0]
+                    conn = pipes[i][0]
                     if conn.poll():
                         #input to read
                         message = conn.recv() # should only be hashes
@@ -152,8 +152,10 @@ class DatabaseTree(Tree):
                                 self.updated_data[h] = [data[1],1]
                         elif command == "ADD":
                             self.nodes_to_add.append(data)
+                        elif command == "STOP":
+                            return
                 except (EOFError, OSError) as e:
-                    self.pipes[i] = Pipe()
+                    pipes[i] = Pipe()
                 except IndexError:
                     i +=1
                     continue
@@ -161,13 +163,13 @@ class DatabaseTree(Tree):
 
     def update_from_data(self):
         """ Updates the entire tree with data acquired from last run """
-        all_pipes_free = False
-        while not(all_pipes_free):
-            all_pipes_free = True
-            for i in range(self.max_threads):
-                conn = self.pipes[i][0]
-                if conn.poll():
-                    all_pipes_free = False
+        # all_pipes_free = False
+        # while not(all_pipes_free):
+        #     all_pipes_free = True
+        #     for i in range(self.max_threads):
+        #         conn = self.pipes[i][0]
+        #         if conn.poll():
+        #             all_pipes_free = False
 
         for n in self.nodes_to_add:
             if n[1] in self.get(n[0]).untried_actions:

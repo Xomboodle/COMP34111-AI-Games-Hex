@@ -12,6 +12,7 @@ from agents.Group27.utils.Heuristics import Heuristics, bfsFinished
 from multiprocessing.connection import Connection, Pipe, wait
 from multiprocessing import Pool, Process, Queue
 from agents.Group27.mcts.Tree import Node, Tree, TreeCache, DatabaseTree
+from threading import Thread
 
 import numpy as np
 import random
@@ -21,7 +22,7 @@ class Searcher:
     def __init__(self):
         self.tree = Tree()
         
-        self.max_simulations = 300
+        self.max_simulations = 1000
         self.max_depth = 200
 
         self.last_move_sequence = ""
@@ -142,7 +143,7 @@ def simulate(node : Node, depth_limit : int = 200) -> float:
         # TODO: use the policy network to pick the best move, instead of random rollouts
         state.make_move_address(move)
         depth_count += 1
-        has_ended = bfsFinished(boardstate_to_board(state), False) # slow
+        # has_ended = bfsFinished(boardstate_to_board(state), False) # slow
     h = Heuristics.evaluateBoard2(boardstate_to_board(state), False,state.turn)
     # h = Heuristics.evaluate_basic(boardstate_to_board(state), False)
     # print(boardstate_to_board(node.state).print_board())
@@ -170,7 +171,7 @@ class MainSearcher(Searcher):
     def __init__(self):
         
 
-        self.max_simulations = 5000
+        self.max_simulations = 1000
         self.max_depth = 200
 
         self.last_move_sequence = ""
@@ -180,8 +181,8 @@ class MainSearcher(Searcher):
         self.max_threads = 8
         
 
-        self.pipes = [Pipe() for i in range(self.max_threads)]
-        self.tree = DatabaseTree(self.pipes, self.max_threads)
+        # self.pipes = [Pipe() for i in range(self.max_threads)]
+        self.tree = DatabaseTree(self.max_threads)
 
 
     def search(self, turn:int, _heuristics: list, board: Board, previous_move : Move):
@@ -217,23 +218,29 @@ class MainSearcher(Searcher):
             current_node = self.tree.get(self.current_move_sequence)
 
         ### ^^^ Above copied
-        self.pipes = [Pipe() for i in range(self.max_threads)]
-        self.tree.pipes = self.pipes
+        
+        pipes = [Pipe() for i in range(self.max_threads)]
+        database_listener = Thread(target=self.tree.listener, args=([pipes]), name="Database Listener")
+        database_listener.start() # we could move this out??
+        
         result_queue = Queue()
         # pool = Pool(self.max_threads)
         # Spool up new processes
-        args_set = [(result_queue, pipe[1],current_node.get_hash(), not(self.player), self.max_simulations, self.max_depth) for pipe in self.pipes]
+        args_set = [(result_queue, pipe[1],current_node.get_hash(), not(self.player), self.max_simulations, self.max_depth) for pipe in pipes]
         pool = [Process(target=branch_search, args=args) for args in args_set]
         for process in pool:
             process.start()
-        results : list[dict] = []
         for process in pool:
             process.join(timeout=25)
             # results.append(result_queue.get())
+        
+        pipes[0][1].send(["STOP",0])
+        database_listener.join()
+
 
         
         # results : list[dict[str,Node]] = pool.starmap(branch_search,args)
-        self.pipes = []
+        # self.pipes = []
 
         ## combine trees
 
