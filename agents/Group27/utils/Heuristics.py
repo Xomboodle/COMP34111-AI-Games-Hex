@@ -140,83 +140,7 @@ def bfs(board: BoardState, player: bool):
 
     return -1
 
-def bfsMove(board: BoardState, player: bool, valid_actions: list[int]):
-    directions = [(-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1)]
-
-    if player: # BLUE PLAYER
-        opp_colour = Colour.BLUE.get_char()
-        start_nodes = [(0, j) for j in range(11) if board.tiles[j]!= Colour.RED.get_char()]
-        target_side = lambda x, y: y == 10
-    else: # RED PLAYER
-        opp_colour = Colour.RED.get_char()
-        start_nodes = [(i, 0) for i in range(11) if board.tiles[i * 11] != Colour.BLUE.get_char()]
-        target_side = lambda x, y: x == 10
-
-    queue = deque([(x, y, [(x, y)]) for x, y in start_nodes])  # (x, y, path_so_far)
-    visited = set(start_nodes)
-    while queue:
-        x, y, path = queue.popleft()
-
-        # Check if we've reached the target side
-        if target_side(x, y):
-            # Now create list of moves that aren't occupied
-            unoccupied: list[int] = []
-            for tile in path:
-                if board.tiles[tile[0] * 11 + tile[1]] in valid_actions: # Empty tile
-                    unoccupied.append(tile[0] * 11 + tile[1])
-            
-            # Now small chance of choosing a random tile
-            if randint(0, 40) == 0 or len(unoccupied) == 0:
-                return choice(valid_actions)
-            else:
-                return choice(unoccupied)
-
-        # Explore neighbours
-        for dx, dy in directions:
-            nx, ny = x + dx, y + dy
-
-            # Check bounds and if the neighbour doesn't belong to the opponent
-            if 0 <= nx < 11 and 0 <= ny < 11 and board.tiles[nx * 11 + ny] != opp_colour and (nx, ny) not in visited:
-                visited.add((nx, ny))
-                queue.append((nx, ny, path + [(nx, ny)]))
-
-    return choice(valid_actions)
-
-
-
-def bfsFinished(board: BoardState, player: bool):
-    directions = [(-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1)]
-
-    if player: # BLUE PLAYER
-        colour = Colour.BLUE.get_char()
-        start_nodes = [(i, 0) for i in range(11) if board.tiles[i * 11] == colour]
-        target_side = lambda x, y: y == 10
-    else: # RED PLAYER
-        colour = Colour.RED.get_char()
-        start_nodes = [(0, j) for j in range(11) if board.tiles[j] == colour]
-        target_side = lambda x, y: x == 10
-    
-    queue = deque([(x, y) for x, y in start_nodes])  # (x, y)
-    visited = set(start_nodes)
-    while queue:
-        x, y = queue.popleft()
-
-        # Check if we've reached the target side
-        if target_side(x, y):
-            return True
-
-        # Explore neighbours
-        for dx, dy in directions:
-            nx, ny = x + dx, y + dy
-
-            # Check bounds and if the neighbour doesn't belong to the opponent
-            if 0 <= nx < 11 and 0 <= ny < 11 and board.tiles[nx * 11 + ny] == colour and (nx, ny) not in visited:
-                visited.add((nx, ny))
-                queue.append((nx, ny))
-
-    return False
-
-def chooseBestMove(board: BoardState, player: bool, valid_actions: list[int]):
+def chooseBestPath(board: BoardState, player: bool, valid_actions: list[int]):
     n = 11 # Size of board
 
     # Directions for hex neighbours
@@ -261,8 +185,7 @@ def chooseBestMove(board: BoardState, player: bool, valid_actions: list[int]):
                     path.append(x * 11 + y)
                 if prev[x][y] is None: break
                 x, y = prev[x][y]
-            return selectMove(path, valid_actions)
-            return current_cost, path[::-1]
+            return path if len(path) else []
 
         # Skip if we've already found a better way to this node
         if current_cost > dist[x][y]:
@@ -289,8 +212,7 @@ def chooseBestMove(board: BoardState, player: bool, valid_actions: list[int]):
                     heapq.heappush(pq, (next_cost, nx, ny))
 
     # No path found so random move
-    m = choice(valid_actions)
-    return m
+    return []
 
 def selectMove(moves: list[int], valid_actions: list[int]):
     if len(moves) == 0:
@@ -298,3 +220,48 @@ def selectMove(moves: list[int], valid_actions: list[int]):
     else:
         # print("SELECTING FROM", moves)
         return choice(moves)
+
+def dfsWinner(board: BoardState):
+    n = 11
+
+    # Directions for hex neighbors
+    directions = [(-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1)]
+
+    # Visited set to avoid revisiting nodes
+    visited: dict[str, bool] = {}
+
+    # Starting nodes based on player
+    if board.player:
+        colour = Colour.BLUE.get_char()
+        start_nodes = [(i, 0) for i in range(n) if board.tiles[i * 11] == colour]
+        target_side = lambda x, y: y == 10
+    else:
+        colour = Colour.RED.get_char()
+        start_nodes = [(0, j) for j in range(n) if board.tiles[j] == colour]
+        target_side = lambda x, y: x == 10
+
+    def dfs(x, y):
+        # If we've reached the target side, the player has won
+        if target_side(x, y):
+            return True
+
+        visited[str(x * 11 + y)] = False
+
+        # Explore neighbors
+        for dx, dy in directions:
+            nx, ny = x + dx, y + dy
+
+            if (0 <= nx < n and 0 <= ny < n and  # Bounds check
+                    visited.get(str(nx * 11 + ny), True) and  # Not visited
+                    board.tiles[nx * 11 + ny] == colour):    # Same player's tile
+                if dfs(nx, ny):
+                    return True
+
+        return False
+
+    # Perform DFS from each starting node
+    for x, y in start_nodes:
+        if visited.get(str(x * 11 + y), True) and dfs(x, y):
+            return True
+
+    return False

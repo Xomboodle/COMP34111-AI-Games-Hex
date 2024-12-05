@@ -1,14 +1,12 @@
 from agents.Group27.mcts.Tree import Node, get_moves
 from agents.Group27.utils.BoardState import BoardState, board_to_boardstate, boardstate_to_board
-from agents.Group27.utils.Heuristics import Heuristics, bfsFinished, chooseBestMove
+from agents.Group27.utils.Heuristics import Heuristics, chooseBestPath, dfsWinner
 from src.Board import Board
 from src.Colour import Colour
 from src.Move import Move
 from math import inf, log, sqrt
 import copy
-from agents.Group27.utils.BoardState import BoardState, board_to_boardstate, boardstate_to_board
 from operator import truth
-from agents.Group27.utils.Heuristics import Heuristics, bfsFinished
 
 from multiprocessing.connection import Connection, Pipe, wait
 from multiprocessing import Pool, Process, Queue
@@ -124,15 +122,38 @@ def simulate(node : Node, depth_limit : int = 300) -> float:
     # print(node.player)
     depth_count = 0
     state = node.state.copy()
-    has_ended = bfsFinished(state, state.player)
+    # has_ended = dfsWinner(state)
+    has_ended = False
+    # Initial chooseBestMove returns path
+    # Remove move selected on make_move_address
+    # Check each iteration if opponent has placed in one of the moves
+    # If so, recalculate
+    current_path_p1 = []
+    current_path_p2 = []
     while not(has_ended) and not(state.get_is_terminal()) and depth_count < depth_limit:  # Until the game reaches a terminal or deep state
-        prestate = state.copy()
-        move = chooseBestMove(state, state.player, state.valid_actions)#random.choice(node.state.valid_actions)  # Pick a random action
+        if len(current_path_p2) == 0 and state.player:
+            current_path_p2 = chooseBestPath(state, state.player, state.valid_actions)#random.choice(node.state.valid_actions)  # Pick a random action
+        if len(current_path_p1) == 0 and not(state.player):
+            current_path_p1 = chooseBestPath(state, state.player, state.valid_actions)
+        
         # TODO: use the policy network to pick the best move, instead of random rollouts
+        if state.player and len(current_path_p2):
+            move = random.choice(current_path_p2)
+            if move in current_path_p1:
+                current_path_p1 = []
+            current_path_p2.remove(move)
+        elif not(state.player) and len(current_path_p1):
+            move = random.choice(current_path_p1)
+            if move in current_path_p2:
+                current_path_p2 = []
+            current_path_p1.remove(move)
+        else:
+            break
+
         state.make_move_address(move)
         t = state.tiles[move]
         depth_count += 1
-        has_ended = bfsFinished(state, state.player)
+        has_ended = not(len(current_path_p1) or len(current_path_p2))
     h = Heuristics.evaluateBoard2(state, False,state.turn)
     # print(boardstate_to_board(node.state).print_board())
     # print(h)
@@ -166,7 +187,7 @@ class MainSearcher(Searcher):
         self.current_move_sequence = ""
         self.player = False # True for blue, False for Red
 
-        self.max_threads = 8
+        self.max_threads = 7
         
 
         # self.pipes = [Pipe() for i in range(self.max_threads)]
