@@ -35,6 +35,8 @@ class BoardState():
         self.move_sequence = ""
         self.last_move_sequence = ""
         self.last_move = 0
+        self.red_occupied = []
+        self.blue_occupied = []
 
         #actions will be referred to by address (move.y*self.size + move.x) reduces faff
         # we can also store actions in one big list.
@@ -64,6 +66,14 @@ class BoardState():
                 self.player = not(self.player)
         else:
             self.tiles = self.tiles[:address] + colour.get_char() + self.tiles[address +1:]
+        
+        # Add for defensive checks
+        if address >= 0:
+            if self.player:
+                self.blue_occupied.append(address)
+            else:
+                self.red_occupied.append(address)
+
         self.player = not(self.player)
 
         self.turn += 1
@@ -92,6 +102,8 @@ class BoardState():
         bs.last_move = self.last_move
         bs.player = self.player
         bs.turn = self.turn
+        bs.red_occupied = self.red_occupied.copy()
+        bs.blue_occupied = self.blue_occupied.copy()
         return bs
 
     def get_is_terminal(self):

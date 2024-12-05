@@ -1,6 +1,6 @@
 from agents.Group27.mcts.Tree import Node, get_moves
 from agents.Group27.utils.BoardState import BoardState, board_to_boardstate, boardstate_to_board
-from agents.Group27.utils.Heuristics import Heuristics, chooseBestPath, dfsWinner
+from agents.Group27.utils.Heuristics import *
 from src.Board import Board
 from src.Colour import Colour
 from src.Move import Move
@@ -137,19 +137,18 @@ def simulate(node : Node, depth_limit : int = 300) -> float:
             current_path_p1 = chooseBestPath(state, state.player, state.valid_actions)
         
         # TODO: use the policy network to pick the best move, instead of random rollouts
+        defensive_moves = getDefensiveMoves(state)
         if state.player and len(current_path_p2):
-            move = random.choice(current_path_p2)
+            move = selectMove(current_path_p2, defensive_moves, state.valid_actions)
             if move in current_path_p1:
                 current_path_p1 = []
-            current_path_p2.remove(move)
         elif not(state.player) and len(current_path_p1):
-            move = random.choice(current_path_p1)
+            move = selectMove(current_path_p1, defensive_moves, state.valid_actions)
             if move in current_path_p2:
                 current_path_p2 = []
-            current_path_p1.remove(move)
         else:
             break
-
+        
         state.make_move_address(move)
         t = state.tiles[move]
         depth_count += 1
@@ -180,7 +179,7 @@ class MainSearcher(Searcher):
     def __init__(self):
         
 
-        self.max_simulations = 300
+        self.max_simulations = 1000
         self.max_depth = 200
 
         self.last_move_sequence = ""

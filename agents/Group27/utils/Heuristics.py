@@ -107,6 +107,27 @@ class Heuristics:
         #     heuristic = -(1 - (turn / 121))
         return heuristic
     
+def getDefensiveMoves(board: BoardState):
+    directions = [-11, -10, 1, 11, 10, -1]
+
+    moves = set({})
+    if board.player:
+        occupied = board.red_occupied
+    else:
+        occupied = board.blue_occupied
+
+    for address in occupied:
+        for offset in directions:
+            n = address + offset
+
+            # Check if tile is unoccupied
+            if 0 <= n < 121 and board.tiles[n] == '0':
+                moves.add(n)
+    
+    move_list = list(moves)
+    return move_list
+
+    
 def bfs(board: BoardState, player: bool):
     directions = [(-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1)]
 
@@ -214,54 +235,16 @@ def chooseBestPath(board: BoardState, player: bool, valid_actions: list[int]):
     # No path found so random move
     return []
 
-def selectMove(moves: list[int], valid_actions: list[int]):
-    if len(moves) == 0:
-        return choice(valid_actions)
-    else:
+def selectMove(offensive_moves: list[int], defensive_moves: list[int], valid_actions: list[int]):
+    num = randint(1, 100)
+    if num < 60 and len(offensive_moves):
+        move = choice(offensive_moves)
+    elif num > 65 and len(defensive_moves):
         # print("SELECTING FROM", moves)
-        return choice(moves)
-
-def dfsWinner(board: BoardState):
-    n = 11
-
-    # Directions for hex neighbors
-    directions = [(-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1)]
-
-    # Visited set to avoid revisiting nodes
-    visited: dict[str, bool] = {}
-
-    # Starting nodes based on player
-    if board.player:
-        colour = Colour.BLUE.get_char()
-        start_nodes = [(i, 0) for i in range(n) if board.tiles[i * 11] == colour]
-        target_side = lambda x, y: y == 10
+        move = choice(defensive_moves)
     else:
-        colour = Colour.RED.get_char()
-        start_nodes = [(0, j) for j in range(n) if board.tiles[j] == colour]
-        target_side = lambda x, y: x == 10
+        move = choice(valid_actions)
 
-    def dfs(x, y):
-        # If we've reached the target side, the player has won
-        if target_side(x, y):
-            return True
-
-        visited[str(x * 11 + y)] = False
-
-        # Explore neighbors
-        for dx, dy in directions:
-            nx, ny = x + dx, y + dy
-
-            if (0 <= nx < n and 0 <= ny < n and  # Bounds check
-                    visited.get(str(nx * 11 + ny), True) and  # Not visited
-                    board.tiles[nx * 11 + ny] == colour):    # Same player's tile
-                if dfs(nx, ny):
-                    return True
-
-        return False
-
-    # Perform DFS from each starting node
-    for x, y in start_nodes:
-        if visited.get(str(x * 11 + y), True) and dfs(x, y):
-            return True
-
-    return False
+    if move in offensive_moves:
+        offensive_moves.remove(move)
+    return move
