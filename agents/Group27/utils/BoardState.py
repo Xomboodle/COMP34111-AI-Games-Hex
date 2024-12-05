@@ -51,10 +51,11 @@ class BoardState():
         self.last_move = address
         self.move_sequence += str(address).zfill(3)
     
-        if self.turn == 1:
+        if self.turn == 1:  
+            self.tiles = self.tiles[:address] + colour.get_char() + self.tiles[address +1:]
             self.valid_actions.append(-1*self.size -1)
         elif self.turn == 2:
-            if address > 0:
+            if address >= 0:
                 # remove when the swap action is not taken
                 self.valid_actions.remove(-1*self.size -1)
                 self.tiles = self.tiles[:address] + colour.get_char() + self.tiles[address +1:]
@@ -76,7 +77,7 @@ class BoardState():
 
     def move_to_address(self, move : Move) -> int:
         '''Converts a move to an address'''
-        return move.y*self.size + move.x
+        return move.x*self.size + move.y
     
     def __str__(self) -> str:
         """Performs conversion into hash"""
@@ -95,4 +96,3 @@ class BoardState():
 
     def get_is_terminal(self):
         return not(truth(self.valid_actions))
-

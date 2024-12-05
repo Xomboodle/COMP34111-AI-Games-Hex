@@ -1,5 +1,6 @@
-from __future__ import annotations  # Enables forward references
-
+from agents.Group27.mcts.Tree import Node, get_moves
+from agents.Group27.utils.BoardState import BoardState, board_to_boardstate, boardstate_to_board
+from agents.Group27.utils.Heuristics import Heuristics, bfsFinished, chooseBestMove
 from src.Board import Board
 from src.Colour import Colour
 from src.Move import Move
@@ -118,34 +119,21 @@ def expand(tree : Tree, node: Node) -> Node:
     move = random.choice(node.untried_actions)
     return tree.add(node.get_hash(), move)
 
-def simulate(node : Node, depth_limit : int = 200) -> float:
+def simulate(node : Node, depth_limit : int = 300) -> float:
     """Simulate a random playout from the current node's state."""
-
-    # for now version ignoring if the game has properly ended (the winner will be the same)
-    # depth_count = 0
-    # state = node.state.copy()
-    # while truth(state.valid_actions) and depth_count < depth_limit: 
-    #     move = random.choice(state.valid_actions)
-    #     state.make_move_address(move)
-    
-    # return Heuristics.evaluate_basic(boardstate_to_board(state), False)
-    # return Heuristics.evaluateBoard2(boardstate_to_board(state), False, state.turn)
-
-    # \/\/\/\/ Version that uses bfs search and more accurate heuristic need to be faster
     # print(node.player)
     depth_count = 0
     state = node.state.copy()
-    board = boardstate_to_board(state)
-    player = node.state.player
-    has_ended = bfsFinished(board, player)
-    while not(has_ended) and truth(state.valid_actions) and depth_count < depth_limit:  # Until the game reaches a terminal or deep state
-        move = random.choice(state.valid_actions)  # Pick a random action
+    has_ended = bfsFinished(state, state.player)
+    while not(has_ended) and not(state.get_is_terminal()) and depth_count < depth_limit:  # Until the game reaches a terminal or deep state
+        prestate = state.copy()
+        move = chooseBestMove(state, state.player, state.valid_actions)#random.choice(node.state.valid_actions)  # Pick a random action
         # TODO: use the policy network to pick the best move, instead of random rollouts
         state.make_move_address(move)
+        t = state.tiles[move]
         depth_count += 1
-        # has_ended = bfsFinished(boardstate_to_board(state), False) # slow
-    h = Heuristics.evaluateBoard2(boardstate_to_board(state), False,state.turn)
-    # h = Heuristics.evaluate_basic(boardstate_to_board(state), False)
+        has_ended = bfsFinished(state, state.player)
+    h = Heuristics.evaluateBoard2(state, False,state.turn)
     # print(boardstate_to_board(node.state).print_board())
     # print(h)
     return  h #Heuristics.evaluateBoard(current_state, player, [0.1,0.7,0.1, 0.1]) # Return the reward of the terminal state
@@ -171,7 +159,7 @@ class MainSearcher(Searcher):
     def __init__(self):
         
 
-        self.max_simulations = 1000
+        self.max_simulations = 300
         self.max_depth = 200
 
         self.last_move_sequence = ""
