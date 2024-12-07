@@ -126,34 +126,36 @@ class DatabaseTree(Tree):
         
 
     def listener(self, pipes):
-        while True:
+        closed_pipes = []
+        while len(closed_pipes) < self.max_threads:
             i = 0
-            while i < self.max_threads:
+            while i < self.max_threads :
                 try:
-                    conn = pipes[i][0]
-                    if conn.poll():
-                        #input to read
-                        message = conn.recv() # should only be hashes
-                        # message must contain
-                        # [command, input]
-                        command, data = message
-                        if command == "GET":
-                            if data in self.nodes:
-                                conn.send(self.get(data))
-                            else:
-                                conn.send(None)
-                        elif command == "UPDATE":
-                            ## data format [hash, reward]
-                            h = data[0]
-                            if h in self.updated_data:
-                                self.updated_data[h][0] += data[1]
-                                self.updated_data[h][1] += 1
-                            else:
-                                self.updated_data[h] = [data[1],1]
-                        elif command == "ADD":
-                            self.nodes_to_add.append(data)
-                        elif command == "STOP":
-                            return
+                    if i not in closed_pipes:
+                        conn = pipes[i][0]
+                        if conn.poll():
+                            #input to read
+                            message = conn.recv() # should only be hashes
+                            # message must contain
+                            # [command, input]
+                            command, data = message
+                            if command == "GET":
+                                if data in self.nodes:
+                                    conn.send(self.get(data))
+                                else:
+                                    conn.send(None)
+                            elif command == "UPDATE":
+                                ## data format [hash, reward]
+                                h = data[0]
+                                if h in self.updated_data:
+                                    self.updated_data[h][0] += data[1]
+                                    self.updated_data[h][1] += 1
+                                else:
+                                    self.updated_data[h] = [data[1],1]
+                            elif command == "ADD":
+                                self.nodes_to_add.append(data)
+                            elif command == "STOP":
+                                closed_pipes.append(i)
                 except (EOFError, OSError) as e:
                     pipes[i] = Pipe()
                 except IndexError:

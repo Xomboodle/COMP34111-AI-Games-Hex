@@ -231,8 +231,7 @@ class MainSearcher(Searcher):
         database_listener = Thread(target=self.tree.listener, args=([pipes]), name="Database Listener")
         database_listener.start() # we could move this out??
         
-        result_queue = Queue()
-        # pool = Pool(self.max_threads)
+        result_queue = Queue() # TODO REMOVE
         # Spool up new processes
         args_set = [(result_queue, pipe[1],current_node.get_hash(), not(self.player), self.max_simulations, self.max_depth) for pipe in pipes]
         pool = [Process(target=branch_search, args=args) for args in args_set]
@@ -240,20 +239,14 @@ class MainSearcher(Searcher):
             process.start()
         for process in pool:
             process.join(timeout=25)
-            # results.append(result_queue.get())
         
-        pipes[0][1].send(["STOP",0])
+        for pipe in pipes:
+            pipe[1].send(["STOP",0])
         database_listener.join()
-
-
-        
-        # results : list[dict[str,Node]] = pool.starmap(branch_search,args)
-        # self.pipes = []
 
         ## combine trees
 
         self.tree.update_from_data()
-
 
         addr = self.tree.get_best_child(self.tree.get(current_node.get_hash()),not(self.player)).state.last_move
 
