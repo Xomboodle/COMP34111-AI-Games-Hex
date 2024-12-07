@@ -69,7 +69,8 @@ class Heuristics:
         if not player and longest_blue >= 22:
             return math.inf
         return heuristic
-    
+
+    @staticmethod
     def evaluate_basic(board : Board, player : bool):
         board.has_ended(Colour.RED)
         board.has_ended(Colour.BLUE)
@@ -79,9 +80,9 @@ class Heuristics:
         elif winner == Colour.RED:
             return 1
         return 0
-    
+
     @staticmethod
-    def evaluateBoard2(boardState: BoardState, player: bool, turn : int) -> float:
+    def evaluateBoard2(boardState: BoardState, player: bool, turn: int) -> float:
         """
             Evaluates the board state by finding the shortest path via
             BFS, and how many tiles within it are currently occupied by
@@ -95,18 +96,13 @@ class Heuristics:
         placed = 0
         placed_opp = 0
 
-        # TODO:
-        #  Values are hard-coded for now, will need to change
-        red_heuristic = (0.1 * (1 / (red_path_length))) * (0.8 * (1 - (turn / 123)))
-        blue_heuristic = (0.1 * (1 / (blue_path_length))) * (0.8 * (1 - (turn / 123))) 
+        game_progress_factor = 1 - (turn / 123)
+        red_heuristic = (1 / (red_path_length)) * game_progress_factor
+        blue_heuristic = (1 / (blue_path_length)) * game_progress_factor
         heuristic = red_heuristic - blue_heuristic
 
-        # if red_path_length > 0:
-        #     heuristic = (1 - (turn / 121))
-        # elif blue_path_length > 0:
-        #     heuristic = -(1 - (turn / 121))
         return heuristic
-    
+
 def getDefensiveMoves(board: BoardState):
     directions = [-11, -10, 1, 11, 10, -1]
 
@@ -123,11 +119,11 @@ def getDefensiveMoves(board: BoardState):
             # Check if tile is unoccupied
             if 0 <= n < 121 and board.tiles[n] == '0':
                 moves.add(n)
-    
+
     move_list = list(moves)
     return move_list
 
-    
+
 def bfs(board: BoardState, player: bool):
     directions = [(-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1)]
 
@@ -139,7 +135,7 @@ def bfs(board: BoardState, player: bool):
         colour = Colour.RED.get_char()
         start_nodes = [(0, j) for j in range(11) if board.tiles[j] == colour]
         target_side = lambda x, y: x == 10
-    
+
     queue = deque([(x, y, [(x, y)]) for x, y in start_nodes])  # (x, y, path_so_far)
     visited = set(start_nodes)
     while queue:
@@ -204,7 +200,8 @@ def chooseBestPath(board: BoardState, player: bool, valid_actions: list[int]):
                 # Only care about the unoccupied tiles
                 if board.tiles[x * 11 + y] == '0':
                     path.append(x * 11 + y)
-                if prev[x][y] is None: break
+                if prev[x][y] is None:
+                    break
                 x, y = prev[x][y]
             return path if len(path) else []
 
@@ -235,16 +232,39 @@ def chooseBestPath(board: BoardState, player: bool, valid_actions: list[int]):
     # No path found so random move
     return []
 
-def selectMove(offensive_moves: list[int], defensive_moves: list[int], valid_actions: list[int]):
-    num = randint(1, 100)
-    if num < 60 and len(offensive_moves):
-        move = choice(offensive_moves)
-    elif num > 65 and len(defensive_moves):
-        # print("SELECTING FROM", moves)
-        move = choice(defensive_moves)
-    else:
-        move = choice(valid_actions)
+def selectMove(offensive_moves: list[int], defensive_moves: list[int], valid_actions: list[int], offensive_threshold: float, defensive_threshold: float):
+    if offensive_threshold + defensive_threshold >= 1:
+        raise ValueError('The sum of offensiveThreshold and defensiveThreshold must be less than 1.')
 
-    if move in offensive_moves:
-        offensive_moves.remove(move)
-    return move
+    ideal_moves = list(set(offensive_moves) & set(defensive_moves))
+
+    num = randint(1, 100) / 100
+
+    if ideal_moves:
+        # overlap between offensive and defensive moves
+        if num < offensive_threshold + defensive_threshold:
+            move = choice(ideal_moves)
+        else:
+            move = choice(valid_actions)
+
+        if move in offensive_moves:
+            offensive_moves.remove(move)
+        return move
+    else:
+        # no overlap, handle separately
+        thresholds = [
+            (offensive_threshold, offensive_moves),
+            (defensive_threshold, defensive_moves),
+            (1, valid_actions)
+        ]
+
+
+        for threshold, moves in thresholds:
+            if num < threshold and moves:
+                move = choice(moves)
+                if move in offensive_moves:
+                    offensive_moves.remove(move)
+                return move
+            num -= threshold
+
+    raise ValueError('No valid moves found.')

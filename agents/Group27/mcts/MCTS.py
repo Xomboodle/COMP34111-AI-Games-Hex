@@ -15,22 +15,27 @@ from threading import Thread
 
 import numpy as np
 import random
-       
+
 
 class Searcher:
-    def __init__(self):
+    def __init__(self, offensive_threshold: float, defensive_threshold: float, debug: bool = False):
         self.tree = Tree()
-        
+
         self.max_simulations = 1000
         self.max_depth = 200
 
         self.last_move_sequence = ""
         self.current_move_sequence = ""
         self.player = False # True for blue, False for Red
-    
+
+        self.offensive_threshold = offensive_threshold
+        self.defensive_threshold = defensive_threshold
+
+        self.debug = debug
+
     def search(self, turn:int, _heuristics: list, board: Board, previous_move : Move):
         _check = self.last_move_sequence
-        
+
         self.last_move_sequence = self.current_move_sequence
         if previous_move is not None:
             previous_move_address = str(previous_move.x*board.size + previous_move.y).zfill(3)
@@ -60,8 +65,7 @@ class Searcher:
             self.tree.add(self.last_move_sequence, previous_move.x*board.size + previous_move.y)
             current_node = self.tree.get(self.current_move_sequence)
 
-        addr = search(self.tree,current_node.get_hash(), not(self.player), self.max_simulations, self.max_depth)
-
+        addr = search(self.tree, current_node.get_hash(), self.offensive_threshold, self.defensive_threshold, not(self.player), self.max_simulations, self.max_depth)
 
         if addr < 0:
             # we have said swap
@@ -74,13 +78,13 @@ class Searcher:
         # for h in current_node.next_states:
         #     print(self.tree.get(h).state.last_move ,self.tree.get(h).value/self.tree.get(h).visits)
         n = self.tree.get(self.current_move_sequence)
-        print(n.state.last_move, n.value/n.visits)
+        if (self.debug):
+            print(n.state.last_move, n.value/n.visits)
 
         return current_node.state.address_to_move(addr)
 
-        
 
-def search(tree : Tree, start_node_address : str, maximise : bool, max_sims : int = 50, depth_limit : int = 200) -> int:
+def search(tree: Tree, start_node_address: str, offensive_threshold: float, defensive_threshold: float, maximise: bool, max_sims: int = 50, depth_limit: int = 200) -> int:
     """Searches the tree for the best child
     maximise - indicates if the search should maximise or minimise the heuristic
 
@@ -93,7 +97,7 @@ def search(tree : Tree, start_node_address : str, maximise : bool, max_sims : in
         if node.untried_actions:
             expand(tree, node)
 
-        reward = simulate(node, depth_limit)
+        reward = simulate(node, offensive_threshold, defensive_threshold, depth_limit)
 
         back_propagate(tree, node, reward)
 
@@ -117,7 +121,7 @@ def expand(tree : Tree, node: Node) -> Node:
     move = random.choice(node.untried_actions)
     return tree.add(node.get_hash(), move)
 
-def simulate(node : Node, depth_limit : int = 300) -> float:
+def simulate(node: Node, offensive_threshold: float, defensive_threshold: float, depth_limit: int = 300) -> float:
     """Simulate a random playout from the current node's state."""
     # print(node.player)
     depth_count = 0
@@ -135,20 +139,20 @@ def simulate(node : Node, depth_limit : int = 300) -> float:
             current_path_p2 = chooseBestPath(state, state.player, state.valid_actions)#random.choice(node.state.valid_actions)  # Pick a random action
         if len(current_path_p1) == 0 and not(state.player):
             current_path_p1 = chooseBestPath(state, state.player, state.valid_actions)
-        
+
         # TODO: use the policy network to pick the best move, instead of random rollouts
         defensive_moves = getDefensiveMoves(state)
         if state.player and len(current_path_p2):
-            move = selectMove(current_path_p2, defensive_moves, state.valid_actions)
+            move = selectMove(current_path_p2, defensive_moves, state.valid_actions, offensive_threshold, defensive_threshold)
             if move in current_path_p1:
                 current_path_p1 = []
         elif not(state.player) and len(current_path_p1):
-            move = selectMove(current_path_p1, defensive_moves, state.valid_actions)
+            move = selectMove(current_path_p1, defensive_moves, state.valid_actions, offensive_threshold, defensive_threshold)
             if move in current_path_p2:
                 current_path_p2 = []
         else:
             break
-        
+
         state.make_move_address(move)
         t = state.tiles[move]
         depth_count += 1
@@ -166,18 +170,18 @@ def back_propagate(tree : Tree, node: Node, reward : float):
 
 
 
-def branch_search(result_queue : Queue,conn : Connection, start_node_address : str, maximise : bool, max_sims : int = 50, depth_limit : int = 200):
+def branch_search(result_queue: Queue, conn: Connection, start_node_address: str, offensive_threshold: float, defensive_threshold: float, maximise: bool, max_sims: int = 50, depth_limit: int = 200):
     # returns the nodes that were made/changed
     tree = TreeCache(conn)
-    search(tree,start_node_address,maximise,max_sims,depth_limit)
+    search(tree, start_node_address, offensive_threshold, defensive_threshold, maximise, max_sims, depth_limit)
     conn.close()
     # print(tree.nodes)
     # result_queue.put(tree.convert_nodes_to_dict())
     result_queue.close()
 
 class MainSearcher(Searcher):
-    def __init__(self):
-        
+    def __init__(self, offensive_threshold: float, defensive_threshold: float, debug: bool = False):
+        super().__init__(offensive_threshold, defensive_threshold, debug)
 
         self.max_simulations = 1000
         self.max_depth = 200
@@ -187,7 +191,6 @@ class MainSearcher(Searcher):
         self.player = False # True for blue, False for Red
 
         self.max_threads = 7
-        
 
         # self.pipes = [Pipe() for i in range(self.max_threads)]
         self.tree = DatabaseTree(self.max_threads)
@@ -195,7 +198,7 @@ class MainSearcher(Searcher):
 
     def search(self, turn:int, _heuristics: list, board: Board, previous_move : Move):
         _check = self.last_move_sequence
-        
+
         self.last_move_sequence = self.current_move_sequence
         if previous_move is not None:
             previous_move_address = str(previous_move.x*board.size + previous_move.y).zfill(3)
@@ -226,23 +229,28 @@ class MainSearcher(Searcher):
             current_node = self.tree.get(self.current_move_sequence)
 
         ### ^^^ Above copied
-        
+
         pipes = [Pipe() for i in range(self.max_threads)]
         database_listener = Thread(target=self.tree.listener, args=([pipes]), name="Database Listener")
         database_listener.start() # we could move this out??
-        
+
         result_queue = Queue() # TODO REMOVE
         # Spool up new processes
-        args_set = [(result_queue, pipe[1],current_node.get_hash(), not(self.player), self.max_simulations, self.max_depth) for pipe in pipes]
+        args_set = [(result_queue, pipe[1], current_node.get_hash(), self.offensive_threshold, self.defensive_threshold, not(self.player), self.max_simulations, self.max_depth) for pipe in pipes]
         pool = [Process(target=branch_search, args=args) for args in args_set]
         for process in pool:
             process.start()
         for process in pool:
             process.join(timeout=25)
-        
+
         for pipe in pipes:
             pipe[1].send(["STOP",0])
         database_listener.join()
+
+
+
+        # results : list[dict[str,Node]] = pool.starmap(branch_search,args)
+        # self.pipes = []
 
         ## combine trees
 
@@ -261,7 +269,8 @@ class MainSearcher(Searcher):
         # for h in current_node.next_states:
         #     print(self.tree.get(h).state.last_move ,self.tree.get(h).value/self.tree.get(h).visits)
         n = self.tree.get(self.current_move_sequence)
-        print(n.state.last_move, n.value/n.visits)
+        if (self.debug):
+            print(n.state.last_move, n.value/n.visits)
 
         return current_node.state.address_to_move(addr)
-    
+

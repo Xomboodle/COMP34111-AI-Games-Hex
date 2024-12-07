@@ -1,0 +1,3 @@
+python3 ./selfPlay.py chump chump 1 10000
+python3 ./selfPlay.py monkey chump 1 100
+python3 ./selfPlay.py monkey monkey 1 100

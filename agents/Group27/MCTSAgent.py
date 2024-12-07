@@ -10,7 +10,7 @@ from src.Colour import Colour
 from src.Move import Move
 
 # from agents.Group27.mcts.PolicyModel import PolicyModel
-from agents.Group27.mcts.MCTS import Searcher,MainSearcher
+from agents.Group27.mcts.MCTS import MainSearcher
 
 class MCTSAgent(AgentBase):
     """
@@ -25,16 +25,18 @@ class MCTSAgent(AgentBase):
     _choices: list[Move]
     _board_size: int = 11
 
-    def __init__(self, colour: Colour):
+    def __init__(self, colour: Colour, offensive_threshold: float = 0.6, defensive_threshold: float = 0.35, debug: bool = False):
         super().__init__(colour)
         self._choices = [
             (i, j) for i in range(self._board_size) for j in range(self._board_size)
         ]
 
+        self.debug = debug
+
         # self.model: PolicyModel = PolicyModel()
         # self.model.load_state_dict(torch.load('agents/Group27/mcts/test.pth'))
         # self.model.eval()
-        self.mcts = MainSearcher() # multithreaded search
+        self.mcts = MainSearcher(offensive_threshold, defensive_threshold, debug=False) # multithreaded search
         # self.mcts = Searcher() # single threaded
 
         self.total_search_time = 0
@@ -64,14 +66,8 @@ class MCTSAgent(AgentBase):
 
         time_searched = b-a
         self.total_search_time += time_searched
-        print("Time: " + str(time_searched) + " Average Time: " + str(self.total_search_time/self.search_count))
-        print(f"Number of nodes {len(self.mcts.tree.nodes)}")
+        if (self.debug):
+            print("Time: " + str(time_searched) + " Average Time: " + str(self.total_search_time/self.search_count))
+            print(f"Number of nodes {len(self.mcts.tree.nodes)}")
 
         return move
-
-        # if turn == 2 and choice([0, 1]) == 1:
-        if turn == 2:
-            return Move(-1, -1)
-        else:
-            x, y = choice(self._choices)
-            return Move(x, y)
