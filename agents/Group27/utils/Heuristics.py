@@ -240,31 +240,18 @@ def selectMove(offensive_moves: list[int], defensive_moves: list[int], valid_act
 
     num = randint(1, 100) / 100
 
-    if ideal_moves:
-        # overlap between offensive and defensive moves
-        if num < offensive_threshold + defensive_threshold:
-            move = choice(ideal_moves)
-        else:
-            move = choice(valid_actions)
+    thresholds = [
+        (offensive_threshold, ideal_moves if (ideal_moves) else offensive_moves),
+        (defensive_threshold, defensive_moves),
+        (1, valid_actions)
+    ]
 
-        if move in offensive_moves:
-            offensive_moves.remove(move)
-        return move
-    else:
-        # no overlap, handle separately
-        thresholds = [
-            (offensive_threshold, offensive_moves),
-            (defensive_threshold, defensive_moves),
-            (1, valid_actions)
-        ]
-
-
-        for threshold, moves in thresholds:
-            if num < threshold and moves:
-                move = choice(moves)
-                if move in offensive_moves:
-                    offensive_moves.remove(move)
-                return move
-            num -= threshold
+    for threshold, moves in thresholds:
+        if num < threshold and moves:
+            move = choice(moves)
+            if move in offensive_moves:
+                offensive_moves.remove(move)
+            return move
+        num -= threshold
 
     raise ValueError('No valid moves found.')
