@@ -142,7 +142,6 @@ class CustomGame(Game):
 def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparamaterise=False, verbose=False):
     """Iteratively play games between agents to generate data."""
     step = 0.1
-    checkpoint = step
 
     options = {
         'chump': 'agents.DefaultAgents.NaiveAgent NaiveAgent',
@@ -158,15 +157,18 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
 
     if (hyperparamaterise):
         grid = []
-        temp_step = 0.2
-        x_values = [round(i * step, 2) for i in range(1, int(0.95 / temp_step))]
-        y_values = [round(i * step, 2) for i in range(1, int(0.95 / temp_step))]
+        temp_step = 0.1
+        x_values = [round(i * temp_step, 2) for i in range(1, int(0.95 / temp_step))]
+        y_values = [round(i * temp_step, 2) for i in range(1, int(0.95 / temp_step))]
         for x in x_values:
             for y in y_values:
+                if (x + y < 0.75):
+                    continue
                 if (x + y > 0.95):
                     break
                 grid.append((x, y))
         print(f'Running a grid search with {len(grid)} hyperparameter combinations', end='\n\n')
+        print(grid)
         numTourneys = len(grid)
     else:
         grid = []
@@ -174,6 +176,7 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
     numOfOpponentsPerTournament = max(1, int(math.sqrt(len(grid))))
 
     for tourney in range(numTourneys):
+        checkpoint = step
         totalWins = 0
 
         if (grid):
@@ -184,6 +187,7 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
             p1Args = {}
 
         print(f'[{tourney+1}] {players[0]} (Alice) vs {players[1]} (Bob)')
+        startTime = time.time()
 
         # random sample for p2
         totalBouts = 0
@@ -194,13 +198,12 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
                 if (players[1] == 'monkey'):
                     p2ArgsRaw = random.choice(grid)
                     p2Args = { 'offensive_threshold': p2ArgsRaw[0], 'defensive_threshold': p2ArgsRaw[1], 'debug': False }
-                    print(p2Args)
+                    print(f'\t{p2Args}')
                 else:
                     p2Args = {}
             else:
                 p2Args = {}
 
-            startTime = time.time()
 
             game = CustomGame(
                 player1=Player(
@@ -245,14 +248,15 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
         endTime = time.time()
         elapsedTime = endTime - startTime
 
-        if (wins > best[0]):
+        if (totalWins > best[0]):
             best = (wins, p1Args)
 
         print(f'Played {numRounds} game{"s" if numRounds > 1 else ""}')
         if (p2Sample > 1):
             print(f'Against {p2Sample} opponents')
         print(f'Won {totalWins} ({totalWins / (numRounds * p2Sample) * 100:.0f}%)')
-        print(f'Took {elapsedTime:.2f} seconds', end='\n\n')
+        print(f'Took {elapsedTime:.2f} seconds')
+        print(f'Current best hyperparameters: {best[1]} ({best[0]} wins)', end='\n\n')
 
     if (hyperparamaterise):
         print('DONE!')
