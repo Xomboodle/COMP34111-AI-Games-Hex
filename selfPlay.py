@@ -146,6 +146,7 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
     options = {
         'chump': 'agents.DefaultAgents.NaiveAgent NaiveAgent',
         'monkey': 'agents.Group27.MCTSAgent MCTSAgent',
+        'Jonathan': 'agents.MCTSAgent.MCTSAgent MCTSAgent',
     }
 
     p1Path, p1Class = options[players[0]].split(" ")
@@ -256,7 +257,8 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
             print(f'Against {p2Sample} opponents')
         print(f'Won {totalWins} ({totalWins / (numRounds * p2Sample) * 100:.0f}%)')
         print(f'Took {elapsedTime:.2f} seconds')
-        print(f'Current best hyperparameters: {best[1]} ({best[0]} wins)', end='\n\n')
+        if (hyperparamaterise):
+            print(f'Current best hyperparameters: {best[1]} ({best[0]} wins)', end='\n\n')
 
     if (hyperparamaterise):
         print('DONE!')

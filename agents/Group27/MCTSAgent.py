@@ -25,7 +25,11 @@ class MCTSAgent(AgentBase):
     _choices: list[Move]
     _board_size: int = 11
 
-    def __init__(self, colour: Colour, offensive_threshold: float = 0.6, defensive_threshold: float = 0.35, debug: bool = False):
+    def __init__(self, colour: Colour,
+                    offensive_threshold: float = 0.3, # from hyperparam self-play tourney
+                    defensive_threshold: float = 0.5, # from hyperparam self-play tourney
+                    debug: bool = False
+    ):
         super().__init__(colour)
         self._choices = [
             (i, j) for i in range(self._board_size) for j in range(self._board_size)
