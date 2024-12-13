@@ -145,7 +145,8 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
 
     options = {
         'chump': 'agents.DefaultAgents.NaiveAgent NaiveAgent',
-        'monkey': 'agents.Group27.MCTSAgent MCTSAgent',
+        'chocco-monkey': 'agents.Group27.MCTSAgent MCTSAgent',
+        'vanilla-monkey': 'agents.Group27.MCTSAgent MCTSAgent',
         'Jonathan': 'agents.MCTSAgent.MCTSAgent MCTSAgent',
     }
 
@@ -182,10 +183,24 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
 
         if (grid):
             # grid search for p1
-            p1Args = { 'offensive_threshold': grid[tourney][0], 'defensive_threshold': grid[tourney][1], 'debug': False } if (players[0] == 'monkey') else {}
-            print(p1Args)
+            if ('monkey' in players[0]):
+                p1Args = {
+                    'offensive_threshold': grid[tourney][0], 'defensive_threshold': grid[tourney][1],
+                    'debug': False
+                }
+                print(p1Args)
+            else:
+                p1Args = {}
         else:
-            p1Args = {}
+            if ('monkey' in players[0]):
+                p1Args = {
+                    'offensive_threshold': 0.3, 'defensive_threshold': 0.5,
+                    'model': 'v2' if (players[0] == 'chocco-monkey') else None,
+                    'debug': False
+                }
+                print(p1Args)
+            else:
+                p1Args = {}
 
         print(f'[{tourney+1}] {players[0]} (Alice) vs {players[1]} (Bob)')
         startTime = time.time()
@@ -196,15 +211,26 @@ def selfPlay(numTourneys=1, numRounds=1, players=('chump', 'chump'), hyperparama
 
             if (grid):
                 # random sample for p2
-                if (players[1] == 'monkey'):
+                if ('monkey' in players[1]):
                     p2ArgsRaw = random.choice(grid)
-                    p2Args = { 'offensive_threshold': p2ArgsRaw[0], 'defensive_threshold': p2ArgsRaw[1], 'debug': False }
+                    p2Args = {
+                        'offensive_threshold': p2ArgsRaw[0], 'defensive_threshold': p2ArgsRaw[1],
+                        'model': 'v2' if (players[1] == 'chocco-monkey') else None,
+                        'debug': False
+                    }
                     print(f'\t{p2Args}')
                 else:
                     p2Args = {}
             else:
-                p2Args = {}
-
+                if ('monkey' in players[1]):
+                    p2Args = {
+                        'offensive_threshold': 0.3, 'defensive_threshold': 0.5,
+                        'model': 'v2' if (players[1] == 'chocco-monkey') else None,
+                        'debug': False
+                    }
+                    print(f'\t{p2Args}')
+                else:
+                    p2Args = {}
 
             game = CustomGame(
                 player1=Player(

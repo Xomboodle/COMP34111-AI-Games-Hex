@@ -2,14 +2,15 @@
 from random import choice
 from time import time
 
-# import torch
+import torch
 
 from src.AgentBase import AgentBase
 from src.Board import Board
 from src.Colour import Colour
 from src.Move import Move
 
-# from agents.Group27.mcts.PolicyModel import PolicyModel
+from agents.Group27.cnn.PolicyModel import PolicyModel
+from agents.Group27.cnn.HeuristicModel import HeuristicModel
 from agents.Group27.mcts.MCTS import MainSearcher
 
 class MCTSAgent(AgentBase):
@@ -28,6 +29,7 @@ class MCTSAgent(AgentBase):
     def __init__(self, colour: Colour,
                     offensive_threshold: float = 0.3, # from hyperparam self-play tourney
                     defensive_threshold: float = 0.5, # from hyperparam self-play tourney
+                    model: str | None = None,
                     debug: bool = False
     ):
         super().__init__(colour)
@@ -37,10 +39,19 @@ class MCTSAgent(AgentBase):
 
         self.debug = debug
 
-        # self.model: PolicyModel = PolicyModel()
-        # self.model.load_state_dict(torch.load('agents/Group27/mcts/test.pth'))
-        # self.model.eval()
-        self.mcts = MainSearcher(offensive_threshold, defensive_threshold, debug=False) # multithreaded search
+        if (model is not None):
+            policyModel: PolicyModel = PolicyModel()
+            policyModel.load_state_dict(torch.load(f'agents/Group27/cnn/models/{model}_policy.pth', weights_only=True))
+            policyModel.eval()
+
+            heuristicModel: HeuristicModel = HeuristicModel()
+            heuristicModel.load_state_dict(torch.load(f'agents/Group27/cnn/models/{model}_heuristic.pth', weights_only=True))
+            heuristicModel.eval()
+        else:
+            policyModel = None
+            heuristicModel = None
+
+        self.mcts = MainSearcher(offensive_threshold, defensive_threshold, policyModel, heuristicModel, debug=False) # multithreaded search
         # self.mcts = Searcher() # single threaded
 
         self.total_search_time = 0

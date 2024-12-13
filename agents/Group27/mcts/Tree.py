@@ -1,5 +1,6 @@
 """TODO"""
-from __future__ import annotations  # Enables forward references
+from __future__ import annotations
+import random  # Enables forward references
 
 from src.Board import Board
 from src.Move import Move
@@ -65,7 +66,7 @@ class Tree:
         Action give is an address"""
         parent = self.get(parent_hash)
         if node_action not in parent.untried_actions:
-            pass
+            node_action = random.choice(parent.untried_actions)
         parent.untried_actions.remove(node_action) # if this fails what the fuck
         next_state = parent.state.copy()
         next_state.make_move_address(node_action)

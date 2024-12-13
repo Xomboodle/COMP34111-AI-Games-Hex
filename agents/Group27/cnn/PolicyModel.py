@@ -29,6 +29,7 @@ class PolicyModel(nn.Module):
         Returns:
             torch.Tensor: Output tensor of shape (batch_size, 1), representing win/loss probability.
         """
+        x = x.float()
 
         # Convolutional layers
         x = torch.relu(self.conv1(x))
