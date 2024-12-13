@@ -23,7 +23,7 @@ class Searcher:
     def __init__(self, offensive_threshold: float, defensive_threshold: float, policyModel: PolicyModel, heuristicModel: HeuristicModel, debug: bool = False):
         self.tree = Tree()
 
-        self.max_simulations = 1000
+        self.max_simulations = 500 if (policyModel is not None) else 1000
         self.max_depth = 200
 
         self.last_move_sequence = ""
@@ -230,7 +230,7 @@ class MainSearcher(Searcher):
     def __init__(self, offensive_threshold: float, defensive_threshold: float, policyModel: PolicyModel, heuristicModel: HeuristicModel, debug: bool = False):
         super().__init__(offensive_threshold, defensive_threshold, policyModel, heuristicModel, debug)
 
-        self.max_simulations = 1000
+        self.max_simulations = 500 if (policyModel is not None) else 1000
         self.max_depth = 200
 
         self.last_move_sequence = ""

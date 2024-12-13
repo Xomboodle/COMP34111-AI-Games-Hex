@@ -29,7 +29,7 @@ class MCTSAgent(AgentBase):
     def __init__(self, colour: Colour,
                     offensive_threshold: float = 0.3, # from hyperparam self-play tourney
                     defensive_threshold: float = 0.5, # from hyperparam self-play tourney
-                    model: str | None = None,
+                    model: str | None = "v2",
                     debug: bool = False
     ):
         super().__init__(colour)
