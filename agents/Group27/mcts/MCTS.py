@@ -130,9 +130,8 @@ def select(tree : Tree, node_address : str):
 
 def expand(tree : Tree, node: Node, policyModel: PolicyModel) -> Node:
     """Expand the node by trying one of the untried actions."""
-    if (policyModel is None):
-        move = random.choice(node.untried_actions)
-    else:
+    skip = False
+    if (policyModel is not None):
         policyOutput = policyModel(tensorfyBoard(node.state.tiles).float().unsqueeze(0)).squeeze()
         validMoves = torch.tensor(node.untried_actions)
         maskedPolicy = torch.full_like(policyOutput, float('-inf'))  # Mask all invalid moves
@@ -141,6 +140,11 @@ def expand(tree : Tree, node: Node, policyModel: PolicyModel) -> Node:
             move = torch.argmin(maskedPolicy).item()
         else:
             move = torch.argmax(maskedPolicy).item()  # Get the highest valid move
+
+        if (len(node.untried_actions) > 0 and move not in node.untried_actions):
+            skip = True
+    if (policyModel is None or skip):
+        move = random.choice(node.untried_actions)
 
     return tree.add(node.get_hash(), move)
 

@@ -44,9 +44,10 @@ class MCTSAgent(AgentBase):
             policyModel.load_state_dict(torch.load(f'agents/Group27/cnn/models/{model}_policy.pth', weights_only=True))
             policyModel.eval()
 
-            heuristicModel: HeuristicModel = HeuristicModel()
-            heuristicModel.load_state_dict(torch.load(f'agents/Group27/cnn/models/{model}_heuristic.pth', weights_only=True))
-            heuristicModel.eval()
+            # heuristicModel: HeuristicModel = HeuristicModel()
+            # heuristicModel.load_state_dict(torch.load(f'agents/Group27/cnn/models/{model}_heuristic.pth', weights_only=True))
+            # heuristicModel.eval()
+            heuristicModel = None
         else:
             policyModel = None
             heuristicModel = None
